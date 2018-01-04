@@ -7,14 +7,14 @@ layout: default
   <h1 class="page-heading">My VM is Windows</h1>
 
   {% for item in site.docwindows %}
-    <p><a href="{{ item.url }}">{{ item.title | escape }}</a></p>
+    <p><a href="{{ item.url | relative_url }}">{{ item.title | escape }}</a></p>
   {% endfor %}
 
 
   <h1 class="page-heading">My VM is Linux</h1>
 
   {% for item in site.doclinux %}
-  <p><a href="{{ item.url }}">{{ item.title | escape }}</a></p>
+  <p><a href="{{ item.url | relative_url}}">{{ item.title | escape }}</a></p>
 {% endfor %}
 
 
