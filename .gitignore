@@ -51,7 +51,9 @@ build-iPhoneSimulator/
 
 # generated files
 _site/
+.sass-cache/
 
 Gemfile
-
 Gemfile.lock
+
+

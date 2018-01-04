@@ -4,7 +4,7 @@
     {% assign default_paths = site.pages | map: "path" %}
     {% assign page_paths = site.header_pages | default: default_paths %}
     <div style="background:url('{{ "/assets/logo_long.jpg" | absolute_url }}'); height: 91px; background-repeat: no-repeat">
-      <h2 style="color:white; position: relative; left: 250px; top: 25px" >{{ site.title | escape }} </h2>
+      <a class="site-title"" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
     </div>
   
     {% if page_paths %}
