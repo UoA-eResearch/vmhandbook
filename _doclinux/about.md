@@ -1,8 +1,6 @@
 ---
-layout: post
 title:  "This is about"
-date:   2017-12-06 16:53:01 +1300
-categories: windows
+categories: admin
 ---
 
 This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)

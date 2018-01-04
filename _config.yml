@@ -1,3 +1,18 @@
-title: Virtual machine handbook
+title: Research Virtual Machine Handbook
 
 theme: minima
+
+
+collections:
+  docwindows:
+    output: true
+    permalink: /:collection/:name
+  doclinux:
+    output: true
+    permalink: /:collection/:name
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "post"

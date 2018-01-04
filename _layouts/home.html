@@ -4,26 +4,26 @@ layout: default
 
 <div class="home">
 
+  <h1 class="page-heading">My VM is Windows</h1>
+
+  {% for item in site.docwindows %}
+    <p><a href="{{ item.url }}">{{ item.title | escape }}</a></p>
+  {% endfor %}
+
+
+  <h1 class="page-heading">My VM is Linux</h1>
+
+  {% for item in site.doclinux %}
+  <p><a href="{{ item.url }}">{{ item.title | escape }}</a></p>
+{% endfor %}
+
+
   {% for category in site.categories %}
     <a href="#{{ category[0] | slugify }}" class="post-tag">{{ category[0] }}</a>
   {% endfor %}
 
-  <h1 class="page-heading">All posts</h1>
   
   {{ content }}
 
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
 
 </div>
