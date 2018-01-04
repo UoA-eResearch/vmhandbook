@@ -40,7 +40,6 @@ bundle exec jekyll serve
 ├── _doclinux       # A Jekyll collection for Linux VM FAQs
 ├── _docwindows     # A Jekyll collection for Windows VM FAQs
 ├── _includes       # Overwritten parts of the template 
-├── _layouts        # Overwritten layouts of the template
 ├── _site           # Jekyll outputs
 ├── assets          # Static files like images, JS/CSS files.
 └── index.md        # Home page
