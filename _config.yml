@@ -6,10 +6,8 @@ theme: minima
 collections:
   docwindows:
     output: true
-    permalink: /:collection/:name
   doclinux:
     output: true
-    permalink: /:collection/:name
 
 defaults:
   - scope:
