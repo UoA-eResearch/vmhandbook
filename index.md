@@ -4,6 +4,23 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 ---
 
- {% for item in site.doclinux %}
-  <p><a href="{{ item.url | relative_url}}">{{ item.title | escape }}</a></p>
-  {% endfor %}
+Welcome to our reasearch virtual machine handbook.
+
+### Linux VM
+
+{% for item in site.doclinux %}
+  -[{{ item.title | escape }}]({{ item.url | relative_url}})
+{% endfor %}
+
+### Windows VM
+
+{% for item in site.docwindows %}
+  -[{{ item.title | escape }}]({{ item.url | relative_url}})
+{% endfor %}
+
+
+### Generic FAQs
+
+{% for item in site.docgeneric %}
+  -[{{ item.title | escape }}]({{ item.url | relative_url}})
+{% endfor %}

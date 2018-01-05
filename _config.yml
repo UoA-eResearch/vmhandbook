@@ -8,6 +8,8 @@ collections:
     output: true
   doclinux:
     output: true
+  docgeneric:
+    output: true
 
 defaults:
   - scope:
