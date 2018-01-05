@@ -47,6 +47,25 @@ bundle exec jekyll serve
 
 ### 2. Article structures
 
+Jekyll requires every file that need to be converted begin with a [front matter](https://jekyllrb.com/docs/frontmatter/)
+
+```
+---
+layout: post
+title: Blogging Like a Hacker
+categories: admin user
+tags: login 2fa
+---
+```
+
+The current template only uses `title` and `categories`. The default value of `layout` has been assigned to `page` in `_config.yml`.
 
 ### 3. kramdown Syntax
+
+Jekyll uses [kramdown](https://kramdown.gettalong.org) as the markdown render engine, which is a superset of the standard Markdown.
+
+## III Useful links
+
+- [kramdown Syntax](https://kramdown.gettalong.org/syntax.html)
+- [Using Jekyll as a static site generator with GitHub Pages](https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/)
 

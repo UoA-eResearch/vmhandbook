@@ -5,7 +5,7 @@ categories: admin
 
 ## What is 2-factor authentication
 
-Please refer to : [What is 2-factor authentication](https://superuoa.custhelp.com/app/answers/detail/a_id/7442/kw/two%20factor%20authentication)
+Please refer to : [What is 2-factor authentication](https://superuoa.custhelp.com/app/answers/detail/a_id/7442/kw/two%20factor%20authentication){:target="_blank"}
 
 ## When do you need to use 2-factor authentication:
 
@@ -18,18 +18,18 @@ Everybody can use Google Authenticator (phone app) to provide the 2nd factor. St
 
 ### Setting up Google Authenticator:
 
-- [What is Google Authenticator](https://superuoa.custhelp.com/app/answers/detail/a_id/7576/kw/Google%20Authenticator)
+- [What is Google Authenticator](https://superuoa.custhelp.com/app/answers/detail/a_id/7576/kw/Google%20Authenticator){:target="_blank"}
 
 - Install Google Authenticator
-    - [On your Android phone](https://superuoa.custhelp.com/app/answers/detail/a_id/7666/kw/Google%20Authenticator)
-    - [On your iPhone](https://superuoa.custhelp.com/app/answers/detail/a_id/7569/kw/Google%20Authenticator)
+    - [On your Android phone](https://superuoa.custhelp.com/app/answers/detail/a_id/7666/kw/Google%20Authenticator){:target="_blank"}
+    - [On your iPhone](https://superuoa.custhelp.com/app/answers/detail/a_id/7569/kw/Google%20Authenticator){:target="_blank"}
 
-- [Register your Google Authenticator app](https://superuoa.custhelp.com/app/answers/detail/a_id/7564/kw/Google%20Authenticator/related/1)
+- [Register your Google Authenticator app](https://superuoa.custhelp.com/app/answers/detail/a_id/7564/kw/Google%20Authenticator/related/1){:target="_blank"}
 
 ### Setting up YubiKey:
 
-- [Get a YubiKey](https://superuoa.custhelp.com/app/answers/detail/a_id/7459/kw/YubiKey/related/1)
-- [Register your YubiKey](https://superuoa.custhelp.com/app/answers/detail/a_id/7581/kw/Google%20Authenticator/related/1)
+- [Get a YubiKey](https://superuoa.custhelp.com/app/answers/detail/a_id/7459/kw/YubiKey/related/1){:target="_blank"}
+- [Register your YubiKey](https://superuoa.custhelp.com/app/answers/detail/a_id/7581/kw/Google%20Authenticator/related/1){:target="_blank"}
 
 
 ## How to use 2-factor authentication:
