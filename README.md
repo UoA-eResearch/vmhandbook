@@ -39,6 +39,7 @@ bundle exec jekyll serve
 ├── _config.yml     # Jekyll configurations
 ├── _doclinux       # A Jekyll collection for Linux VM FAQs
 ├── _docwindows     # A Jekyll collection for Windows VM FAQs
+├── _docgeneric     # A Jekyll collection for generic FAQs
 ├── _includes       # Overwritten parts of the template 
 ├── _site           # Jekyll outputs
 ├── assets          # Static files like images, JS/CSS files.
@@ -64,7 +65,7 @@ The current template only uses `title` and `categories`. The default value of `l
 
 Jekyll uses [kramdown](https://kramdown.gettalong.org) as the markdown render engine, which is a superset of the standard Markdown.
 
-## III Useful links
+## III. Useful links
 
 - [kramdown Syntax](https://kramdown.gettalong.org/syntax.html)
 - [Using Jekyll as a static site generator with GitHub Pages](https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/)

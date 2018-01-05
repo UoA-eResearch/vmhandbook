@@ -2,6 +2,9 @@ title: Research Virtual Machine Handbook
 
 theme: minima
 
+header_pages:
+  - index.md
+  - contact-us.md
 
 collections:
   docwindows:
