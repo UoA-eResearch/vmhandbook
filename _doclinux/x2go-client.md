@@ -15,7 +15,7 @@ After starting the X2GO client, first create a new session:
 
 On the session tab, give your session a meaningful name and write the name of the VM into the "Host" field and your UPI into the "Login" field. Make sure you choose MATE from the "Session type" selection menu.
 
-![useful image]({{ site.url }}/assets/x2go/x2go_screenshot1.png)
+![useful image]({{ "/assets/x2go/x2go_screenshot1.png" | absolute_url }})
 
 On the Media tab, please disable "Sound" and "Client side printing support:
 
