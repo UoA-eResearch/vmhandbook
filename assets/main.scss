@@ -12,5 +12,9 @@ $content-width:    1024px;
     left: 250px; 
     top: 15px;
     &, &:visited, &:hover, &:active { color: white; }
+
+    @include media-query($on-palm) {
+        display: none;
+    }
 }
 
