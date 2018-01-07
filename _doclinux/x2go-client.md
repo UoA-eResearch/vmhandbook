@@ -3,6 +3,7 @@ title:  "Login to a graphical desktop environment through X2Go"
 categories: admin user
 ---
 
+
 ## Download and install X2GO client
 
 Please follow [this article](https://wiki.x2go.org/doku.php/doc:installation:x2goclient){:target="_blank"}.
@@ -19,7 +20,7 @@ On the session tab, give your session a meaningful name and write the name of th
 
 On the Media tab, please disable "Sound" and "Client side printing support:
 
-![useful image]({{ "/assets/linux-x2go/x2go_screenshot3.png" | absolute_url }}){:width="600px"}
+![useful image]({{ "/assets" | append: page.id | append: "/x2go_screenshot3.png" | absolute_url }}){:width="600px"}
 
 Then click Ok. The new session will then show up on the right side of your X2GO client window.
 
