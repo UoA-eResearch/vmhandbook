@@ -6,6 +6,9 @@ categories: admin user
 For security reasons Windows VMs by default don't have access to the Internet. To set up Internet access follow the next steps to configure the proxy server:
 
 1. On the **Tools** menu in Internet Explorer (little cog close to the top right corner of the IE window), click **Internet Options**, click the **Connections** tab, and then click **LAN Settings**.
+
+![useful image]({{ "/assets/win-proxy/screenshot1.png" | absolute_url }}){:width="600px"}
+
 2. Under **Proxy server**, click to select the **Use a proxy server for your LAN** check box.
 3. In the **Address** box, type `squid.auckland.ac.nz`.
 4. In the **Port** box, type `3128`.
