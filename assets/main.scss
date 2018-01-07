@@ -6,6 +6,7 @@ $content-width:    1024px;
 
 @import "minima";
 
+
 .site-title {
     font-size: 30px;
     position: relative; 
@@ -18,3 +19,9 @@ $content-width:    1024px;
     }
 }
 
+blockquote {
+    border-left:1px solid #e5e5e5;
+    margin:0;
+    padding:0 0 0 20px;
+    font-style: normal;
+}
