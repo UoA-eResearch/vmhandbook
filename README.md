@@ -1,8 +1,10 @@
 # vmhandbook
 
-This repository contains the user manual for CeR research virtual machines, which is a Jekyll based static website. It can be hosted on either Github pages or any http hosts.
+This repository contains the user manual for CeR research virtual machines, which is a Jekyll based static website. It can be hosted on either Github pages or any hosts with a HTTP server.
 
 ## I. Setting up this site locally with Jekyll
+
+Editing markdown files online using Github directly is possible, but it's recommended to setup a local copy to preview the changes before committing. 
 
 ### 1. Install ruby
 
@@ -40,15 +42,27 @@ bundle exec jekyll serve
 ├── _doclinux       # A Jekyll collection for Linux VM FAQs
 ├── _docwindows     # A Jekyll collection for Windows VM FAQs
 ├── _docgeneric     # A Jekyll collection for generic FAQs
-├── _includes       # Overwritten parts of the template 
+├── _includes       # Customised parts of the theme 
 ├── _site           # Jekyll outputs
 ├── assets          # Static files like images, JS/CSS files.
+│   └── main.scss   # Customised CSS of the theme
 └── index.md        # Home page
 ```
 
-### 2. Article structures
+Jekyll uses the [Liquid](https://shopify.github.io/liquid/) template language to process markdown files. Therefore, the markdown files in Jekyll don't purely follow markdown syntax, but are mixtures of:
+- liquid templating language, 
+- kramdown syntax
+- YAML front matter block
+- possible nested HTML
 
-Jekyll requires every file that need to be converted begin with a [front matter](https://jekyllrb.com/docs/frontmatter/)
+Jekyll organises content with posts, pages and collections. This website mainly uses **collections** to organise articles. The decision is made based according to this article: [When to use a post, a page, or a collection](https://ben.balter.com/2015/02/20/jekyll-collections/#when-to-use-a-post-a-page-or-a-collection)
+
+
+### 2. Adding a new article
+
+To add a new article, create a new `*.md` file under `_doclinux`, `_docwindows` or `_docgeneric` collection. articles under these folders will be automatically listed on the home page.
+
+Jekyll requires every file that need to be processed begin with a [front matter](https://jekyllrb.com/docs/frontmatter/)
 
 ```
 ---
@@ -61,9 +75,24 @@ tags: login 2fa
 
 The current template only uses `title` and `categories`. The default value of `layout` has been assigned to `page` in `_config.yml`.
 
-### 3. kramdown Syntax
+### 3. URLs in the article
+
+To avoid hard coding, the URLs of resources(internal links, images, css/js files) must be represented with liquid template language. 
+
+E.g., to include images in the article, firstly create a new folder `assets/<collection name>/<article name>` and put all images under this folder. Then, the image can be referenced in the corresponding article with:
+
+```markdown
+![useful image]({{ "/assets" | append: page.id | append: "/screenshot2.png" | absolute_url }})
+```
+
+
+### 4. kramdown Syntax
 
 Jekyll uses [kramdown](https://kramdown.gettalong.org) as the markdown render engine, which is a superset of the standard Markdown.
+
+### 5. Theme Customisation
+
+This site uses [minima](https://github.com/jekyll/minima), which is the default theme of Jekyll, as the base theme with several minor customisations.
 
 ## III. Useful links
 
