@@ -3,6 +3,8 @@ title:  "Login to the command-line through ssh"
 categories: admin user
 ---
 
+## If you're using macOS or Linux
+
 Use a terminal to log in via ssh:
 
 ```bash
@@ -15,4 +17,9 @@ Example:
 
 ```bash
 $ ssh mfel395@cerdkroprd01.its.auckland.ac.nz
+```
+
+## If you're using Windows
+```
+TODO: add a Windows client
 ```
