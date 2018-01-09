@@ -19,7 +19,7 @@ title: "Home"
     </ul>
   </div>
 
-  <h3>I'm using a Linux Research VM</h3>
+  <h3>I'm using a <b>Linux</b> Research VM</h3>
   <div id="doclinux">
     <div>
       <h4>I'm an administrator</h4>
@@ -37,7 +37,7 @@ title: "Home"
     </div>
   </div>
 
-  <h3>I'm using a Windows Research VM</h3>
+  <h3>I'm using a <b>Windows</b> Research VM</h3>
   <div id="docwindows">
     <div>
       <h4>I'm an administrator</h4>
