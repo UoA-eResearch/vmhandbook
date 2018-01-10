@@ -102,6 +102,11 @@ Jekyll uses [kramdown](https://kramdown.gettalong.org) as the markdown render en
 
 This site uses [minima](https://github.com/jekyll/minima), which is the default theme of Jekyll, as the base theme with several minor customisations.
 
+### 6. Search
+
+[Tipue search](https://github.com/Tipue/Tipue-Search) is enabled on this site. By default, all articles in `_doc` folder will be indexed during Jekyll build time. To exclude articles from being indexed, please refer to [Jekyll Tipue Search](https://github.com/jekylltools/jekyll-tipue-search)
+
+
 ## III. Useful links
 
 - [kramdown Syntax](https://kramdown.gettalong.org/syntax.html)
