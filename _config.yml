@@ -5,13 +5,11 @@ theme: minima
 header_pages:
   - index.md
   - contact-us.md
+  - filter.html
+  - search.html
 
 collections:
-  docwindows:
-    output: true
-  doclinux:
-    output: true
-  docgeneric:
+  doc:
     output: true
 
 defaults:
@@ -19,3 +17,12 @@ defaults:
       path: ""
     values:
       layout: "page"
+
+# Tipue search settings
+tipue_search:
+  include:
+    pages: true
+    collections: [doc]
+  exclude:
+    files: [search.html, index.md, filter.html]
+  

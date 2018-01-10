@@ -7,6 +7,14 @@ $content-width:    1024px;
 @import "minima";
 
 
+blockquote {
+    border-left:1px solid #e5e5e5;
+    margin:0;
+    padding:0 0 0 20px;
+    font-style: normal;
+}
+
+
 .site-title {
     font-size: 30px;
     position: relative; 
@@ -19,9 +27,29 @@ $content-width:    1024px;
     }
 }
 
-blockquote {
-    border-left:1px solid #e5e5e5;
-    margin:0;
-    padding:0 0 0 20px;
-    font-style: normal;
+.center {
+    text-align: center;
 }
+
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+.row {
+    padding: 0 0 30px 0;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+

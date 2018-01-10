@@ -1,6 +1,6 @@
 ---
 title:  "How to acknowledge CeR in publications"
-categories: admin user
+categories: generic admin user howto
 ---
 
 

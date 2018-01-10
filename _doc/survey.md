@@ -1,6 +1,6 @@
 ---
 title:  "How to participate CeR yearly survey"
-categories: admin user
+categories: generic admin user howto
 ---
 
 ```

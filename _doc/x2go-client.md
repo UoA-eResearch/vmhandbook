@@ -1,6 +1,6 @@
 ---
 title:  "Login to a graphical desktop environment through X2Go"
-categories: admin user
+categories: linux admin user howto
 ---
 
 
@@ -26,4 +26,4 @@ Then click Ok. The new session will then show up on the right side of your X2GO 
 
 ## Login
 
-To log in, click the session you need. If you have sudo privileges on the VM you need to use [2-factor authentication]({{ site.baseurl }}{% link _doclinux/two-factor-authentication.md %}) for the Password field. Otherwise just type your University password.
+To log in, click the session you need. If you have sudo privileges on the VM you need to use [2-factor authentication]({{ site.baseurl }}{% link _doc/two-factor-authentication.md %}) for the Password field. Otherwise just type your University password.

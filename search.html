@@ -1,0 +1,22 @@
+---
+layout: "default"
+title: "Search"
+tipue_search_active: true
+---
+
+<form action="{{ page.url | relative_url }}">
+  <div class="row">
+    <input type="text" name="q" id="tipue_search_input" pattern=".{3,}" placeholder="At least 3 characters" required>
+    <button type="submit">Search</button>
+  </div>
+</form>
+
+<div id="tipue_search_content"></div>
+
+<script>
+$(document).ready(function() {
+  $('#tipue_search_input').tipuesearch();
+});
+</script>
+
+

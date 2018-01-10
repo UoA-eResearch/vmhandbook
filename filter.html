@@ -1,0 +1,90 @@
+--- 
+layout: "default" 
+title: "Filter" 
+
+---
+
+
+<div class="row">
+    <div class="column">
+        <h3>VM operating system</h3>
+        <select id="os">
+            <option value="all" selected>All</option>
+            <option value="windows">Windows</option>
+            <option value="linux">Linux</option>
+            <option value="generic">OS independent</option>
+        </select>
+    </div>
+    <div class="column">
+        <h3>My role</h3>
+        <select id="role">
+            <option value="all" selected>All</option>
+            <option value="admin">Administrator</option>
+            <option value="user">Normal user</option>
+        </select>
+    </div>
+    <div class="column">
+        <h3>Article type</h3>
+        <select id="type">
+            <option value="all" selected>All</option>
+            <option value="howto">How to</option>
+            <option value="tshoot">Trouble shooting</option>
+        </select>
+    </div>
+</div>
+
+<div class="row">
+    <ul id="articles">
+    </ul>
+</div>
+    
+
+    <script>
+
+        function selectChange() {
+            let os = $("#os").val();
+            let role = $("#role").val();
+            let tp = $("#type").val();
+
+            let catArray = [os, role, tp];
+
+            let dispArticle = docArray.filter((doc) => {
+                let ret = true;
+                catArray.forEach((val) => {
+                    if (val != "all") {
+                        ret = ret & doc.categories.includes(val);
+                    }
+                });
+                return ret;
+            });
+
+            $("#articles").empty();
+            dispArticle.forEach((doc) => {
+                $("#articles").append(`<li> <a href="${doc.url}">${doc.title}</a></li>`)
+            });
+        }
+
+        // initialise the array
+        let docArray = new Array();
+        {% for item in site.documents %}
+        docArray.push(
+            {
+                title: "{{item.title | escape }}",
+                url: "{{item.url | relative_url}}",
+                categories: {{ item.categories | jsonify }}
+            }
+        );
+        {% endfor %}
+
+        // register event
+        $("#os").on("change", selectChange);
+        $("#role").on("change", selectChange);
+        $("#type").on("change", selectChange);
+
+        // trigger a change
+        selectChange();
+
+
+    </script>
+
+

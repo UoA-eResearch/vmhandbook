@@ -2,10 +2,11 @@
 layout: "default"
 title: "Home"
 ---
-{% assign linux_admin_posts = site.doclinux | where: "categories","admin" %}
-{% assign linux_user_posts = site.doclinux | where: "categories","user" %}
-{% assign windows_admin_posts = site.docwindows | where: "categories","admin" %}
-{% assign windows_user_posts = site.docwindows | where: "categories","user" %}
+{% assign generic_posts = site.doc | where: "categories","generic" %}
+{% assign linux_admin_posts = site.doc | where: "categories","admin" | where: "categories","linux" %}
+{% assign linux_user_posts = site.doc | where: "categories","user" | where: "categories","linux" %}
+{% assign windows_admin_posts = site.doc | where: "categories","admin" | where: "categories","windows" %}
+{% assign windows_user_posts = site.doc | where: "categories","user" | where: "categories","windows" %}
 
 ## Welcome to CeR {{ site.title }}.
 
@@ -13,7 +14,7 @@ title: "Home"
   <h3 class="open"> Generic FAQs </h3>
   <div>
     <ul>
-    {% for item in site.docgeneric %}
+    {% for item in generic_posts %}
       <li> <a href="{{ item.url | relative_url}}">{{ item.title | escape }}</a></li>
     {% endfor %}
     </ul>
@@ -55,10 +56,6 @@ title: "Home"
     </div>
   </div>
 
-<script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
 
 <script src="{{ "/assets/jquery.collapse.js" | absolute_url }}"></script>
 

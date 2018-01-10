@@ -1,6 +1,6 @@
 ---
 title:  "Two-factor authentication (aka 2-step authentication)"
-categories: admin
+categories: linux admin howto
 ---
 
 ## What is 2-factor authentication
