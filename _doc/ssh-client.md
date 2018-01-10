@@ -8,7 +8,7 @@ categories: linux admin user howto
 Use a terminal to log in via ssh:
 
 ```bash
-$ ssh <UPI>@<VM name>
+$ ssh <user name>@<VM name>
 ```
 
 If you have admin privileges on the VM (sudo) you need to login through [2-factor authentication]({{ site.baseurl }}{% link _doc/two-factor-authentication.md %}). Otherwise just use your University password to log in.

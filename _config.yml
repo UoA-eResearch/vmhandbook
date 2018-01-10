@@ -4,9 +4,9 @@ theme: minima
 
 header_pages:
   - index.md
-  - contact-us.md
   - filter.html
   - search.html
+  - contact-us.md
 
 collections:
   doc:
