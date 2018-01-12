@@ -3,7 +3,7 @@ title:  "Login to the command-line through ssh"
 categories: linux admin user howto
 ---
 
-## If you're using macOS or Linux
+## If you're using Mac or Linux
 
 Use a terminal to log in via ssh:
 
@@ -20,6 +20,11 @@ $ ssh mfel395@cerdkroprd01.its.auckland.ac.nz
 ```
 
 ## If you're using Windows
-```
-TODO: add a Windows client
-```
+
+Windows doesn't have a built-in SSH client, we need to install one of the followings:
+- [MobaXterm](https://mobaxterm.mobatek.net/)
+- [Git bash](https://git-scm.com/download/win)
+- [PuTTY](https://git-scm.com/download/win)
+
+Open a terminal window after installation has completed, and login follow the same steps as Linux.
+

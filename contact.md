@@ -3,7 +3,11 @@ layout: "default"
 title: "Contact us"
 ---
 
-If you need a new research virtual machine, please contact us: <mailto:research-vm@auckland.ac.nz>
+Please send us an e-mail: <mailto:research-vm@auckland.ac.nz> if you:
+- need a new research VM
+- have troubles in VM and this website doesn't help
+
+or visit us at
 
 ```
 Centre for eResearch

@@ -6,7 +6,7 @@ header_pages:
   - index.md
   - filter.html
   - search.html
-  - contact-us.md
+  - contact.md
 
 collections:
   doc:
