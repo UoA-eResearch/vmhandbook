@@ -3,7 +3,7 @@ title:  "Two-factor authentication (aka 2-step authentication)"
 categories: linux admin howto
 ---
 
-If you want to skip the introduction, click [this direct link](https://mytoken.auckland.ac.nz){:target="_blank"}
+**Shortcut**: If you want to skip the introduction, click [this direct link](https://mytoken.auckland.ac.nz){:target="_blank"}.
 
 ## What is 2-factor authentication
 
