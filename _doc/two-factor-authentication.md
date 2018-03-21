@@ -3,7 +3,11 @@ title:  "Two-factor authentication (aka 2-step authentication)"
 categories: linux admin howto
 ---
 
-**Shortcut**: If you want to skip the introduction, click [this direct link](https://mytoken.auckland.ac.nz){:target="_blank"}.
+
+```
+Warning: Due to the access control of the University, the following introduction links are only visible to PhD Students and staffs. Postraduates and undergraduates shall directly go to [this direct link](https://mytoken.auckland.ac.nz){:target="_blank"} and activiate Google Authenticator.
+```
+
 
 ## What is 2-factor authentication
 
