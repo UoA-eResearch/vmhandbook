@@ -4,10 +4,9 @@ categories: linux admin howto
 ---
 
 
-```
-Warning: Due to the access control of the University, the following introduction links are only visible to PhD Students and staffs. Postraduates and undergraduates shall directly go to [this direct link](https://mytoken.auckland.ac.nz){:target="_blank"} and activiate Google Authenticator.
-```
+## Warning
 
+Due to the access control of the University, the following introduction links are only visible to PhD Students and staffs. Postraduates and undergraduates shall directly go to [this direct link](https://mytoken.auckland.ac.nz){:target="_blank"} and activiate Google Authenticator.
 
 ## What is 2-factor authentication
 
