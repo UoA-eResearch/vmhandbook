@@ -19,6 +19,7 @@ For security reasons Linux VMs by default don't have access to the Internet. To 
 
     b. Follow the [instructions here](https://github.com/bryanpkc/corkscrew#how-do-i-install-it) on how to install it 
 
+    Contact us, if you need help with installing corkscrew.
 
 2. Run following commands in the terminal:
 
