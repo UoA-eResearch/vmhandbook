@@ -21,6 +21,7 @@ gem install bundler
 ### 4. Install Jekyll and other dependencies
 
 ```bash
+cd vmhandbook
 bundle install
 ```
 
