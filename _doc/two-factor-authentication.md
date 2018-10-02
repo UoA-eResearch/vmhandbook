@@ -10,7 +10,7 @@ If you're familiar with 2FA, you can directly go to [this direct link](https://m
 
 ## What is 2-factor authentication
 
-Please refer to : [What is 2-factor authentication](https://www.auckland.ac.nz/en/about-us/about-the-university/identity-and-access-management/two-factor-authentication/introduction.html){:target="_blank"}
+Please refer to : [What is 2-factor authentication](https://www.auckland.ac.nz/en/about-us/about-the-university/identity-and-access-management/two-factor-authentication.html){:target="_blank"}
 
 ## When do you need to use 2-factor authentication:
 
