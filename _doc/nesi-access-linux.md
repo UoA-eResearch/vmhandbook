@@ -63,9 +63,7 @@ For security reasons Linux VMs by default don't have access to the Internet. To 
 	chmod 600 ~/.ssh/config
 	```
 	
-3. Login to Mahuika or Maui by simply running `ssh mahuika` or `ssh maui` in terminal
-
-4. Transfer files from mahuika to the VM by running `scp -r mahuika:/some/folder .`
+3. To log in to Mahuika or Maui run `ssh mahuika` or `ssh maui` in a terminal on the VM. To transfer files from Mahuika or Maui to the VM run `scp -r mahuika:/some/folder .` or `scp -r maui:/some/folder .` (make sure to replace /some/folder by an existing directory you have access to).
 
 Note:
 
