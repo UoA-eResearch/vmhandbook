@@ -26,7 +26,9 @@ Then, you can login with your university password.
 
 ## Accessing Local Files and Folders on Remote Desktop Session
 
-On Windows, choose your **local resources** in the settings of your RDP connect window.  Notice below the **More** button at the bottom which takes you to the local devices and resources section which allows resources to be chosen.
+To access local files from virtual machines, you need to configure the remote desktop connection settings **before** connecting to the VM.
+
+On Windows, choose your **local resources** in the settings of your remote desktop connection window.  Notice below the **More** button at the bottom which takes you to the local devices and resources section which allows resources to be chosen.
 
 ![useful image]({{ "/assets" | append: page.id | append: "/screenshot3.png" | absolute_url }}){:width="50%"}
 
@@ -34,7 +36,6 @@ On Mac, Add local resources follow the screen shot below:
 
 ![useful image]({{ "/assets" | append: page.id | append: "/screenshot4.png" | absolute_url }}){:width="50%"}
 
-
-On your target remote desktop connection, you will see these redirected drives underneath your **Devices and drives** area of **Explorer**. They will be designated by "drive letter" on "computername" where computername is your host.
+On your virtual machine, open **Explorer**, you will see these redirected drives underneath your **Devices and drives** area. They will be designated by "drive letter" on "computername" where computername is your host.
 
 ![useful image]({{ "/assets" | append: page.id | append: "/screenshot5.png" | absolute_url }}){:width="50%"}
