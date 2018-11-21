@@ -35,5 +35,6 @@ On Mac, Add local resources follow the screen shot below:
 ![useful image]({{ "/assets" | append: page.id | append: "/screenshot4.png" | absolute_url }}){:width="50%"}
 
 
-On your target remote desktop connection, you will see these redirected drives underneath your Devices and drives area of Explorer. They will be designated by "drive letter" on "computername" where computername is your host.
+On your target remote desktop connection, you will see these redirected drives underneath your **Devices and drives** area of **Explorer**. They will be designated by "drive letter" on "computername" where computername is your host.
 
+![useful image]({{ "/assets" | append: page.id | append: "/screenshot5.png" | absolute_url }}){:width="50%"}
