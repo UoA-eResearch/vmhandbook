@@ -3,6 +3,7 @@ title:  "Login to a graphical desktop environment through X2Go"
 categories: linux admin user howto
 ---
 
+__Note: Login via x2go only works on Linux VMs that are set up for this. Please check with CeR if it doesn't work for you and you feel it should work.__
 
 ## Download and install X2GO client
 
