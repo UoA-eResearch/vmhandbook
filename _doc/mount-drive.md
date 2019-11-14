@@ -11,6 +11,8 @@ If you want to mount some other location, e.g. a faculty drive, you'll need to c
 
 ## Prerequisites: Install cifs-utils and create mount directory [required once]
 
+You need to have sudo privileges to mount network drives.
+
 On Ubuntu VM, run:
 
 ```bash
@@ -28,7 +30,9 @@ sudo yum install cifs-utils
 
 ## Mount a research drive
 
-Below is a script you can use to mount a research drive (should you have one). Make sure you adjust the name of your drive in the variable drive_name to your needs at the beginning of the script.
+Below is a script you can use to mount a research drive (should you have one). 
+
+Make sure you adjust the name of your drive in the variable `drive_name` at the beginning of the script to your needs.
 
 ```bash
 #!/bin/bash
@@ -46,7 +50,7 @@ if [ "$?" -gt "0" ]; then
 fi
 ```
 
-If you save this code in `~/mount_drive.sh`, and give it executable permissions via `chmod u+x ~/mount_drive.sh`, you can then run the script like this:
+If you save this code in the file `~/mount_drive.sh` and give it executable permissions via `chmod u+x ~/mount_drive.sh`, you can then run the script like this:
 ```bash
 ~/mount_drive.sh
 ```
