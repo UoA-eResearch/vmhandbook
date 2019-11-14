@@ -3,9 +3,13 @@ title:  "Mount network drives to Linux VMs"
 categories: linux admin howto
 ---
 
-Network drives include Unifiles, research drive and other network file systems that start with `//machine_name`. This tutorial will mount network folder `//files.auckland.ac.nz/ResFolder` to VM's `~/ResFolder`. You may need to change the paths according to your own requirements.
+Network drives include your Unifiles home folder, Unifiles research drives and other network file systems that start with `//machine_name`.
+This tutorial will mount one of your research drives..
 
-## Install cifs-utils and create mount directory [required once]
+If you want to mount some other location, e.g. a faculty drive, you'll need to change the path according to your requirements.
+
+
+## Prerequisites: Install cifs-utils and create mount directory [required once]
 
 On Ubuntu VM, run:
 
@@ -21,26 +25,36 @@ sudo yum update
 sudo yum install cifs-utils
 ```
 
-Create a local directory to be mounted to
+
+## Mount a research drive
+
+Below is a script you can use to mount a research drive (should you have one). Make sure you adjust the name of your drive in the variable drive_name to your needs at the beginning of the script.
 
 ```bash
-mkdir -p /home/${USER}/ResFolder
-```
+#!/bin/bash
 
-
-## Mount a network drive
-
-```bash
-share="//files.auckland.ac.nz/ResFolder"
-mountpoint="/home/${USER}/ResFolder"
+drive_name="rescer201800002-cer-researchfolder-test"
+share="//files.auckland.ac.nz/research/${drive_name}"
+mountpoint="${HOME}/${drive_name}"
 common_options="iocharset=utf8,workgroup=uoa,uid=${USER},dir_mode=0700,file_mode=0700,nodev,nosuid,vers=2.1"
 options="username=${USER},${common_options}"
+
+mkdir -p ${mountpoint}
 sudo mount -t cifs "${share}" "${mountpoint}" -o "${options}"
+if [ "$?" -gt "0" ]; then
+  rmdir ${mountpoint}
+fi
+```
+
+If you save this code in `~/mount_drive.sh`, and give it executable permissions via `chmod u+x ~/mount_drive.sh`, you can then run the script like this:
+```bash
+~/mount_drive.sh
 ```
 
 ## Unmount a network drive
 
 ```bash
-mountpoint="/home/${USER}/ResFolder"
-sudo umount -l ${mountpoint}
+sudo umount -l ${HOME}/rescer201800002-cer-researchfolder-test
 ```
+
+Make sure you adjust `${HOME}/rescer201800002-cer-researchfolder-test` to the location you used when you mounted the research drive
