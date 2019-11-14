@@ -1,6 +1,6 @@
 ---
 title:  "Map network drives to Windows VMs"
-categories: windows admin howto
+categories: windows admin user howto
 ---
 
 Network drives include Unifiles, research drive and other network file systems that start with `\\machine_name`. This tutorial will mount network folder `\\files.auckland.ac.nz\myhome\` to Windows VM's `F:\` drive. You may need to change the paths according to your own requirements.
