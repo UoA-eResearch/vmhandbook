@@ -1,5 +1,5 @@
 ---
-title:  "How to launch and use a GPU instance on Auckland cluster"
+title:  "How to launch and use a GPU instance in Auckland cluster"
 categories: nectar howto
 ---
 
