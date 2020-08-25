@@ -7,6 +7,7 @@ title: "Home"
 {% assign linux_user_posts = site.doc | where: "categories","user" | where: "categories","linux" %}
 {% assign windows_admin_posts = site.doc | where: "categories","admin" | where: "categories","windows" %}
 {% assign windows_user_posts = site.doc | where: "categories","user" | where: "categories","windows" %}
+{% assign nectar_posts = site.doc | where: "categories","nectar" %}
 
 ## Welcome to CeR {{ site.title }}.
 
@@ -54,6 +55,15 @@ title: "Home"
       {% endfor %}
       </ul>
     </div>
+  </div>
+
+  <h3>I'm using <b>Nectar</b> Research VM</h3>
+  <div id="docnectar">
+    <ul>
+    {% for item in nectar_posts %}
+      <li> <a href="{{ item.url | relative_url}}">{{ item.title | escape }}</a></li>
+    {% endfor %}
+    </ul>
   </div>
 
 
