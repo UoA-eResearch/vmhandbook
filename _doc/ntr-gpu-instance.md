@@ -14,7 +14,7 @@ Login to [Nectar Dashboard](https://dashboard.rc.nectar.org.au/) via Tuakiri. Br
 
 If there are multiple images, please always choose the latest one, and click the "Launch" button to start the new instance wizard.
 
-In the *Details* tab, please select `auckland` from *Availability Zone* the dropdown box.
+In the *Details* tab, please select `auckland` from the *Availability Zone* dropdown box.
 
 ![useful image]({{ "/assets" | append: page.id | append: "/step2-az.png" | absolute_url }}){:width="60%"}
 
