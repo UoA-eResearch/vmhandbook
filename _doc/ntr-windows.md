@@ -11,6 +11,9 @@ Due to Microsoft licensing requirements, access to Windows VM on Nectar has a fe
 - We can not install and run Microsoft Office on Windows VMs.
 - You can not share the Windows VM with non-UoA collaborators.
 
+If you prefer video tutorials, you can refer to [Nectar On-board Tutorial Videos]({{ site.baseurl }}{% link _doc/ntr-onboard.md %})
+
+
 ## Launch a Windows instance
 
 Login to [Nectar Dashboard](https://dashboard.rc.nectar.org.au/) via Tuakiri. Browse to *Project > Compute > Images* as shown in the picture below, and enter `UoA-Server` in the search box. You will find the prebuilt images for Windows instances.

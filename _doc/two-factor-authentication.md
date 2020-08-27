@@ -5,7 +5,7 @@ categories: linux admin howto
 
 
 
-If you're familiar with 2FA, you can directly go to [this direct link](https://mytoken.auckland.ac.nz){:target="_blank"} and activiate Google Authenticator.
+If you're familiar with 2FA, you can directly go to [this direct link](https://mytoken.auckland.ac.nz){:target="_blank"} and activate Google Authenticator.
 
 
 ## What is 2-factor authentication
