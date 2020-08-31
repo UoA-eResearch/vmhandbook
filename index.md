@@ -57,7 +57,7 @@ title: "Home"
     </div>
   </div>
 
-  <h3>I'm using <b>Nectar</b> Research VM</h3>
+  <h3>I'm using a <b>Nectar</b> VM</h3>
   <div id="docnectar">
     <ul>
     {% for item in nectar_posts %}
