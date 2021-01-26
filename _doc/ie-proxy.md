@@ -1,5 +1,5 @@
 ---
-title:  "Set up Internet connection for browsers via the UoA proxy server"
+title:  "Set up Internet connection via the UoA proxy server"
 categories: windows admin user howto
 ---
 
