@@ -5,9 +5,9 @@ title: "Contact us"
 
 Please send us an e-mail: <mailto:research-vm@auckland.ac.nz> if you:
 - need a new research VM
-- have troubles in VM and this website doesn't help
+- have troubles with a VM and this website doesn't help
 
-Please [raise a new support ticket](http://support.ehelp.edu.au/) if you:
+Please [raise a Nectar support ticket](http://support.ehelp.edu.au/) if you:
 - have any questions regarding Nectar VMs and platform 
 
 or visit us at

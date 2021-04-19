@@ -1,7 +1,7 @@
 repository: uoa-eresearch.github.io/vmhandbook
-title: Research Virtual Machine Handbook
+title: Centre for eResearch services handbook
 
-baseurl: /vmhandbook
+baseurl: /cer_handbook
 
 theme: minima
 

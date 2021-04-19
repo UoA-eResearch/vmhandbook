@@ -9,7 +9,7 @@ title: "Home"
 {% assign windows_user_posts = site.doc | where: "categories","user" | where: "categories","windows" %}
 {% assign nectar_posts = site.doc | where: "categories","nectar" %}
 
-## Welcome to CeR {{ site.title }}.
+## Welcome to the {{ site.title }}.
 
 <div id="outer">
   <h3 class="open"> Generic FAQs </h3>
