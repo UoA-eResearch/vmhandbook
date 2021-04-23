@@ -1,7 +1,7 @@
 repository: uoa-eresearch.github.io/vmhandbook
 title: Centre for eResearch services handbook
 
-baseurl: /vmhandbook
+baseurl: /cerhandbook
 
 theme: minima
 
