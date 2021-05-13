@@ -9,7 +9,7 @@ This tutorial will mount one of your research drives..
 If you want to mount some other location, e.g. a faculty drive, you'll need to change the path according to your requirements.
 
 
-## Prerequisites: Install cifs-utils and create mount directory [required once]
+### Prerequisites: Install cifs-utils and create mount directory [required once]
 
 You need to have sudo privileges to mount network drives.
 
@@ -39,8 +39,14 @@ Make sure you adjust the name of your drive in the variable `drive_name` at the 
 
 drive_name="rescer201800002-cer-researchfolder-test"
 share="//files.auckland.ac.nz/research/${drive_name}"
+
+# unifiles doesn't work with cifs versions earlier than 2.1, and cifs version 2.1 has some issues with caja file manager
+# we therefore specify cifs version 3.0
+# as newer versions of cifs become available, this may need to be updated to a higher version number
+cifs_version="3.0"
+
 mountpoint="${HOME}/${drive_name}"
-common_options="iocharset=utf8,workgroup=uoa,uid=${USER},dir_mode=0700,file_mode=0700,nodev,nosuid,vers=2.1"
+common_options="iocharset=utf8,workgroup=uoa,uid=${USER},dir_mode=0700,file_mode=0700,nodev,nosuid,vers=${cifs_version}"
 options="username=${USER},${common_options}"
 
 mkdir -p ${mountpoint}
