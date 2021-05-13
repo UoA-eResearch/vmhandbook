@@ -1,10 +1,10 @@
 ---
-title:  "Map network drives to Windows VMs"
-categories: windows admin user howto
+title:  "Map network drives to Windows"
+categories: windows admin user howto drive
 ---
 
 Network drives include your Unifiles home folder, Unifiles research drives and other network file systems that start with `\\machine_name`.
-This tutorial will mount your Unifiles home folder `\\files.auckland.ac.nz\myhome` to Windows VM’s `F:\` drive.
+This tutorial will mount your Unifiles home folder `\\files.auckland.ac.nz\myhome` to `F:\` drive on Windows.
 
 To mount a research drive (should you have one), you need to use `\\files.auckland.ac.nz\research\YOUR_DRIVE_NAME`, where YOUR_DRIVE_NAME needs to be replaced by the name of your research drive (research drive names look similar to this: rescer201800002-cer-researchfolder-test).
 
