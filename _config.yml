@@ -7,7 +7,7 @@ theme: minima
 
 header_pages:
   - index.md
-  - filter.html
+  # - filter.html
   - search.html
   - contact.md
 
