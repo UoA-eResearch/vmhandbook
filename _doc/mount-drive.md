@@ -40,13 +40,12 @@ Make sure you adjust the name of your drive in the variable `drive_name` at the 
 drive_name="rescer201800002-cer-researchfolder-test"
 share="//files.auckland.ac.nz/research/${drive_name}"
 
-# unifiles doesn't work with cifs versions earlier than 2.1, and cifs version 2.1 has some issues with caja file manager
-# we therefore specify cifs version 3.0
-# as newer versions of cifs become available, this may need to be updated to a higher version number
-cifs_version="3.0"
+# unifiles doesn't work with smb versions earlier than 2.1, and smb version 2.1 has some issues with caja file manager
+# we therefore specify smb version 3.0, introduced with Windows 8 / Windows Server 2012
+smb_version="3.0"
 
 mountpoint="${HOME}/${drive_name}"
-common_options="iocharset=utf8,workgroup=uoa,uid=${USER},dir_mode=0700,file_mode=0700,nodev,nosuid,vers=${cifs_version}"
+common_options="iocharset=utf8,workgroup=uoa,uid=${USER},dir_mode=0700,file_mode=0700,nodev,nosuid,vers=${smb_version}"
 options="username=${USER},${common_options}"
 
 mkdir -p ${mountpoint}
