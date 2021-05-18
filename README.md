@@ -1,6 +1,8 @@
 # vmhandbook
 
 This repository contains the user manual for CeR research virtual machines, which is a Jekyll based static website. It can be hosted on either Github pages or any hosts with a HTTP server.
+The site is currently hosted on [Github pages](https://uoa-eresearch.github.io/vmhandbook/).
+
 
 ## I. Setting up this site locally with Jekyll
 
