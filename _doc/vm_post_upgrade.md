@@ -22,8 +22,8 @@ categories: linux admin user howto
         $ rm -rf venv/
         ```
 
-    Or, if your virtual environment is not in a dedicated directory, so
-    you can see directories `bin`, `lib`, `share`, `include` in your root project directory
+        Or, if your virtual environment is not in a dedicated directory, so
+        you can see directories `bin`, `lib`, `share`, `include` in your root project directory
 
         ```console
         $ rm -rf bin lib include share
