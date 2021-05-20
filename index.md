@@ -24,7 +24,7 @@ title: "Home"
   </div>
   </section>
 
-  <h1><u>Virtual Machine Handbook</u></h1>
+  <h2 id="vm"><u>Virtual Machine</u></h2>
   <div class="accordion">
     <h3>I'm using a <b>Linux</b> Research VM</h3>
     <div id="doclinux">
@@ -69,7 +69,7 @@ title: "Home"
   </div>
   </div>
     
-  <h2><u>Data Handbook</u></h2>
+  <h2 id="data"><u>Data </u></h2>
   <div class="accordion">
       <h3>I'm using a <b>Research Drive</b> </h3>
       <div id="docdrive">
