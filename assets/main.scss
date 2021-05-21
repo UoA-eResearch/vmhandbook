@@ -54,7 +54,6 @@ blockquote {
 }
 
 ol ol { list-style-type: lower-alpha; } and ol ol ol { list-style-type: lower-roman; }
-div#doclinux {
-    display: block;
-    height: auto;
+.accordion,.nested_accordion,.re_nested_accordion{
+    height: auto !important;
 }

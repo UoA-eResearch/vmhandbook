@@ -76,13 +76,11 @@ title: "Home"
   <h2 id="data"><u>Data </u></h2>
   <div class="accordion">
       <h3>I'm using a <b>Research Drive</b> </h3>
-      <div id="docdrive">
-          <div class="re_nested_accordion">
+      <div id="docdrive" class="re_nested_accordion">
           {% for item in research_drive_posts %}
             <h5> {{ item.title}}</h5>
             <section>{{ item.content| markdownify }}</section>
           {% endfor %}
-        </div>
      </div>
 
   <h3>I'm using <b>Dropbox</b></h3>
