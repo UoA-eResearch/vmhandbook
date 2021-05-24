@@ -58,14 +58,9 @@ ol ol { list-style-type: lower-alpha; } and ol ol ol { list-style-type: lower-ro
     height: auto !important;
 }
 
-// ensure top level accordions (such as "I'm using a Linux Research VM") aren't ridiculously long when opened, when using nested accordions
-div.nested_accordion {
-    height: auto !important;
-}
-
 // restore some styling of links when using nested accordions
 a {
-    color: blue !important;
+    color: #2a7ae2 !important;
     // text-decoration: underline;
 }
 
