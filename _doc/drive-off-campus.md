@@ -10,8 +10,17 @@ To access your research drive from off campus:
 - If you are mapping your research drive for the first time, you need to enter your username as `UOA\your_upi_here`.
 
 #### Connecting to the VPN
-You can install FortiClient and connect to the VPN by following the instructions here:  
-[FortiClient guide]({{ "/assets" | append: page.id | append: "/how-to-guide-for-forticlient-vpn.pdf" | absolute_url }})
+To install FortiClient and connect to the VPN:
+
+* [FortiClient guide]({{ "/assets" | append: page.id | append: "/how-to-guide-for-forticlient-vpn.pdf" | absolute_url }})
+* [Windows Video Guide ]( https://youtu.be/xRTBHlLycm4)
+* [Video Guide ]( https://youtu.be/tYSyPi9hM5Y)
 
 #### Mapping your research drive
-See instructions for mapping a research drive on a [Mac]({{ site.baseurl }}{% link _doc/map-drive-mac.md %}) or on [Windows]({{ site.baseurl }}{% link _doc/map-drive-windows.md %})
+
+* Mac:
+    - [Text Guide]({{ site.baseurl }}{% link _doc/map-drive-mac.md %})
+    - [Video Guide]( https://youtu.be/1TF_5Ejpmv4)
+* Windows:
+    - [Text Guide]({{ site.baseurl }}{% link _doc/map-drive-windows.md %})
+    - [Video guide]( https://youtu.be/HNlL4UCZcIs)
