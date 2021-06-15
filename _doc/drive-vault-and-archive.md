@@ -9,11 +9,11 @@ Your research drive comes with two folders especially for data that is only occa
 
 ### Vault
 Access is slightly slower than your normal disk storage, ideal for data that you have finished working on but would like to come back to every few months.
-Data stored here is moved to object-store overnight, and once moved, does not count against your allocation.
+Data stored here will be moved to object-store after 7 days, and once moved, does not count against your allocation.
 
 ### Archive
 Access is even slower than the vault folder, and is good for data that you may not use but would like to keep safe, e.g. to comply with your ethics requirements.
-Data stored here is moved to tape overnight, and once moved, does not count against your allocation.
+Data stored here is moved to tape after 7 days, and once moved, does not count against your allocation.
 
 
 ### FAQs
