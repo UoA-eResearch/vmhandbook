@@ -1,6 +1,6 @@
 ---
-title:  "Set up UoA proxy server on Linux VMs"
-categories: howto windows linux admin user
+title:  "Set up internet connection via the UoA proxy server"
+categories: howto linux admin user
 ---
 
 For security reasons Linux VMs by default don’t have access to the Internet. To access the internet, the proxy server must be configured.
