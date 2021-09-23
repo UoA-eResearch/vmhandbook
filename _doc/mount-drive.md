@@ -106,7 +106,7 @@ We assume you mount the drive on your home directory as above, e.g. `~/<research
 Using sudo, edit the file `/etc/fstab` and append the following line to it, substituting your values:
 
 ```
-//files.auckland.ac.nz/research/<research_drive_name>  <research_drive_mount_point>  cifs credentials=/home/<your_username_on_the_vm>/.cifs_credentials,uid=<your_uid>,gid=<your_gid>,users 0   0
+//files.auckland.ac.nz/research/<research_drive_name>  /home/<your_username_on_the_vm>/<research_drive_mount_point>  cifs credentials=/home/<your_username_on_the_vm>/.cifs_credentials,uid=<your_uid>,gid=<your_gid>,users 0   0
 ```
 
 Unmount the research drive in order to test the fstab configuration:
