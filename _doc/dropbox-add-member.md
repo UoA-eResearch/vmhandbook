@@ -1,6 +1,7 @@
 ---
 title:  "Change access or share a folder"
 categories: howto dropbox
+permalink: /dropbox/sharing/
 ---
 
 ### Basic Sharing

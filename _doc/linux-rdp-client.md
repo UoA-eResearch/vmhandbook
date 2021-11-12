@@ -1,6 +1,7 @@
 ---
 title:  "Login to a graphical desktop environment with a remote desktop client"
-categories: linux admin user howto
+categories: linux user howto
+permalink: /linux/rdp/
 ---
 
 __Note: Login via MS Remote Deskop only works on Linux VMs that are set up for this. Please check with CeR if it doesn't work for you and you feel it should work.__

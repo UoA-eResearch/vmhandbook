@@ -1,6 +1,7 @@
 ---
 title:  "Connecting business and personal accounts"
 categories: howto dropbox
+permalink: /dropbox/accounts/
 ---
 
 When we give you a Dropbox business folder, the Dropbox account associated with your UoA email will become your work account.

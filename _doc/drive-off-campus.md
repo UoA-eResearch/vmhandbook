@@ -1,6 +1,7 @@
 ---
 title:  "Access from off campus"
 categories: howto drive windows linux admin user
+permalink: /drive/off-campus/
 ---
  
 Resources on the UoA network are protected by the UoA firewall. This means that by default they are not able to be accessed from off campus. This applies to:

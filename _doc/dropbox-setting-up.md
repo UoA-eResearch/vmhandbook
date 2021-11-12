@@ -1,6 +1,7 @@
 ---
 title:  "Getting started with your new Dropbox business folder"
 categories: howto dropbox
+permalink: /dropbox/getting-started/
 ---
 
 Once we have created your Dropbox business folder, you will receive an email (at your UoA email address) inviting you to sign up for a Dropbox business account. This account will provide you with unlimited storage, and access to you Dropbox business folder.

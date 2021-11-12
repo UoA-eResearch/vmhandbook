@@ -1,6 +1,6 @@
 ---
 title:  "How to copy files from/to a Linux VM"
-categories: linux admin user howto
+categories: linux user howto
 ---
 
 

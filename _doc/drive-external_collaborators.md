@@ -1,6 +1,7 @@
 ---
 title:  "External Collaborator Access"
 categories: howto drive
+permalink: /drive/external-collaborators/
 ---
 
 ### Instructions for UoA staff member to permit external collaborators to access research drives.

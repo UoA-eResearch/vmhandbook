@@ -1,6 +1,7 @@
 ---
 title:  "Using the Vault and Archive folders"
 categories: howto drive
+permalink: /drive/tape-objectstore/
 ---
 
 Your research drive comes with two folders especially for data that is only occasionally accessed, the `vault` and `archive` folders.

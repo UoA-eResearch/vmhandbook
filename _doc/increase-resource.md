@@ -1,6 +1,8 @@
 ---
 title:  "How to increase CPU / RAM / disk of my VM"
-categories: windows linux admin user howto
+categories: windows linux admin howto
+layout: page
+permalink: /resource/increase/
 ---
 
 If you want to increase the CPU, RAM or disk of your VM, please [contact us]({{ site.baseurl }}{% link contact.md %}).

@@ -1,6 +1,7 @@
 ---
 title:  "Data Transfer Using Globus"
 categories: howto drive
+permalink: /drive/globus/
 ---
 
 ## Access
