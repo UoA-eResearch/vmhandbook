@@ -1,6 +1,6 @@
 ---
 title:  "Set up Internet connection via the UoA proxy server"
-categories: windows admin user howto
+categories: vmware windows admin howto
 ---
 
 For security reasons Windows VMs by default don't have access to the Internet. To set up Internet access follow the next steps to configure the proxy server:

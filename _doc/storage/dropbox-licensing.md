@@ -1,6 +1,6 @@
 ---
 title:  "How Dropbox licences work"
-categories: howto dropbox
+categories:  storage howto dropbox
 permalink:  /dropbox/licences/
 ---
 

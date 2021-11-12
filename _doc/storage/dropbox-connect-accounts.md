@@ -1,6 +1,6 @@
 ---
 title:  "Connecting business and personal accounts"
-categories: howto dropbox
+categories:  storage howto dropbox
 permalink: /dropbox/accounts/
 ---
 

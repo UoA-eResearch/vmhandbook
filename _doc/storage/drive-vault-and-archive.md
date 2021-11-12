@@ -1,6 +1,6 @@
 ---
 title:  "Using the Vault and Archive folders"
-categories: howto drive
+categories:  storage howto drive
 permalink: /drive/tape-objectstore/
 ---
 

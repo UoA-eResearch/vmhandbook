@@ -1,6 +1,7 @@
 ---
 title:  "Login to the command-line through ssh"
-categories: linux admin user howto
+categories: vmware linux  user howto
+permalink: /compute/linux/ssh/
 ---
 
 ## If you're using Mac or Linux
@@ -11,7 +12,7 @@ Use a terminal to log in via ssh:
 $ ssh <user name>@<VM name>
 ```
 
-If you have admin privileges on the VM (sudo) you need to login through [2-factor authentication]({{ site.baseurl }}{% link _doc/two-factor-authentication.md %}). Otherwise just use your University password to log in.
+If you have admin privileges on the VM (sudo) you need to login through [2-factor authentication]({{ site.baseurl }}{% link _doc/compute/vmware/two-factor-authentication.md %}). Otherwise just use your University password to log in.
 
 Example:
 

@@ -1,6 +1,7 @@
 ---
 title:  "Two-factor authentication (aka 2-step authentication)"
-categories: linux admin howto
+categories: general linux user howto
+permalink:  /compute/linux/2fa
 ---
 
 

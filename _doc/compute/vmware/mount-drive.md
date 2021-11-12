@@ -1,6 +1,7 @@
 ---
 title:  "Mount network drives to Linux VMs"
-categories: linux admin howto
+categories: vmware linux admin howto
+permalink: /compute/linux/researchdrive/
 ---
 
 Network drives include your Unifiles home folder, Unifiles research drives and other network file systems that start with `//machine_name`.

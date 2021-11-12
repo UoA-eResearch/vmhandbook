@@ -1,6 +1,6 @@
 ---
 title:  "Map network drives to a Mac"
-categories: mac howto drive
+categories:  storage mac howto drive
 ---
 
 Network drives include your Unifiles home folder, Unifiles research drives and other network file systems that start with `//machine_name`.

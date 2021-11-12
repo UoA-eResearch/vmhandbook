@@ -1,6 +1,6 @@
 ---
 title:  "Change access or share a folder"
-categories: howto dropbox
+categories:  storage howto dropbox
 permalink: /dropbox/sharing/
 ---
 

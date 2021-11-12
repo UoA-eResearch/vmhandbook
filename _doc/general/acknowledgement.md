@@ -1,7 +1,7 @@
 ---
 title:  "How to acknowledge CeR in publications"
-categories: generic admin user howto
 permalink:  /cer/acknowledgement/
+categories: generic user howto
 ---
 
 

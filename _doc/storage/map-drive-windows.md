@@ -1,6 +1,7 @@
 ---
 title:  "Map network drives to Windows"
-categories: windows admin user howto drive
+categories:  storage windows admin user howto drive
+permalink: /compute/windows/networkdrive/
 ---
 
 Network drives include your Unifiles home folder, Unifiles research drives and other network file systems that start with `\\machine_name`.

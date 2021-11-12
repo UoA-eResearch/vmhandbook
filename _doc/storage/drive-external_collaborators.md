@@ -1,6 +1,6 @@
 ---
 title:  "External Collaborator Access"
-categories: howto drive
+categories:  storage howto drive
 permalink: /drive/external-collaborators/
 ---
 

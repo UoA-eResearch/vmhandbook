@@ -1,6 +1,6 @@
 ---
 title:  "Login to a graphical desktop environment with a remote desktop client"
-categories: linux user howto
+categories: vmware linux user howto
 permalink: /linux/rdp/
 ---
 
@@ -16,7 +16,7 @@ Create a new remote desktop connection. Set the **Computer** as the VM's host na
 
 ![useful image]({{ "/assets" | append: page.id | append: "/screenshot1.png" | absolute_url }}){:width="50%"}
 
-Then, click **Connect** and enter your university password. If you have sudo privileges on the VM you need to use [2-factor authentication]({{ site.baseurl }}{% link _doc/two-factor-authentication.md %}) for the Password field. Otherwise just type your University password.
+Then, click **Connect** and enter your university password. If you have sudo privileges on the VM you need to use [2-factor authentication]({{ site.baseurl }}{% link _doc/compute/vmware/two-factor-authentication.md %}) for the Password field. Otherwise just type your University password.
 
 ![useful image]({{ "/assets" | append: page.id | append: "/screenshot1a.png" | absolute_url }}){:width="50%"}
 
@@ -32,7 +32,7 @@ Create a new remote desktop connection. Set the **PC name** as the VM's host nam
     
 ![useful image]({{ "/assets" | append: page.id | append: "/screenshot2.png" | absolute_url }}){:width="50%"}
 
-Then, you can login with your university password. If you have sudo privileges on the VM you need to use [2-factor authentication]({{ site.baseurl }}{% link _doc/two-factor-authentication.md %}) for the Password field. Otherwise just type your University password.
+Then, you can login with your university password. If you have sudo privileges on the VM you need to use [2-factor authentication]({{ site.baseurl }}{% link _doc/compute/vmware/two-factor-authentication.md %}) for the Password field. Otherwise just type your University password.
 
 
 ## Accessing Local Files and Folders on Remote Desktop Session

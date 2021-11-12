@@ -1,6 +1,6 @@
 ---
 title:  "Set up internet connection via the UoA proxy server"
-categories: howto linux admin user
+categories: vmware howto linux admin user
 permalink: /linux/proxy/
 ---
 

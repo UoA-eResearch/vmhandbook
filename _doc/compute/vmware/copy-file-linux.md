@@ -1,6 +1,7 @@
 ---
 title:  "How to copy files from/to a Linux VM"
-categories: linux user howto
+categories: vmware general linux user howto
+permalink: /linux/file-copy
 ---
 
 
@@ -19,7 +20,7 @@ In Site Manager dialog of FileZilla, create a new site and fill in the following
 
 ![useful image]({{ "/assets" | append: page.id | append: "/filezilla.png" | absolute_url }}){:width="600px"}
 
-After clicking **Connect** button, enter password dialog will popup. In this dialog, uncheck the **Remember password until FileZilla is closed** checkbox, and enter the same password as [SSH login]({{ site.baseurl }}{% link _doc/ssh-client.md %}).
+After clicking **Connect** button, enter password dialog will popup. In this dialog, uncheck the **Remember password until FileZilla is closed** checkbox, and enter the same password as [SSH login]({{ site.baseurl }}{% link _doc/compute/vmware/ssh-client.md %}).
 
 ![useful image]({{ "/assets" | append: page.id | append: "/filezilla2.png" | absolute_url }}){:width="300px"}
 

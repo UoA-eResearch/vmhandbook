@@ -1,6 +1,7 @@
 ---
 title:  "Login to a graphical desktop environment through X2Go"
-categories: linux admin user howto
+categories: vmware linux user howto
+permalink: /compute/linux/gui
 ---
 
 __Note: Login via x2go only works on Linux VMs that are set up for this. Please check with CeR if it doesn't work for you and you feel it should work.__
@@ -27,4 +28,4 @@ Then click Ok. The new session will then show up on the right side of your X2GO 
 
 ## Login
 
-To log in, click the session you need. If you have sudo privileges on the VM you need to use [2-factor authentication]({{ site.baseurl }}{% link _doc/two-factor-authentication.md %}) for the Password field. Otherwise just type your University password.
+To log in, click the session you need. If you have sudo privileges on the VM you need to use [2-factor authentication]({{ site.baseurl }}{% link _doc/compute/vmware/two-factor-authentication.md %}) for the Password field. Otherwise just type your University password.

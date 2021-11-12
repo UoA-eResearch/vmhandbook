@@ -5,6 +5,7 @@ baseurl: /vmhandbook
 
 theme: minima
 
+
 header_pages:
   - index.md
   # - filter.html
@@ -25,7 +26,7 @@ defaults:
 tipue_search:
   include:
     pages: true
-    collections: [doc]
+    collections: [compute,storage]
   exclude:
-    files: [search.html, index.md, filter.html]
+    files: [search.html, index.md, filter.html, ]
   

@@ -1,6 +1,6 @@
 ---
 title:  "Login with a remote desktop client"
-categories: windows admin user howto
+categories: vmware windows user howto
 ---
 
 ## Windows Client

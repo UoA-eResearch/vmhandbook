@@ -1,6 +1,6 @@
 ---
 title:  "Post Ubuntu VirtualMachine OS Upgrade"
-categories: linux admin user howto
+categories: vmware linux admin howto
 ---
 
 1. Any third-party applications you have previously installed may need to be reinstalled.  Libraries these applications depend on have been upgraded and your applicaiton may need to be upgraded too.
