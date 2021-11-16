@@ -54,3 +54,13 @@ blockquote {
 }
 
 ol ol { list-style-type: lower-alpha; } and ol ol ol { list-style-type: lower-roman; }
+.accordion,.nested_accordion,.re_nested_accordion{
+    height: auto !important;
+}
+
+// restore some styling of links when using nested accordions
+a {
+    color: #2a7ae2 !important;
+    // text-decoration: underline;
+}
+

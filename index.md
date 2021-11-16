@@ -13,6 +13,7 @@ title: "Home"
 {% assign dropbox_posts = site.doc | where: "categories","dropbox"| where: "categories","storage"  %}
 ## Welcome to the {{ site.title }}.
 <div id="outer">
+<section id="generic">
   <h3 class="open"><u> Generic FAQs </u></h3>
   <div>
     <ul>
@@ -21,80 +22,77 @@ title: "Home"
     {% endfor %}
     </ul>
   </div>
-  <h3><u>Virtual Machine Handbook</u></h3>
-  <div>
+  </section>
+
+  <h2 id="vm"><u>Virtual Machine</u></h2>
+  <div class="accordion">
     <h3>I'm using a <b>Linux</b> Research VM</h3>
-    <div id="doclinux">
-      <div>
+    <div class="nested_accordion" id="doclinux">
         <h4>I'm an administrator</h4>
-        <ul>
-        {% for item in linux_admin_posts %}
-
-          <li> <a href="{{ item.url | relative_url}}">{{ item.title | escape }}</a></li>
-        {% endfor %}
-        </ul>
-        <h4>I'm a normal user</h4>
-        <ul>
-        {% for item in linux_user_posts %}
-          <li> <a href="{{ item.url | relative_url}}">{{ item.title | escape }}</a></li>
-        {% endfor %}
-        </ul>
-      </div>
-    </div>
-
-  <h3>I'm using a <b>Windows</b> Research VM</h3>
-  <div id="docwindows">
-    <div>
-      <h4>I'm an administrator</h4>
-      <ul>
-      {% for item in windows_admin_posts %}
-        <li> <a href="{{ item.url | relative_url}}">{{ item.title | escape }}</a></li>
-      {% endfor %}
-      </ul>
-      <h4>I'm a normal user</h4>
-      <ul>
-      {% for item in windows_user_posts %}
-        <li> <a href="{{ item.url | relative_url}}">{{ item.title | escape }}</a></li>
-      {% endfor %}
-      </ul>
-    </div>
-  </div>
-
-  <h3>I'm using a <b>Nectar</b> VM</h3>
-  <div id="docnectar">
-    <ul>
-    {% for item in nectar_posts %}
-      <li> <a href="{{ item.url | relative_url}}">{{ item.title | escape }}</a></li>
-    {% endfor %}
-    </ul>
-  </div>
-  </div>
-    
-  <h3><u>Data Handbook</u></h3>
-    <div>
-      <h3>I'm using a <b>Research Drive</b> </h3>
-      <div id="docdrive">
-        <div>
-          <ul>
-          {% for item in research_drive_posts %}
-            <li> <a href="{{ item.url | relative_url}}">{{ item.title | escape }}</a></li>
-          {% endfor %}
-          </ul>
+        <div class="re_nested_accordion">
+            {% for item in linux_admin_posts %}
+                <h5> {{ item.title}}</h5>
+                <section>{{ item.content| markdownify }}</section>
+            {% endfor %}
+        </div>
+        <h4 >I'm a normal user</h4>
+        <div class="re_nested_accordion">
+            {% for item in linux_user_posts %}
+                <h5> {{ item.title }} </h5>
+                <section>{{ item.content| markdownify }}</section>
+            {% endfor %}
         </div>
       </div>
 
+  <h3>I'm using a <b>Windows</b> Research VM</h3>
+  <div id="docwindows" class="nested_accordion">
+      <h4>I'm an administrator</h4>
+      <div class="re_nested_accordion">
+            {% for item in windows_admin_posts %}
+                <h5> {{ item.title}}</h5>
+                <section>{{ item.content| markdownify }}</section>
+            {% endfor %}
+      </div>
+      <h4>I'm a normal user</h4>
+      <div class="re_nested_accordion">
+            {% for item in windows_user_posts %}
+                <h5> {{ item.title}}</h5>
+                <section>{{ item.content| markdownify }}</section>
+            {% endfor %}
+      </div>
+    </div>
+
+  <h3>I'm using a <b>Nectar</b> VM</h3>
+  <div id="docnectar" class="nested_accordion">
+      <div class="re_nested_accordion">
+        {% for item in nectar_posts %}
+            <h5> {{ item.title}}</h5>
+            <section>{{ item.content| markdownify }}</section>
+        {% endfor %}
+     </div>
+  </div>
+  </div>
+
+  <h2 id="data"><u>Data </u></h2>
+  <div class="accordion">
+      <h3>I'm using a <b>Research Drive</b> </h3>
+      <div id="docdrive" class="re_nested_accordion">
+          {% for item in research_drive_posts %}
+            <h5> {{ item.title}}</h5>
+            <section>{{ item.content| markdownify }}</section>
+          {% endfor %}
+     </div>
+
   <h3>I'm using <b>Dropbox</b></h3>
-  <div id="docdropbox">
-    <ul>
+  <div id="docdropbox" class="re_nested_accordion">
     {% for item in dropbox_posts %}
-      <li> <a href="{{ item.url | relative_url}}">{{ item.title | escape }}</a></li>
+            <h5> {{ item.title}}</h5>
+            <section>{{ item.content| markdownify }}</section>
     {% endfor %}
-    </ul>
   </div>
   </div>
 
   </div>
-
 
 
 
@@ -102,6 +100,7 @@ title: "Home"
 
 <script>
 
+/*
   function div_open() {
     this.slideDown(200);
   };
@@ -115,15 +114,17 @@ title: "Home"
     query: 'h3'
   });
 
-  new jQueryCollapse($("#doclinux"), {
+  new jQueryCollapse($("#linux"), {
     open: div_open,
     close: div_close,
     query: 'div h4'
   });
 
-  new jQueryCollapse($("#docwindows"), {
+  new jQueryCollapse($("#windows"), {
     open: div_open,
     close: div_close,
     query: 'div h4'
   });
+  */
+$(".accordion").accordion({ collapsible: true, active: false});
 </script>

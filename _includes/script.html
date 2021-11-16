@@ -1,0 +1,36 @@
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script>
+(function($){
+    $(document).ready(function(){
+        $(".accordion" ).accordion({
+          header: "h3",
+          heightStyle: "content",
+          active: false,
+          autoHeight: false,
+          collapsible: true
+        });
+        $(".nested_accordion" ).accordion({
+          header: "h4",
+          heightStyle: "content",
+          active: false,
+          collapsible: true,
+            autoHeight: false
+        });
+
+        $(".re_nested_accordion" ).accordion({
+          header: "h5",
+          heightStyle: "content",
+          active: false,
+          collapsible: true,
+            autoHeight: false
+        });
+
+    })
+})(jQuery);
+</script>
