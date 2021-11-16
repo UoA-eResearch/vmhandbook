@@ -3,18 +3,15 @@ layout: "default"
 title: "Home"
 ---
 {% assign generic_posts = site.doc | where: "categories","generic" %}
-{% assign linux_admin_posts = site.doc | where: "categories","admin" | where: "categories","linux" %}
-{% assign linux_user_posts = site.doc | where: "categories","user" | where: "categories","linux" %}
-{% assign windows_admin_posts = site.doc | where: "categories","admin" | where: "categories","windows" %}
-{% assign windows_user_posts = site.doc | where: "categories","user" | where: "categories","windows" %}
+{% assign linux_admin_posts = site.doc | where: "categories","admin" | where: "categories","linux" | where: "categories","vmware"%}
+{% assign linux_user_posts = site.doc | where: "categories","user" | where: "categories","linux" | where: "categories","vmware"%}
+{% assign windows_admin_posts = site.doc | where: "categories","vmware" | where: "categories","windows" | where: "categories","admin"%}
+{% assign windows_user_posts = site.doc | where: "categories","user" | where: "categories","windows" | where: "categories","vmware"%}
 {% assign nectar_posts = site.doc | where: "categories","nectar" %}
 
-{% assign research_drive_posts = site.doc | where: "categories","drive" %}
-{% assign dropbox_posts = site.doc | where: "categories","dropbox" %}
-
-
+{% assign research_drive_posts = site.doc | where: "categories","drive"| where: "categories","drive"  %}
+{% assign dropbox_posts = site.doc | where: "categories","dropbox"| where: "categories","storage"  %}
 ## Welcome to the {{ site.title }}.
-
 <div id="outer">
   <h3 class="open"><u> Generic FAQs </u></h3>
   <div>
@@ -32,6 +29,7 @@ title: "Home"
         <h4>I'm an administrator</h4>
         <ul>
         {% for item in linux_admin_posts %}
+
           <li> <a href="{{ item.url | relative_url}}">{{ item.title | escape }}</a></li>
         {% endfor %}
         </ul>

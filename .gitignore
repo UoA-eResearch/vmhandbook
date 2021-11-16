@@ -55,4 +55,6 @@ _site/
 
 Gemfile.lock
 
-
+*.cl
+.dir_bash_history
+seder
