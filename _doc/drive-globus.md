@@ -38,3 +38,20 @@ now transfer the file `<bundle_name>.tar.gz`
 ```bash
 tar xzvf <bundle_name>.tar.gz  #extract into directory named <name_of_directory_containing_files>
 ```
+
+### Errors
+
+You can inspect the logs for your globus transfers from the console
+in globus:  
+
+1.  Select the Activity tab on the LHS of the globus
+page and then select the job that you want to investigate. ![useful
+image]({{ "/assets" | append: page.id | append: "/globus_activity.png"
+| absolute_url }}){:width="900px"} 
+
+2. Select the Event Log tab
+(highlighted) and view the Fault Events for that job.  You may be able
+to see the problem with your transfer here.  If this raises issues you
+can't control, please get in touch with Centre for eResearch. ![useful
+image]({{ "/assets" | append: page.id | append: "/globus_error_logs.png"
+| absolute_url }}){:width="900px"}
