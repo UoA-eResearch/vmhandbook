@@ -10,14 +10,13 @@ categories: howto drive
 
 * As of Dec 8, 2021, the NeSI data transfer node `NeSI Wellington DTN` has been deactivated,
 * A new endpoint called `NeSI Wellington DTN V5` is available in its place.[^1]
-Please see [the NeSI update](https://support.nesi.org.nz/hc/en-gb/articles/4409792460815-New-Globus-endpoint-makes-it-easier-to-transfer-large-data-sets-to-from-NeSI-HPC-Platform).
 
 ---
 
 
 ## Access
 You can use globus (globus.org) to transfer data between your research drive and NeSI and other globus endpoints. 
-[See here for documentation](https://support.nesi.org.nz/hc/en-gb/articles/360000576776-Data-Transfer-using-Globus).  
+[See here for documentation](https://support.nesi.org.nz/hc/en-gb/articles/4409792460815-New-Globus-endpoint-makes-it-easier-to-transfer-large-data-sets-to-from-NeSI-HPC-Platform).
 
 
 If you want your research drive accessible as a globus end point, please provide us with 
