@@ -1,6 +1,6 @@
 ---
 title:  "Data Transfer Using Globus"
-categories: howto drive
+categories: howto drive nectar
 ---
 
 # Contents
@@ -94,14 +94,13 @@ In order to transfer files between your nectar instance and your research drive 
 1. [request globus access to your research-drive from the Centre for eResearch](#access)
 2. install a [globus personal endpoint](https://docs.globus.org/how-to/) on your nectar vm  (as per your operating system)
 3. in your browser, sign in to [globus](globus.org) selecting the "existing organizational login" associated with University of Auckland.
-
 4. Proceed to globus's [FileManager](https://app.globus.org/file-manager) page, and select
 the two endpoints you want to connect:
-* Auckland Research Data DTN:  once you authenticate, your research drive will be visible 
-* your personal globus endpoint on your nectar vm
-
-
-Now proceed to transfer files as you wish.
+* Enter "Auckland" in the Collection Search bar, and select `Auckland Research Data DTN`.
+Authenticate, and your research drive will be visible.
+* Under the "Your Collections" tab, select the personal globus endpoint on your nectar vm.
+ ![useful image]({{ "/assets" | append: page.id | append: "/select_personal_connect.png" | absolute_url }}){:width="650px"}
+5. Navigate to the location of your source and target directories, and proceed to transfer files.
 
 ## Further Reading
 
