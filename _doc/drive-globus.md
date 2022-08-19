@@ -1,6 +1,6 @@
 ---
 title:  "Data Transfer Using Globus"
-categories: howto drive
+categories: howto drive nectar
 ---
 
 # Contents
