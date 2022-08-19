@@ -13,6 +13,7 @@ title: "Home"
 {% assign dropbox_posts = site.doc | where: "categories","dropbox" %}
 
 
+
 ## Welcome to the {{ site.title }}.
 
 <div id="outer">
@@ -97,6 +98,7 @@ title: "Home"
 
   </div>
 
+<aside style="font-size: 8pt;"> this document last updated <span id="last_updated"> </span></aside>
 
 
 
@@ -128,4 +130,7 @@ title: "Home"
     close: div_close,
     query: 'div h4'
   });
+  document.getElementById("last_updated").textContent = new Date(document.lastModified).toLocaleDateString('en-nz');
+
+
 </script>
