@@ -58,3 +58,4 @@ Gemfile.lock
 
 *.cl
 .*.sw*
+.bash_history.txt
