@@ -57,10 +57,10 @@ image]({{ "/assets" | append: page.id | append: "/globus_error_logs.png"
 
 ## Endpoint management
 
-Occasionally you may attempt to transfer files to/from your research drive, and the drive
-appears empty.
-The computer that the `University of Auckland Research Data DTN` runs from is occasionally
-restarted, and that may cause your research-drive to appear empty when you pick up where you left of.
+Occasionally you may attempt to transfer files to/from your research drive,
+and the drive appears empty.
+The computer that the globus endpoint `University of Auckland Research Data DTN` runs from is occasionally
+restarted, and that may cause your research-drive to appear empty when you browse your drive from globus.
 
 In this case, deactivate that endpoint `University of Auckland Research Data DTN`
 by 
