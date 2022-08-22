@@ -7,6 +7,7 @@ categories: howto drive nectar
   - [Research Drive Access](#access)
   - [Transfer Errors](#errors)
   - [Performance](#performance)
+  - [Nectar Data Transfers](#nectar)
 
 ---
 
@@ -23,7 +24,7 @@ You can use [globus](globus.org) to transfer data between your research drive an
 [See here for documentation](https://support.nesi.org.nz/hc/en-gb/articles/4409792460815-New-Globus-endpoint-makes-it-easier-to-transfer-large-data-sets-to-from-NeSI-HPC-Platform).
 
 
-If you want your research drive accessible as a globus end point, please [open a servicenow request with us](https://eresearch-dashboard.auckland.ac.nz/service/research-storage/request), specifying "existing" storage, and providing
+If you want your research drive accessible as a globus end point, please [submit a request](https://eresearch-dashboard.auckland.ac.nz/service/research-storage/request), specifying "existing" storage, and providing
 1. the name of your research drive
 2. the usernames (UPI) of those on your team who need globus access to this drive
 
@@ -45,6 +46,26 @@ can't control, please get in touch with Centre for eResearch. ![useful
 image]({{ "/assets" | append: page.id | append: "/globus_error_logs.png"
 | absolute_url }}){:width="900px"}
    
+
+## Research-drive not displaying files correctly
+
+Occasionally you may attempt to transfer files to/from your research drive, and the drive
+appears empty.
+The computer that the `University of Auckland Research Data DTN` runs from is occasionally
+restarted, and that may cause your research-drive to appear empty when you pick up where you left of.
+
+In this case, deactivate that endpoint `University of Auckland Research Data DTN`
+by 
+1. selecting [the endpoint's details page](https://app.globus.org/file-manager/collections/e7f6aaae-fe52-11e8-9345-0e3d676669f4/overview)
+, and from there:
+2. de-activate the endpoint
+3. re-activate the endpoint
+
+| endpoint overview             |  deactivate              | reactivate                         |
+:------------------------------:|:------------------------:|:-----------------------------------:
+![](../assets/doc/drive-globus/endpoint_details.png)  |  ![](../assets/doc/drive-globus/endpoint_deactivate.png)  |  ![](../assets/doc/drive-globus/endpoint_reactivate.png)  |  
+
+Now your files should be visible.
 
 ## Performance
 
@@ -76,6 +97,11 @@ now transfer the file `<bundle_name>.tar.gz`
 tar xzvf <bundle_name>.tar.gz  #extract into directory named <name_of_directory_containing_files>
 ```
 
+
+ 
+##  Nectar Data Transfers
+
+Please see [globus nectar data-transfers](./ntr-drive.html)
 
 ## Further Reading
 

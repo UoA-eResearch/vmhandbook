@@ -9,12 +9,27 @@ categories: howto nectar
 
 ---
 
-## Research Drive Access
-You can use [globus](globus.org) to transfer data between your research drive and nectar vms.
+## Research Drive Data Transfers
 
-If you want your research drive accessible as a globus end point, please [open a servicenow request with us](https://eresearch-dashboard.auckland.ac.nz/service/research-storage/request), specifying "existing" storage, and providing
-1. the name of your research drive
-2. the usernames (UPI) of those on your team who need globus access to this drive
+Nectar vms are located, by default, outside the University of Auckland firewall, 
+and your research drive is inside that firewall. <br/>
+For that reason, you cannot currently mount your research drive on a nectar vm.
+
+But the University operates a globus data-transfer node [Auckland Research Data DTN](https://support.nesi.org.nz/hc/en-gb/articles/360000931775)
+outside the firewall giving you access to your research-drive from there.
+
+In order to transfer files between your nectar instance and your research drive using globus, follow the following steps:
+You can use [globus](globus.org) to transfer data between your research drive and any nectar vm.
+This requires configuration on both the research-drive and your nectar vm.
+
+## Research-drive configuration
+
+Request access for globus to see your research-drive: [globus nectar data-transfers](./drive-globus.html#access)
+
+## Nectar vm configuration
+
+Install a [globus personal endpoint](https://docs.globus.org/how-to/) on your nectar vm.
+This installation is specific to the vm's operating system.  Choose appropriately.
 
 
    
