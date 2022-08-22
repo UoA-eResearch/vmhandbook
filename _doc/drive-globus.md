@@ -4,10 +4,10 @@ categories: howto drive nectar
 ---
 
 # Contents
-  - [Research Drive Access](#access)
-  - [Transfer Errors](#errors)
+  - [Globus Research Drive Access](#globus-research-drive-access)
+  - [Transfer Errors](#transfer-errors)
+  - [Endpoint management](#endpoint-management)
   - [Performance](#performance)
-  - [Nectar](#nectar)
 
 ---
 
@@ -19,15 +19,22 @@ categories: howto drive nectar
 ---
 
 
-## Research Drive Access
-You can use globus (globus.org) to transfer data between your research drive and NeSI and other globus endpoints.
-[See here for documentation](https://support.nesi.org.nz/hc/en-gb/articles/4409792460815-New-Globus-endpoint-makes-it-easier-to-transfer-large-data-sets-to-from-NeSI-HPC-Platform).
+* You can use [globus](globus.org) to transfer data between your research drive and NeSI (or other public globus endpoints):
+[NeSI documentation](https://support.nesi.org.nz/hc/en-gb/articles/4409792460815-New-Globus-endpoint-makes-it-easier-to-transfer-large-data-sets-to-from-NeSI-HPC-Platform).
 
+* You can create a personal endpoint on your Nectar vm and transfer data between your research drive and your nectar vm:
+[Nectar vm data-transfers](./ntr-drive.html)
 
-If you want your research drive accessible as a globus end point, please [open a servicenow request with us](https://eresearch-dashboard.auckland.ac.nz/service/research-storage/request), specifying "existing" storage, and providing
+   
+
+## Globus Research Drive Access
+
+If you want Globus to access your research drive, please [submit a research-drive request](https://eresearch-dashboard.auckland.ac.nz/service/research-storage/request), specifying "existing" storage, and providing
 1. the name of your research drive
 2. the usernames (UPI) of those on your team who need globus access to this drive
 
+
+   
 
 ## Transfer Errors
 
@@ -45,6 +52,29 @@ to see the problem with your transfer here.  If this raises issues you
 can't control, please get in touch with Centre for eResearch. ![useful
 image]({{ "/assets" | append: page.id | append: "/globus_error_logs.png"
 | absolute_url }}){:width="900px"}
+
+   
+
+## Endpoint management
+
+Occasionally you may attempt to transfer files to/from your research drive, and the drive
+appears empty.
+The computer that the `University of Auckland Research Data DTN` runs from is occasionally
+restarted, and that may cause your research-drive to appear empty when you pick up where you left of.
+
+In this case, deactivate that endpoint `University of Auckland Research Data DTN`
+by 
+1. selecting [the endpoint's details page](https://app.globus.org/file-manager/collections/e7f6aaae-fe52-11e8-9345-0e3d676669f4/overview)
+, and from there:
+2. de-activate the endpoint
+3. re-activate the endpoint
+
+| endpoint overview             |  deactivate              | reactivate                         |
+:------------------------------:|:------------------------:|:-----------------------------------:
+![](../assets/doc/drive-globus/endpoint_details.png)  |  ![](../assets/doc/drive-globus/endpoint_deactivate.png)  |  ![](../assets/doc/drive-globus/endpoint_reactivate.png)  |  
+
+Now your files should be visible.
+
    
 
 ## Performance
@@ -78,29 +108,8 @@ tar xzvf <bundle_name>.tar.gz  #extract into directory named <name_of_directory_
 ```
 
 
-   
-## Nectar
+ 
 
-Nectar vms are located, by default, outside the University of Auckland firewall, 
-and your research drive is inside that firewall. <br/>
-For that reason, you cannot currently mount your research drive on a nectar vm.
-
-But the University operates a globus data-transfer node [Auckland Research Data DTN](https://support.nesi.org.nz/hc/en-gb/articles/360000931775)
-outside the firewall giving you access to your research-drive from there.
-
-In order to transfer files between your nectar instance and your research drive using globus, follow the following steps:
-
-
-1. [request globus access to your research-drive from the Centre for eResearch](#access)
-2. install a [globus personal endpoint](https://docs.globus.org/how-to/) on your nectar vm  (as per your operating system)
-3. in your browser, sign in to [globus](globus.org) selecting the "existing organizational login" associated with University of Auckland.
-4. Proceed to globus's [FileManager](https://app.globus.org/file-manager) page, and select
-the two endpoints you want to connect:
-* Enter "Auckland" in the Collection Search bar, and select `Auckland Research Data DTN`.
-Authenticate, and your research drive will be visible.
-* Under the "Your Collections" tab, select the personal globus endpoint on your nectar vm.
- ![personal-endpoint]({{ "/assets" | append: page.id | append: "/select_personal_connect.png" | absolute_url }}){:width="650px"}
-5. Navigate to the location of your source and target directories, and proceed to transfer files.
 
 ## Further Reading
 
