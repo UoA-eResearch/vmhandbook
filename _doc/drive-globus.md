@@ -5,9 +5,10 @@ categories: howto drive nectar
 
 # Contents
   - [Research Drive Access](#access)
-  - [Transfer Errors](#errors)
+  - [Transfer Errors](#transfer-errors)
+  - [Endpoint management](#endpoint-management)
   - [Performance](#performance)
-  - [Nectar Data Transfers](#nectar)
+  - [Nectar Data Transfers](#nectar-data-transfers)
 
 ---
 
@@ -24,10 +25,14 @@ You can use [globus](globus.org) to transfer data between your research drive an
 [See here for documentation](https://support.nesi.org.nz/hc/en-gb/articles/4409792460815-New-Globus-endpoint-makes-it-easier-to-transfer-large-data-sets-to-from-NeSI-HPC-Platform).
 
 
+   
+
 If you want your research drive accessible as a globus end point, please [submit a request](https://eresearch-dashboard.auckland.ac.nz/service/research-storage/request), specifying "existing" storage, and providing
 1. the name of your research drive
 2. the usernames (UPI) of those on your team who need globus access to this drive
 
+
+   
 
 ## Transfer Errors
 
@@ -45,9 +50,10 @@ to see the problem with your transfer here.  If this raises issues you
 can't control, please get in touch with Centre for eResearch. ![useful
 image]({{ "/assets" | append: page.id | append: "/globus_error_logs.png"
 | absolute_url }}){:width="900px"}
+
    
 
-## Research-drive not displaying files correctly
+## Endpoint management
 
 Occasionally you may attempt to transfer files to/from your research drive, and the drive
 appears empty.
@@ -66,6 +72,8 @@ by
 ![](../assets/doc/drive-globus/endpoint_details.png)  |  ![](../assets/doc/drive-globus/endpoint_deactivate.png)  |  ![](../assets/doc/drive-globus/endpoint_reactivate.png)  |  
 
 Now your files should be visible.
+
+   
 
 ## Performance
 
