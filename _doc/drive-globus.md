@@ -4,11 +4,10 @@ categories: howto drive nectar
 ---
 
 # Contents
-  - [Research Drive Access](#access)
+  - [Globus Research Drive Access](#globus-research-drive-access)
   - [Transfer Errors](#transfer-errors)
   - [Endpoint management](#endpoint-management)
   - [Performance](#performance)
-  - [Nectar Data Transfers](#nectar-data-transfers)
 
 ---
 
@@ -20,14 +19,17 @@ categories: howto drive nectar
 ---
 
 
-## Research Drive Access
-You can use [globus](globus.org) to transfer data between your research drive and NeSI and other globus endpoints.
-[See here for documentation](https://support.nesi.org.nz/hc/en-gb/articles/4409792460815-New-Globus-endpoint-makes-it-easier-to-transfer-large-data-sets-to-from-NeSI-HPC-Platform).
+* You can use [globus](globus.org) to transfer data between your research drive and NeSI (or other public globus endpoints):
+[NeSI documentation](https://support.nesi.org.nz/hc/en-gb/articles/4409792460815-New-Globus-endpoint-makes-it-easier-to-transfer-large-data-sets-to-from-NeSI-HPC-Platform).
 
+* You can create a personal endpoint on your Nectar vm and transfer data between your research drive and your nectar vm:
+[Nectar vm data-transfers](./ntr-drive.html)
 
    
 
-If you want your research drive accessible as a globus end point, please [submit a request](https://eresearch-dashboard.auckland.ac.nz/service/research-storage/request), specifying "existing" storage, and providing
+## Globus Research Drive Access
+
+If you want Globus to access your research drive, please [submit a research-drive request](https://eresearch-dashboard.auckland.ac.nz/service/research-storage/request), specifying "existing" storage, and providing
 1. the name of your research drive
 2. the usernames (UPI) of those on your team who need globus access to this drive
 
@@ -107,9 +109,7 @@ tar xzvf <bundle_name>.tar.gz  #extract into directory named <name_of_directory_
 
 
  
-##  Nectar Data Transfers
 
-Please see [globus nectar data-transfers](./ntr-drive.html)
 
 ## Further Reading
 

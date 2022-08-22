@@ -1,15 +1,14 @@
 ---
-title:  "Data Transfer to/from Research Drive"
+title:  "Research Drive Data Transfers"
 categories: howto nectar
 ---
 
 # Contents
-  - [Research Drive Access](#research-drive-access)
-  - [Research Drive Data Transfers](#research-drive-data-transfers)
+  - [Research Drive Configuration](#research-drive-configuration)
+  - [Nectar VM Configuration](#nectar-vm-configuration)
+  - [Globus Data Transfers](#globus-data-transfers)
 
 ---
-
-## Research Drive Data Transfers
 
 Nectar vms are located, by default, outside the University of Auckland firewall, 
 and your research drive is inside that firewall. <br/>
@@ -24,7 +23,7 @@ This requires configuration on both the research-drive and your nectar vm.
 
 ## Research-drive configuration
 
-Request access for globus to see your research-drive: [globus nectar data-transfers](./drive-globus.html#access)
+Request [access for globus to see your research-drive](./drive-globus.html#research-drive-access)
 
 ## Nectar vm configuration
 
@@ -33,7 +32,7 @@ This installation is specific to the vm's operating system.  Choose appropriatel
 
 
    
-## Research Drive Data Transfers
+## Globus Data Transfers
 
 Nectar vms are located, by default, outside the University of Auckland firewall, 
 and your research drive is inside that firewall. <br/>
