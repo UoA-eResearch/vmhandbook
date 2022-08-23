@@ -23,7 +23,10 @@ requires configuration on both the research-drive and your nectar instance:
 
 ### Research-drive configuration
 
-Request [access for globus to see your research-drive](./drive-globus.html#research-drive-access)
+[Submit a research-drive request](https://eresearch-dashboard.auckland.ac.nz/service/research-storage/request), specifying "existing" storage, and provide
+1. the name of your research drive
+2. the University of Auckland usernames (UPIs) of those on your team who need globus access to this drive
+
 
 ### Nectar vm configuration
 
