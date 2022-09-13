@@ -5,8 +5,8 @@ categories: windows linux admin user tshoot nectar
 
 
 
-  -  [ Move docker from system drive](#move docker from system drive)
-  -  [ Move anaconda from system drive](#move anaconda from system drive)
+  -  [ Move docker from system drive](#move-docker-from-system-drive)
+  -  [ Move anaconda from system drive](#move-anaconda-from-system-drive)
 
 We keep the system drive small to encourage you to work on your external drive.
 Keeping system files on a different drive than your data is good practice:  your
@@ -17,7 +17,9 @@ environments to your external data volumme.
 If you are running docker or anaconda, you are strongly encouraged to move them to your external volume, as outlined below.
 
 
-## Move Docker from system drive  
+   
+
+## Move docker from system drive
 
 ### Linux
 
@@ -48,7 +50,9 @@ $ sudo rm -rf /var/lib/docker.old
 ```
 
 
+   
+
 ## Move anaconda from system drive
 
-See https://www.anaconda.com/blog/moving-conda-environments
+See the documentation from anaconda on [moving conda environments](https://www.anaconda.com/blog/moving-conda-environments).
 
