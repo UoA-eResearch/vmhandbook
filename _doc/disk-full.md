@@ -1,6 +1,6 @@
 ---
 title:  "Disk or partition is full"
-categories: windows linux admin user tshoot
+categories: windows linux admin user tshoot nectar
 ---
 
 
