@@ -20,12 +20,12 @@ categories: howto drive
 Globus is updating the Certificate Authority (CA) used for its transfer service, and moving to a different system for managing the CA. All Globus Connect installations (including Globus Connect Personal) must be updated to install the new trust root by December 12, 2022. After this date, the Globus service will cease to function with Globus Connect installations that have not updated the trust root.
 
 Please see 
-*  [globus_ca_update](https://docs.globus.org/ca-update-2022/#globus_connect_personal)
+*  [globus ca update](https://docs.globus.org/ca-update-2022/#globus_connect_personal)
 for details.
 
 Essentially, you need to do one of two things to ensure your globus connect personal continues to work:
 1) upgrade your version to 3.2.0 or later: https://app.globus.org/file-manager/gcp
-2) manually update the certificates in the etc/ca subfolder of your installation, as documented at [globus_manual_ca_update](https://docs.globus.org/ca-update-2022/#manual_update)
+2) manually update the certificates in the etc/ca subfolder of your installation, as documented at [globus manual ca update](https://docs.globus.org/ca-update-2022/#manual_update)
 
 *2021*
 * As of Dec 8, 2021, the NeSI data transfer node `NeSI Wellington DTN` has been deactivated,
