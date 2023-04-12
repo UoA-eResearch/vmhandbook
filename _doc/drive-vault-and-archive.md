@@ -9,17 +9,17 @@ Your research drive comes with two folders especially for data that is only occa
 
 ### Vault
 Access is slightly slower than your normal disk storage, ideal for data that you have finished working on but would like to come back to every few months.
-Data stored here will be moved to object-store after 7 days, and once moved, does not count against your allocation.
+Data stored here will be moved to object-store after 21 days, and once moved, does not count against your allocation.
 
 ### Archive
 Access is even slower than the vault folder, and is good for data that you may not use but would like to keep safe, e.g. to comply with your ethics requirements.
-Data stored here is moved to tape after 7 days, and once moved, does not count against your allocation.
+Data stored here is moved to tape after 21 days, and once moved, does not count against your allocation.
 
 
 ### FAQs
 **Why does data in my vault/archive folder still count against my research drive storage allocation?**  
 There are two circumstances in which this may happen:
-1. If you have just moved data into the vault or archive folder, you need to wait for that data to be shifted to slower storage. Data will begin to be shifted to slower storage 7 days after it has remained unopened in the vault or archive folder. Only after the data is successfully shifted will it cease to count against your storage allocation.
+1. If you have just moved data into the vault or archive folder, you need to wait for that data to be shifted to slower storage. Data will begin to be shifted to slower storage 21 days after it has remained unopened in the vault or archive folder. Only after the data is successfully shifted will it cease to count against your storage allocation.
 
 2. If you open a file that is stored in the vault or archive folder, in the background it will be moved onto normal speed storage, and will therefore count against your allocation again. After it has not been opened for 7 days it will again be moved onto slower storage.
 
