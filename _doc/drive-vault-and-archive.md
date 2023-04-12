@@ -21,7 +21,7 @@ Data stored here is moved to tape after 21 days, and once moved, does not count 
 There are two circumstances in which this may happen:
 1. If you have just moved data into the vault or archive folder, you need to wait for that data to be shifted to slower storage. Data will begin to be shifted to slower storage 21 days after it has remained unopened in the vault or archive folder. Only after the data is successfully shifted will it cease to count against your storage allocation.
 
-2. If you open a file that is stored in the vault or archive folder, in the background it will be moved onto normal speed storage, and will therefore count against your allocation again. After it has not been opened for 7 days it will again be moved onto slower storage.
+2. If you open a file that is stored in the vault or archive folder, in the background it will be moved onto normal speed storage, and will therefore count against your allocation again. After it has not been opened for 21 days it will again be moved onto slower storage.
 
 **Why is data slow to access, even though I have moved it out of the vault/archive folder?**  
 If you cut and pasted data to outside the vault or archive folder, this will not have resulted in the data being shifted back to full-speed storage. Data is moved to full-speed storage when you first access it (e.g. when you open a file).
