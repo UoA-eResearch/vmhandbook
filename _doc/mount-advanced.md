@@ -4,10 +4,10 @@ categories: howto drive linux admin
 ---
 
 # Contents
-  - [Persistent Mount of Research Drive on VM](#persistent-drive-mount)
-  - [Shared Access to Research Drive on VM](#shared-drive-access)
+  - [Persistent Research Drive Mount](#persistent-research-drive-mount)
+  - [Shared Research Drive Access](#shared-research-drive-access)
 
-## Persistent mount of Research Drive on VM
+## Persistent Research Drive Mount
 
 System maintenance on the vm will cause it to occasionally reboot.
 This section outlines how to ensure the drive is automatically remounted after reboot.
@@ -55,7 +55,7 @@ sudo mount -av
 ```
 ----
 
-## Shared Access to Research Drive
+## Shared Research Drive Access
 (Taken from [RedHat documentation](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html-single/managing_file_systems/index#proc_accessing-a-share-as-a-user_assembly_performing-a-multi-user-smb-mount))
 
 One method of sharing a mount of a research drive is by having an admin user set up the mount with the multiuser option, mounting the drive, and then letting individual users authenticate with cifs using their credentials.
