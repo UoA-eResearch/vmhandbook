@@ -11,6 +11,7 @@ categories: howto drive
 
 ---
 
+<!--
 **NOTES**
 
 *2022*
@@ -31,11 +32,12 @@ Essentially, you need to do one of two things to ensure your globus connect pers
 * As of Dec 8, 2021, the NeSI data transfer node `NeSI Wellington DTN` has been deactivated,
 * A new endpoint called `NeSI Wellington DTN V5` is available in its place.[^1]
 
+-->
 ---
 
 
-* You can use [globus](globus.org) to transfer data between your research drive and NeSI (or other public globus endpoints):
-[NeSI documentation](https://support.nesi.org.nz/hc/en-gb/articles/4409792460815-New-Globus-endpoint-makes-it-easier-to-transfer-large-data-sets-to-from-NeSI-HPC-Platform).
+* You can use [globus](http://globus.org) to transfer data between your research drive and NeSI (or other public globus endpoints):
+[NeSI documentation](https://support.nesi.org.nz/hc/en-gb/articles/4405623380751-Data-Transfer-using-Globus-V5)
 
 * You can create a personal endpoint on your Nectar vm and transfer data between your research drive and your nectar vm:
 [Nectar vm data-transfers](./ntr-drive.html)
