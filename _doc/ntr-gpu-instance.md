@@ -24,7 +24,7 @@ You can follow the link inside the email to read the instructions on how to laun
 
 ## Renew your reservation
 
-We your reservation is approaching to the end, you'll receive another email asking you to renew. You can follow the instructions to renew your reservation, if nobody has reserved your GPU.
+We your reservation is approaching to the end date (normally 2 weeks before), you'll receive another email asking you to renew. You can follow the instructions to renew your reservation, if nobody has reserved your GPU. You won't be able to see the renew button until you receive the email. That is, you can not renew your reservation in advance.
 
 ![useful image]({{ "/assets" | append: page.id | append: "/email2.png" | absolute_url }}){:width="60%"}
 
