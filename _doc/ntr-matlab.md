@@ -35,4 +35,4 @@ Then, connect with the new session, you should be able to see the graphical user
 
 To connect to your Windows VM on Nectar, please refer to this article:
 
-[How to access Windows VMs in Auckland cluster]({{ site.baseurl }}{% link _doc/ntr-windows.md %})
+[How to access Windows VMs in Auckland cluster]({{ site.baseurl }}{% link _doc/ntr-windows/index.md %})

@@ -37,4 +37,4 @@ Once you have successfully connected to the UoA VPN, you can refer to the below 
     - [command line session via SSH]({{ site.baseurl }}{% link _doc/ssh-client.md %})
     - [graphical session via x2go]({{ site.baseurl }}{% link _doc/x2go-client.md %})
     - [graphical session via remote desktop client]({{ site.baseurl }}{% link _doc/linux-rdp-client.md %})
-* [Connecting to Nectar Windows VMs]({{ site.baseurl }}{% link _doc/ntr-windows.md %})
+* [Connecting to Nectar Windows VMs]({{ site.baseurl }}{% link _doc/ntr-windows/index.md %})
