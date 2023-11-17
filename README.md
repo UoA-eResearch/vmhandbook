@@ -10,7 +10,18 @@ Editing markdown files online using Github directly is possible, but it's recomm
 
 ### 1. Install ruby
 
-On macOS, do **NOT** use the build-in ruby. Install via `brew` to avoid permission errors.
+#### macOS
+On macOS, do **NOT** use the built-in ruby. Install via `brew` to avoid permission errors.
+
+#### Ubuntu
+On Ubuntu, follow [Jekyll on Ubuntu](https://jekyllrb.com/docs/installation/ubuntu/)
+You may need to set up the symbolic link:
+
+```bash
+    sudo ln -s /usr/bin/jekyll /usr/share/rubygems-integration/all/specifications/exe/jekyll
+```
+
+to get jekyll working.
 
 ### 2. Install Bundler
 
