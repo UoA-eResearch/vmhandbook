@@ -9,32 +9,20 @@ categories: howto drive
   - [Endpoint management](#endpoint-management)
   - [Performance](#performance)
 
----
 
-<!--
-**NOTES**
 
-*2022*
 
-[Notice from Globus, September 12, 2022](https://docs.globus.org/ca-update-2022/)
+> [!NOTE]
+>
+> *22 November 2023*
+>
+>  The Globus Connect Server at University of Auckland has been upgraded from version 4 to version 5.4. \
+> Access your research drive on the Data Transfer Node (DTN) by 
+> searching the FileManager for the collection [University of Auckland Research Data Collection](https://app.globus.org/file-manager?destination_id=844ba90c-1d37-4480-8263-a206ebd9f4f3) \
+> From there, navigate to your research drive at /home/\<your_upi\>/\<research_drive_name\>
+>
 
-Globus is updating the Certificate Authority (CA) used for its transfer service, and moving to a different system for managing the CA. All Globus Connect installations (including Globus Connect Personal) must be updated to install the new trust root by December 12, 2022. After this date, the Globus service will cease to function with Globus Connect installations that have not updated the trust root.
-
-Please see 
-*  [globus ca update](https://docs.globus.org/ca-update-2022/#globus_connect_personal)
-for details.
-
-Essentially, you need to do one of two things to ensure your globus connect personal continues to work:
-1) upgrade your version to 3.2.0 or later: https://app.globus.org/file-manager/gcp
-2) manually update the certificates in the etc/ca subfolder of your installation, as documented at [globus manual ca update](https://docs.globus.org/ca-update-2022/#manual_update)
-
-*2021*
-* As of Dec 8, 2021, the NeSI data transfer node `NeSI Wellington DTN` has been deactivated,
-* A new endpoint called `NeSI Wellington DTN V5` is available in its place.[^1]
-
--->
----
-
+## Transfer to and from NeSI
 
 * You can use [globus](http://globus.org) to transfer data between your research drive and NeSI (or other public globus endpoints):
 [NeSI documentation](https://support.nesi.org.nz/hc/en-gb/articles/4405623380751-Data-Transfer-using-Globus-V5)
@@ -42,7 +30,7 @@ Essentially, you need to do one of two things to ensure your globus connect pers
 * You can create a personal endpoint on your Nectar vm and transfer data between your research drive and your nectar vm:
 [Nectar vm data-transfers](./ntr-drive.html)
 
-   
+
 
 ## Globus Research Drive Access
 
@@ -51,7 +39,7 @@ If you want Globus to access your research drive, please [submit a research-driv
 2. the usernames (UPI) of those on your team who need globus access to this drive
 
 
-   
+
 
 ## Transfer Errors
 
@@ -70,17 +58,16 @@ can't control, please get in touch with Centre for eResearch. ![useful
 image]({{ "/assets" | append: page.id | append: "/globus_error_logs.png"
 | absolute_url }}){:width="900px"}
 
-   
+
 
 ## Endpoint management
 
-Occasionally you may attempt to transfer files to/from your research drive,
 and the drive appears empty.
 The computer that the globus endpoint `University of Auckland Research Data DTN` runs from is occasionally
 restarted, and that may cause your research-drive to appear empty when you browse your drive from globus.
 
 In this case, deactivate that endpoint `University of Auckland Research Data DTN`
-by 
+by
 1. selecting [the endpoint's details page](https://app.globus.org/file-manager/collections/e7f6aaae-fe52-11e8-9345-0e3d676669f4/overview)
 , and from there:
 2. de-activate the endpoint
@@ -88,11 +75,11 @@ by
 
 | endpoint overview             |  deactivate              | reactivate                         |
 :------------------------------:|:------------------------:|:-----------------------------------:
-![](../assets/doc/drive-globus/endpoint_details.png)  |  ![](../assets/doc/drive-globus/endpoint_deactivate.png)  |  ![](../assets/doc/drive-globus/endpoint_reactivate.png)  |  
+![](../assets/doc/drive-globus/endpoint_details.png)  |  ![](../assets/doc/drive-globus/endpoint_deactivate.png)  |  ![](../assets/doc/drive-globus/endpoint_reactivate.png)  |
 
 Now your files should be visible.
 
-   
+
 
 ## Performance
 
@@ -125,7 +112,7 @@ tar xzvf <bundle_name>.tar.gz  #extract into directory named <name_of_directory_
 ```
 
 
- 
+
 
 
 ## Further Reading
