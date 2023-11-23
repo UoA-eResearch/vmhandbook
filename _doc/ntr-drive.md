@@ -14,7 +14,7 @@ Nectar vms are located, by default, outside the University of Auckland firewall,
 and your research drive is inside that firewall. <br/>
 For that reason, you cannot currently, generally, mount your research drive on a nectar vm.
 
-But the University operates a [globus](http://globus.org) data-transfer node [Auckland Research Data DTN](https://support.nesi.org.nz/hc/en-gb/articles/360000931775)
+But the University operates a [globus](http://globus.org) data-transfer node and data collection[University of Auckland Research Data Collection](https://app.globus.org/file-manager?origin_id=844ba90c-1d37-4480-8263-a206ebd9f4f3)
 outside the firewall giving you access to your research-drive from there.
 And globus provides one of the fastest ways to transfer large amounts of data.
 
@@ -24,8 +24,7 @@ requires configuration on both the research-drive and your nectar instance:
 ### Research-drive configuration
 
 [Submit a research-drive request](https://eresearch-dashboard.auckland.ac.nz/service/research-storage/request), specifying "existing" storage, and provide
-1. the name of your research drive
-2. the University of Auckland usernames (UPIs) of those on your team who need globus access to this drive
+1. the University of Auckland usernames (UPIs) of those on your team who need globus access to this drive
 
 
 ### Nectar vm configuration
@@ -45,7 +44,7 @@ With both your research-drive and nectar vm now configured to be accessible thro
 associated with `The University of Auckland` (single-sign-on).
 3. Proceed to globus's [FileManager](https://app.globus.org/file-manager) page, and select
 the two endpoints you want to connect:
-* For your research drive:  enter "Auckland" in the Collection Search bar, and select `Auckland Research Data DTN`.
+* For your research drive:  enter "University of Auckland Research Data Collection" in the Collection Search bar, and select it. 
 Authenticate, and your research drive will be visible.
 * For your nectar vm: under the "Your Collections" tab, select the personal globus endpoint on your nectar vm.
  ![personal-endpoint]({{ "/assets" | append: page.id | append: "/select_personal_connect.png" | absolute_url }}){:width="650px"}

@@ -12,17 +12,24 @@ categories: howto drive
 
 
 
-> [!NOTE]
+> **NOTE**
 >
 > *22 November 2023*
 >
 >  The Globus Connect Server at University of Auckland has been upgraded from version 4 to version 5.4. \
 > Access your research drive on the Data Transfer Node (DTN) by 
-> searching the FileManager for the collection [University of Auckland Research Data Collection](https://app.globus.org/file-manager?destination_id=844ba90c-1d37-4480-8263-a206ebd9f4f3) \
-> From there, navigate to your research drive at /home/\<your_upi\>/\<research_drive_name\>
->
+> searching the FileManager for the collection 
+>   [University of Auckland Research Data Collection](https://app.globus.org/file-manager?origin_id=844ba90c-1d37-4480-8263-a206ebd9f4f3).
 
-## Transfer to and from NeSI
+> From there, navigate to your research drive at "/home/\<your_upi\>", or "/~/" for short.
+>
+![home_dir]({{ "/assets" | append: page.id | append: "/globus_home_dir.png" | absolute_url }}){:width=70%}
+or to "/~/":
+![tilde_home_dir]({{ "/assets" | append: page.id | append: "/globus_tilde_home_dir.png" | absolute_url }}){:width=70%}
+> 
+
+
+## Transfer data between UoA and other NZ locations
 
 * You can use [globus](http://globus.org) to transfer data between your research drive and NeSI (or other public globus endpoints):
 [NeSI documentation](https://support.nesi.org.nz/hc/en-gb/articles/4405623380751-Data-Transfer-using-Globus-V5)
@@ -35,10 +42,7 @@ categories: howto drive
 ## Globus Research Drive Access
 
 If you want Globus to access your research drive, please [submit a research-drive request](https://eresearch-dashboard.auckland.ac.nz/service/research-storage/request), specifying "existing" storage, and providing
-1. the name of your research drive
-2. the usernames (UPI) of those on your team who need globus access to this drive
-
-
+* the usernames (UPI) of those on your team who need globus access to this drive
 
 
 ## Transfer Errors
@@ -57,28 +61,6 @@ to see the problem with your transfer here.  If this raises issues you
 can't control, please get in touch with Centre for eResearch. ![useful
 image]({{ "/assets" | append: page.id | append: "/globus_error_logs.png"
 | absolute_url }}){:width="900px"}
-
-
-
-## Endpoint management
-
-and the drive appears empty.
-The computer that the globus endpoint `University of Auckland Research Data DTN` runs from is occasionally
-restarted, and that may cause your research-drive to appear empty when you browse your drive from globus.
-
-In this case, deactivate that endpoint `University of Auckland Research Data DTN`
-by
-1. selecting [the endpoint's details page](https://app.globus.org/file-manager/collections/e7f6aaae-fe52-11e8-9345-0e3d676669f4/overview)
-, and from there:
-2. de-activate the endpoint
-3. re-activate the endpoint
-
-| endpoint overview             |  deactivate              | reactivate                         |
-:------------------------------:|:------------------------:|:-----------------------------------:
-![](../assets/doc/drive-globus/endpoint_details.png)  |  ![](../assets/doc/drive-globus/endpoint_deactivate.png)  |  ![](../assets/doc/drive-globus/endpoint_reactivate.png)  |
-
-Now your files should be visible.
-
 
 
 ## Performance
