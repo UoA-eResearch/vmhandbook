@@ -7,7 +7,10 @@ Once we have created your Dropbox business folder, you will receive an email (at
 
 If you don’t already have a Dropbox account using your work email address, respond to the email as instructed, signing in via UoA Single-Sign-On.
 
-If you already have a Dropbox account using your work email address, please change the email on your other account to another address and then proceed as above. For more info, see [Dropbox's instructions on changing your email address](help.dropbox.com/accounts-billing/settings-sign-in/change-email for details).
+If you already have a Dropbox account using your work email 
+address, please change the email on your other account to another 
+address and then proceed as above. 
+For more info, see [Dropbox's instructions on changing your email address](help.dropbox.com/accounts-billing/settings-sign-in/change-email) for details.
 
 Other steps you wish to take may include:
 - [Connecting your personal and work accounts]({{ site.baseurl }}{% link _doc/dropbox-connect-accounts.md %})
