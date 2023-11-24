@@ -17,16 +17,28 @@ categories: howto drive
 > *22 November 2023*
 >
 >  The Globus Connect Server at University of Auckland has been upgraded from version 4 to version 5.4. \
-> Access your research drive on the Data Transfer Node (DTN) by 
-> searching the FileManager for the collection 
+> Access your research drive on the Data Transfer Node (DTN) by
+> searching the FileManager for the collection \
 >   [University of Auckland Research Data Collection](https://app.globus.org/file-manager?origin_id=844ba90c-1d37-4480-8263-a206ebd9f4f3).
 
 > From there, navigate to your research drive at "/home/\<your_upi\>", or "/~/" for short.
 >
-![home_dir]({{ "/assets" | append: page.id | append: "/globus_home_dir.png" | absolute_url }}){:width=70%}
-or to "/~/":
-![tilde_home_dir]({{ "/assets" | append: page.id | append: "/globus_tilde_home_dir.png" | absolute_url }}){:width=70%}
-> 
+![home_dir]({{ "/assets" | append: page.id | append: "/globus_home_dir.png" | absolute_url }}){:width=30%} \
+or to "/~/": \
+![tilde_home_dir]({{ "/assets" | append: page.id | append: "/globus_tilde_home_dir.png" | absolute_url }}){:width=30%}
+>
+
+## Access
+
+If you have previously transferred files to or from any University of Auckland Globus endpoint,
+you should find that all research-drives you have Globus access to are visible from the home-directory of the UoA collection.
+
+If you have not previously transferred files to or from a University of Auckland Globus endpoint,
+you need to request access from us. \
+Please [submit a research-drive request](https://eresearch-dashboard.auckland.ac.nz/service/research-storage/request), specifying "existing" storage, and providing
+
+* the name of the research drive
+* the usernames (UPI) of those on your team who need globus access to that drive.
 
 
 ## Transfer data between UoA and other NZ locations
@@ -40,9 +52,6 @@ or to "/~/":
 
 
 ## Globus Research Drive Access
-
-If you want Globus to access your research drive, please [submit a research-drive request](https://eresearch-dashboard.auckland.ac.nz/service/research-storage/request), specifying "existing" storage, and providing
-* the usernames (UPI) of those on your team who need globus access to this drive
 
 
 ## Transfer Errors
