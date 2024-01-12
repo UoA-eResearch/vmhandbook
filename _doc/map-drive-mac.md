@@ -10,7 +10,7 @@ This tutorial will mount your Unifiles home folder `//files.auckland.ac.nz/resea
 To mount a research drive, you need to use `//files.auckland.ac.nz/research/YOUR_DRIVE_NAME`, where YOUR_DRIVE_NAME needs to be replaced by the name of your research drive (research drive names look similar to this: rescer201800002-cer-researchfolder-test).
 
 If you want to mount some other location, e.g. a faculty drive, you'll need to change the path according to your requirements.
-
+You need to activate...
 1. Open **Finder** and select **Go** on the menu bar.
 
 2. Click the **Connect to Server** (shortcut (⌘K))
