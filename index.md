@@ -125,6 +125,10 @@ title: "Home"
     query: 'h3'
   });
 
+  $("#outer").bind("opened", function(e, section) {
+    location.hash = section.$details[0].id;
+  });
+
   // new jQueryCollapse($("#doclinux"), {
   //   open: div_open,
   //   close: div_close,
