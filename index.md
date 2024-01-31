@@ -26,9 +26,9 @@ title: "Home"
     </ul>
   </div>
   <h3><u>Virtual Machine Handbook</u></h3>
-  <div>
+  <div style="margin-left:20px;">
     <h3>I'm using a <b>Linux</b> Research VM</h3>
-    <div id="doclinux">
+    <div id="doclinux" style="margin-left:20px;">
       <div>
         <h4>I'm an administrator</h4>
         <ul>
@@ -46,7 +46,7 @@ title: "Home"
     </div>
 
   <h3>I'm using a <b>Windows</b> Research VM</h3>
-  <div id="docwindows">
+  <div id="docwindows" style="margin-left:20px;">
     <div>
       <h4>I'm an administrator</h4>
       <ul>
@@ -74,7 +74,7 @@ title: "Home"
   </div>
     
   <h3><u>Data Handbook</u></h3>
-    <div>
+    <div style="margin-left:20px;">
       <h3>I'm using a <b>Research Drive</b> </h3>
       <div id="docdrive">
         <div>
