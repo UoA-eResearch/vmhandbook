@@ -4,6 +4,6 @@ gem 'github-pages', group: :jekyll_plugins
 
 gem "webrick"
 
-gem "jekyll", "~> 3.1"
+gem "jekyll", "~> 3.9"
 
-gem "jekyll-commonmark-ghpages", "~> 0.1.0"
+gem "jekyll-commonmark-ghpages", "~> 0.4"
