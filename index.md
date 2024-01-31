@@ -17,8 +17,8 @@ title: "Home"
 ## Welcome to the {{ site.title }}.
 
 <div id="outer">
-  <h3 class="open"><u> Generic FAQs </u></h3>
-  <div>
+  <h3><u> Generic FAQs </u></h3>
+  <div id="generic">
     <ul>
     {% for item in generic_posts %}
       <li> <a href="{{ item.url | relative_url}}">{{ item.title | escape }}</a></li>
@@ -26,9 +26,9 @@ title: "Home"
     </ul>
   </div>
   <h3><u>Virtual Machine Handbook</u></h3>
-  <div style="margin-left:20px;">
+  <div style="margin-left:20px;" id="vmhandbook">
     <h3>I'm using a <b>Linux</b> Research VM</h3>
-    <div id="doclinux" style="margin-left:20px;">
+    <div class="expandable" id="doclinux" style="margin-left:20px;">
       <div>
         <h4>I'm an administrator</h4>
         <ul>
@@ -46,7 +46,7 @@ title: "Home"
     </div>
 
   <h3>I'm using a <b>Windows</b> Research VM</h3>
-  <div id="docwindows" style="margin-left:20px;">
+  <div class="expandable" id="docwindows" style="margin-left:20px;">
     <div>
       <h4>I'm an administrator</h4>
       <ul>
@@ -64,7 +64,7 @@ title: "Home"
   </div>
 
   <h3>I'm using a <b>Nectar</b> VM</h3>
-  <div id="docnectar">
+  <div class="expandable" id="docnectar">
     <ul>
     {% for item in nectar_posts %}
       <li> <a href="{{ item.url | relative_url}}">{{ item.title | escape }}</a></li>
@@ -74,9 +74,9 @@ title: "Home"
   </div>
     
   <h3><u>Data Handbook</u></h3>
-    <div style="margin-left:20px;">
+    <div style="margin-left:20px;" id="datahandbook">
       <h3>I'm using a <b>Research Drive</b> </h3>
-      <div id="docdrive">
+      <div class="expandable" id="docdrive">
         <div>
           <ul>
           {% for item in research_drive_posts %}
@@ -87,7 +87,7 @@ title: "Home"
       </div>
 
   <h3>I'm using <b>Dropbox</b></h3>
-  <div id="docdropbox">
+  <div class="expandable" id="docdropbox">
     <ul>
     {% for item in dropbox_posts %}
       <li> <a href="{{ item.url | relative_url}}">{{ item.title | escape }}</a></li>
@@ -106,6 +106,12 @@ title: "Home"
 
 <script>
 
+  jQuery(document).ready(function($) {
+    // find parent div of the current hash and open it
+    $(location.hash).parent().slideDown(200);
+    $(location.hash).slideDown(200);
+  });
+
   function div_open() {
     this.slideDown(200);
   };
@@ -119,17 +125,17 @@ title: "Home"
     query: 'h3'
   });
 
-  new jQueryCollapse($("#doclinux"), {
-    open: div_open,
-    close: div_close,
-    query: 'div h4'
-  });
+  // new jQueryCollapse($("#doclinux"), {
+  //   open: div_open,
+  //   close: div_close,
+  //   query: 'div h4'
+  // });
 
-  new jQueryCollapse($("#docwindows"), {
-    open: div_open,
-    close: div_close,
-    query: 'div h4'
-  });
+  // new jQueryCollapse($("#docwindows"), {
+  //   open: div_open,
+  //   close: div_close,
+  //   query: 'div h4'
+  // });
   document.getElementById("last_updated").textContent = new Date(document.lastModified).toLocaleDateString('en-nz');
 
 
