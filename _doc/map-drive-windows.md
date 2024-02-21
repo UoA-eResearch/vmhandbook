@@ -1,25 +1,33 @@
 ---
-title:  "Map network drives to Windows"
+title:  "Map a Research Drive to a Windows computer"
 categories: windows admin user howto drive
 ---
 
-Network drives include your Unifiles home folder, Unifiles research drives and other network file systems that start with `\\machine_name`.
-This tutorial will mount your Unifiles home folder `\\files.auckland.ac.nz\myhome` to `F:\` drive on Windows.
+Steps:
+1. If you are **off-campus** connect via the University [Virtual Private Network](https://www.auckland.ac.nz/en/students/academic-information/postgraduate-students/postgraduate/postgraduate-support-and-services/vpn-service.html) (VPN).
 
-To mount a research drive (should you have one), you need to use `\\files.auckland.ac.nz\research\YOUR_DRIVE_NAME`, where YOUR_DRIVE_NAME needs to be replaced by the name of your research drive (research drive names look similar to this: rescer201800002-cer-researchfolder-test).
+2. Open **File Explorer** from the taskbar or the Start menu. 
 
-If you want to mount some other location, e.g. a faculty drive, you'll need to change the path according to your requirements.
+3. Select **This PC**, then:
+    a. Windows 10: Select **Map Network Drive** from the Computer tab
+    OR
+    b. Windows 11: Select **•••** on the File Explorer ribbon, then **Map Network Drive**.
 
-1. Open **File Explorer** and select **This PC**.
 
-2. Click the **Map network drive** button in the ribbon menu at the top, then select "Map network drive." (This is under the Computer tab, which should open automatically when you go to This PC, as above.)
+    ![useful image]({{ "/assets" | append: page.id | append: "/map-drive-windows-win10-11.png" | absolute_url }}){:width="1000px"}
 
-    ![useful image]({{ "/assets" | append: page.id | append: "/screenshot1.png" | absolute_url }}){:width="600px"}
+4. In the **Drive** list, select a free drive letter.
 
-3. Select the drive letter you want to use for the network folder, then enter the path `\\files.auckland.ac.nz\myhome\`. Make sure the path exists.
+5. In the **Folder** box, enter the location of the Research Drive. It will look similar to this: `\\files.auckland.ac.nz\research\ressci202400035-drive-name)`
 
-    ![useful image]({{ "/assets" | append: page.id | append: "/screenshot2.png" | absolute_url }}){:width="600px"}
+6. Make sure that **Reconnect at login** remains ticked.
 
-4. Confirm your selection and click **Finish**. You can choose to reconnect to the folder every time you sign in so it's always available to you and, if needed, use a different user account to connect to the folder.
+7. Click **Finish**.
 
-When you're done, you should see the new drive letter under This PC and will be able to access its contents like you would any other folder. If you want to disconnect the network drive, right-click on it and select **Disconnect**.
+
+    ![useful image]({{ "/assets" | append: page.id | append: "/map-drive-windows-options.png" | absolute_url }}){:width="500"}
+
+8. If prompted, enter your University username and password ensuring the Domain is UOA.
+
+
+    ![useful image]({{ "/assets" | append: page.id | append: "/map-drive-windows-credentials2.png" | absolute_url }}){:width="500"}
