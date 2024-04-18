@@ -21,30 +21,41 @@ categories: howto drive
 > searching the FileManager for the collection 
 >   [University of Auckland Research Data Collection](https://app.globus.org/file-manager?origin_id=844ba90c-1d37-4480-8263-a206ebd9f4f3).
 
-> From there, navigate to your research drive at "/home/\<your_upi\>", or "/~/" for short.
->
-![home_dir]({{ "/assets" | append: page.id | append: "/globus_home_dir.png" | absolute_url }}){:width=70%}
-or to "/~/":
-![tilde_home_dir]({{ "/assets" | append: page.id | append: "/globus_tilde_home_dir.png" | absolute_url }}){:width=70%}
-> 
 
 
 ## Transfer data between UoA and other NZ locations
 
-* You can use [globus](http://globus.org) to transfer data between your research drive and NeSI (or other public globus endpoints):
-[NeSI documentation](https://support.nesi.org.nz/hc/en-gb/articles/4405623380751-Data-Transfer-using-Globus-V5)
+* You can use [globus](http://globus.org) to transfer data between your research drive and <a href="https://support.nesi.org.nz/hc/en-gb/articles/360000931775-National-Data-Transfer-Platform"> NeSI and other associated NZ public globus endpoints</a>
 
-* You can create a personal endpoint on your Nectar vm and transfer data between your research drive and your nectar vm:
-[Nectar vm data-transfers](./ntr-drive.html)
+* [NeSI documentation](https://support.nesi.org.nz/hc/en-gb/articles/4405623380751-Data-Transfer-using-Globus-V5)
 
+## Transfer data between an institutional globus endpoint and your workstation
 
-
-## Globus Research Drive Access
-
-If you want Globus to access your research drive, please [submit a research-drive request](https://eresearch-dashboard.auckland.ac.nz/service/research-storage/request), specifying "existing" storage, and providing
-* the usernames (UPI) of those on your team who need globus access to this drive
+* You can create a personal endpoint on your workstation or Nectar vm, and transfer data between them in exactly the same way:
+    [Nectar vm data-transfers](./ntr-drive.html)
 
 
+## University of Auckland Research Drive Access
+
+If you have transferred files to or from a previous University of Auckland Globus endpoint (prior to November 2023),
+you should find that all research-drives you had Globus access to then are now visible from your home-directory of the current [UoA data collection](https://app.globus.org/file-manager?origin_id=844ba90c-1d37-4480-8263-a206ebd9f4f3)
+
+If you have not previously transferred files to or from a University of Auckland Globus endpoint,
+you need to request access from Centre for eResearch.  Please [submit a research-drive request](https://eresearch-dashboard.auckland.ac.nz/service/research-storage/request), specifying "existing" storage, providing
+
+    * the name of the research drive
+    * the usernames (UPI) of those on your team who need globus access to that drive.
+
+Access your research drive on the Data Transfer Node (DTN) either by using the 
+link   [University of Auckland Research Data Collection](https://app.globus.org/file-manager?origin_id=844ba90c-1d37-4480-8263-a206ebd9f4f3) or .
+searching the FileManager for the collection "University of Auckland Research Data Collection".
+
+Once you have logged in (UoA Single-Sign-On), navigate to your research drive from "/home/\<your_upi\>", or "/~/" for short.
+>
+![home_dir]({{ "/assets" | append: page.id | append: "/globus_home_dir.png" | absolute_url }}){:width=30%} \
+or to "/~/": \
+![tilde_home_dir]({{ "/assets" | append: page.id | append: "/globus_tilde_home_dir.png" | absolute_url }}){:width=30%}
+>
 ## Transfer Errors
 
 You can inspect the logs for your globus transfers from the console
