@@ -14,7 +14,7 @@ Nectar vms are located, by default, outside the University of Auckland firewall,
 and your research drive is inside that firewall. <br/>
 For that reason, you cannot currently, generally, mount your research drive on a nectar vm.
 
-But the University operates a [globus](http://globus.org) data-transfer node and data collection[University of Auckland Research Data Collection](https://app.globus.org/file-manager?origin_id=844ba90c-1d37-4480-8263-a206ebd9f4f3)
+But the University operates a [globus](http://globus.org) data-transfer node and data collection [University of Auckland Research Data Collection](https://app.globus.org/file-manager?origin_id=844ba90c-1d37-4480-8263-a206ebd9f4f3)
 outside the firewall giving you access to your research-drive from there.
 And globus provides one of the fastest ways to transfer large amounts of data.
 
