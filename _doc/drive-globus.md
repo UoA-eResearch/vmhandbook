@@ -31,7 +31,8 @@ categories: howto drive
 
 ## Transfer data between an institutional globus endpoint and your workstation
 
-* You can create a personal endpoint on your workstation or Nectar vm, and transfer data between them in exactly the same way:
+* Using [GlobusConnectPersonal](https://www.globus.org/globus-connect-personal), you can create a personal endpoint on your workstation or Nectar vm, and transfer data between 
+that endpoint and any NZ institutional endpoint in exactly the same way:
     [Nectar vm data-transfers](./ntr-drive.html)
 
 
