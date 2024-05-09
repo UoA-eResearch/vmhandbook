@@ -105,9 +105,23 @@ now transfer the file `<bundle_name>.tar.gz`
 tar xzvf <bundle_name>.tar.gz  #extract into directory named <name_of_directory_containing_files>
 ```
 
+## Data Transfer between two personal globus endpoints
 
+In order to do this, you must join NeSI's Globus subscription. <br/>
+Point your browser to https://app.globus.org/settings/subscriptions and 
+in the *Find a Subscription field*, enter the text
+`New Zealand eScience Infrastructure Standard`
 
+![find globus subscription]({{ "/assets" | append: page.id | append: "/globus_subscription_find.png" | absolute_url }}){:width="700px"}
 
+![nesi globus subscription]({{ "/assets" | append: page.id | append: "/nesi_globus_subscription.png" | absolute_url }}){:width="700px"}
+
+Join that subscription
+
+![globus subscription joined]({{ "/assets" | append: page.id | append: "/globus_subscription_joined.png"
+| absolute_url }}){:width="700px"}
+<br/>
+and you are configured.
 
 ## Further Reading
 
