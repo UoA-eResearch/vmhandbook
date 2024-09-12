@@ -18,7 +18,8 @@ Steps:
 
 4. In the **Drive** list, select a free drive letter.
 
-5. In the **Folder** box, enter the location of the Research Drive. It will look similar to this: `\\files.auckland.ac.nz\research\ressci202400035-drive-name`
+5. In the **Folder** box, enter `\\files.auckland.ac.nz\research\` followed by the name of the Research Drive. It will look similar to this:
+ `\\files.auckland.ac.nz\research\ressci202400035-drive-name`
 
 6. Make sure that **Reconnect at login** remains ticked.
 
