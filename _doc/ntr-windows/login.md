@@ -1,4 +1,3 @@
-
 ---
 title:  "remote login to Windows VMs in Auckland cluster"
    

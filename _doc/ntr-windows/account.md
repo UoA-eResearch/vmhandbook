@@ -1,4 +1,3 @@
-
 ---
 title:  "account configuration of Windows VMs in Auckland cluster"
 ---
