@@ -49,6 +49,8 @@ For more information about other VM launching options, security groups, and keys
 
 --- 
 
+Now you can begin to access your instance.
+First you need to configure your local administrator account on the instance:
 ## Initialise the Windows nectar res-admin administrator account
 
 Follow the instructions at [Nectar RDP admin account configuration](./account.html)
