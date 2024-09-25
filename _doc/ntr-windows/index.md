@@ -38,26 +38,7 @@ In order to access your windows instance, you need to enable Remote Desktop Prot
 Follow the instructions at [Nectar RDP security groups](./rdp.html)
 
 
-For more information about other VM launching options, security groups, and keys, please refer to the following Nectar tutorials:
-
-- [Launching Virtual Machines](https://tutorials.rc.nectar.org.au/launching-virtual-machines/01-overview)
-- [Security groups, the absolute basics](https://tutorials.rc.nectar.org.au/sec-groups-101/01-overview)
-- [Intermediate Security Groups](https://tutorials.rc.nectar.org.au/intermediate-security-groups/01-overview)
-
-## Initialise the Windows nectar res-admin administrator account
-
-Follow the instructions at [Nectar RDP admin account configuration](./account.html)
-
-
-## Remote login via Remote Desktop
-
-Follow the instructions at [Nectar RDP login ](./login.html)
-
-## data volume management
-
-Follow the instructions at [Nectar Volume management](./volume.html)
-
-
+### Launch the instance
 Click the "Launch" button, and go to *Project > Compute > Instances* panel, wait until the status of your new instance is **Active**. It might take 2-10 minutes, depending on the size of your VM.
 
 For more information about other VM launching options, security groups, and keys, please refer to the following Nectar tutorials:
@@ -66,4 +47,19 @@ For more information about other VM launching options, security groups, and keys
 - [Security groups, the absolute basics](https://tutorials.rc.nectar.org.au/sec-groups-101/01-overview)
 - [Intermediate Security Groups](https://tutorials.rc.nectar.org.au/intermediate-security-groups/01-overview)
 
+--- 
 
+## Initialise the Windows nectar res-admin administrator account
+
+Follow the instructions at [Nectar RDP admin account configuration](./account.html)
+
+--- 
+
+## Remote login via Remote Desktop
+
+Follow the instructions at [Nectar RDP login ](./login.html)
+
+--- 
+
+## Data Volume Management
+Follow the instructions at [Nectar Volume management](./volume.html)
