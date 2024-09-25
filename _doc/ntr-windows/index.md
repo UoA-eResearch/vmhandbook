@@ -53,6 +53,9 @@ Follow the instructions at [Nectar RDP admin account configuration](./account.ht
 
 Follow the instructions at [Nectar RDP login ](./login.html)
 
+## data volume management
+
+Follow the instructions at [Nectar Volume management](./volume.html)
 
 
 Click the "Launch" button, and go to *Project > Compute > Instances* panel, wait until the status of your new instance is **Active**. It might take 2-10 minutes, depending on the size of your VM.
