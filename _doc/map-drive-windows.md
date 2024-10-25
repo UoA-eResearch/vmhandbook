@@ -4,6 +4,7 @@ categories: windows admin user howto drive
 ---
 
 Steps:
+**Please sign-out and/or restart your computer before attempting to map your research drive. This step also applies to any and all additional people who have been added to the research drive.**
 1. If you are **off-campus** connect via the University [Virtual Private Network](https://www.auckland.ac.nz/en/students/academic-information/postgraduate-students/postgraduate/postgraduate-support-and-services/vpn-service.html) (VPN).
 
 2. Open **File Explorer** from the taskbar or the Start menu. 
