@@ -11,18 +11,6 @@ categories: howto drive
 
 
 
-
-> **NOTE**
->
-> *22 November 2023*
->
->  The Globus Connect Server at University of Auckland has been upgraded from version 4 to version 5.4. \
-> Access your research drive on the Data Transfer Node (DTN) by 
-> searching the FileManager for the collection 
->   [University of Auckland Research Data Collection](https://app.globus.org/file-manager?origin_id=844ba90c-1d37-4480-8263-a206ebd9f4f3).
-
-
-
 ## Transfer data between UoA and other NZ locations
 
 * You can use [globus](http://globus.org) to transfer data between your research drive and <a href="https://support.nesi.org.nz/hc/en-gb/articles/360000931775-National-Data-Transfer-Platform"> NeSI and other associated NZ public globus endpoints</a>
