@@ -25,13 +25,12 @@ Steps:
 6. Make sure that **Reconnect at login** remains ticked.
 
 7. Click **Finish**.
+**Note**: If you receive an error message when attempting to map the drive, please sign out or restart your machine and try again.
 
 
     ![useful image]({{ "/assets" | append: page.id | append: "/map-drive-windows-options.png" | absolute_url }}){:width="500"}
 
-8. If prompted, enter your University username and password ensuring the Domain is UOA.
+9. If prompted, enter your University username and password ensuring the Domain is UOA.
 
 
     ![useful image]({{ "/assets" | append: page.id | append: "/map-drive-windows-credentials2.png" | absolute_url }}){:width="500"}
-
-**Note**: If you receive an error message when attempting to map the drive, please sign out or restart your machine and try again.
