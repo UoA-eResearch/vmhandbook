@@ -5,11 +5,5 @@ categories: howto drive
 
 ### Instructions for UoA staff member to permit external collaborators to access research drives.
 
-Please follow the steps at [this link](https://superuoa.custhelp.com/app/answers/detail/a_id/8183/kw/university%20username%20for%20collaborators) to 
-
-1. Enable your external collaborator to register a UoA username
-
-2. Authorize the external collaborator to have access to your research drive
-
-
-Then you should open a ticket with Connect IT to request that  Centre of eResearch add the external collaborator to the drive's access group.
+1.  Follow the instructions in [this article](https://superuoa.custhelp.com/app/answers/detail/a_id/8183/kw/university%20username%20for%20collaborators) and ensure all steps are completed.
+2.  Once the external collaborator has been set up and has working University credentials, the researcher should use [the Request or update storage form](https://research-hub.auckland.ac.nz/service/research-drive) to ask for the external collaborator to be given access to the specified Research Drive.
