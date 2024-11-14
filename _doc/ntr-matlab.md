@@ -3,11 +3,10 @@ title:  "MATLAB Installation"
 categories: nectar howto
 ---
 
-# Matlab installation at University of Auckland
 
 The University of Auckland has a site-wide MATLAB licence.
-While we currently do not have a custom image containing MATLAB you can launch,
-it is not difficult to install it on your Nectar vm yourself.
+While the UoA Nectar node does not provide have a custom image containing MATLAB, 
+it is not difficult to install it on your Nectar instance yourself.
 
 Firstly, create and launch your Nectar instance:
 If Windows, follow the instructions at [How to access Windows VMs in Auckland cluster]({{ site.baseurl }}{% link _doc/ntr-windows/index.md %})
