@@ -1,30 +1,44 @@
 ---
-title:  "How to use Matlab on Nectar VMs"
+title:  "MATLAB Installation"
 categories: nectar howto
 ---
 
-**Note**: The Matlab images are no longer maintained on Nectar. Please don't launch any new instances with Matlab pre-installed. If you need to use Matlab, please install it on your VM manually. 
+# Matlab installation at University of Auckland
 
-UoA Researchers can find information on the staff Intranet at the following links:
+The University of Auckland has a site-wide MATLAB licence.
+While we currently do not have a custom image containing MATLAB you can launch,
+it is not difficult to install it on your Nectar vm yourself.
 
-- [Matlab Download](https://www.software.auckland.ac.nz/en/matlab/matlab-download.html)
-- [Matlab License](https://www.software.auckland.ac.nz/en/matlab/matlab-licence.html)
-- [Matlab](https://www.software.auckland.ac.nz/en/matlab.html)
+Firstly, create and launch your Nectar instance:
+If Windows, follow the instructions at [How to access Windows VMs in Auckland cluster]({{ site.baseurl }}{% link _doc/ntr-windows/index.md %})
+What follows should be run from a browser on your Nectar image.
+
+### create a mathworks account 
+
+Point your browser to [mathworks.com](mathworks.com) and select the "Sign In" tab at the top of the page.
+
+![online]({{ "/assets" | append: page.id | append: "/mathworks_signup.png" | absolute_url }}){:width="70%"}
+| ![online]({{ "/assets" | append: page.id | append: "/uoa_email_sign_in.png" | absolute_url }}){:width="45%"}| ![ online]({{ "/assets" | append: page.id | append: "/organizational_portal_login.png" | absolute_url }}){:width="45%"}|
+
+Sign in with your UoA email address.
+You'll be taken to UoA single-sign-on during this process, and will need your UoA two-factor authentication token.
+
+Now that you have an account with mathworks, you can download and install MATLAB:
+
+### Download MATLAB
+
+From the Mathworks page, select the MATLAB link, and search for "Downloads" at the bottom of the page:
+![online]({{ "/assets" | append: page.id | append: "/downloads_link.png" | absolute_url }}){:width="70%"}
+Once again you'll sign in using your UoA identity.
+
+You'll be provided with an installation appropriate to your operating system:
+![online]({{ "/assets" | append: page.id | append: "/matlab_os_download.png" | absolute_url }}){:width="70%"}
+
+Download and install the application software.
+
+You now have Matlab on your Nectar instance.
 
 
-~~## Matlab Images~~
-
-~~We offer two images with Matlab pre-installed:~~
-- ~~**UoA-Server2012-MATLAB**: Windows Server 2012, Matlab 2018b~~
-- ~~**UoA-Ubuntu1604-MATLAB**: Ubuntu Linux 1604, Matlab 2017b~~
-
-~~To find these images, login to [Nectar Dashboard](https://dashboard.rc.nectar.org.au/) via Tuakiri. Browse to *Project > Compute > Images* as shown in the picture below, and enter `Matlab` in the search box. If there are multiple images, please always choose the latest one, and click the "Launch" button to start the new instance wizard.~~
-
-~~![Fig1 Image]({{ "/assets" | append: page.id | append: "/fig1-image.png" | absolute_url }}){:width="60%"}~~
-
-~~**Note**: You might also find some other community Matlab images, please don't use them and use those start with `UoA`. If you can not find these images, please [contact us]({{ site.baseurl }}{% link contact.md %}) and we'll grant you access.~~
-
-~~Launch a VM with the image, and you'll be able to use Matlab when the VM is active.~~
 
 ## Matlab on Linux VMs
 
