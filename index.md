@@ -11,7 +11,7 @@ title: "Home"
 
 {% assign research_drive_posts = site.doc | where: "categories","drive" %}
 {% assign dropbox_posts = site.doc | where: "categories","dropbox" %}
-
+{% assign announcement_posts = site.doc | where: "categories","announcement" %}
 
 
 ## Welcome to the {{ site.title }}.
@@ -94,6 +94,15 @@ title: "Home"
     {% endfor %}
     </ul>
   </div>
+  </div>
+
+  <h3><u> Announcements </u></h3>
+  <div id="generic">
+    <ul>
+    {% for item in announcement_posts %}
+      <li> <a href="{{ item.url | relative_url}}">{{ item.title | escape }}</a></li>
+    {% endfor %}
+    </ul>
   </div>
 
   </div>
