@@ -55,6 +55,7 @@ if [ "$?" -gt "0" ]; then
 fi
 ```
 
+
 If you save this code in the file `~/mount_drive.sh` and give it executable permissions via `chmod u+x ~/mount_drive.sh`, you can then run the script like this:
 ```bash
 ~/mount_drive.sh
@@ -66,5 +67,14 @@ If you save this code in the file `~/mount_drive.sh` and give it executable perm
 sudo umount -l ${HOME}/rescer201800002-cer-researchfolder-test
 ```
 
-Make sure you adjust `${HOME}/rescer201800002-cer-researchfolder-test` to the location you used when you mounted the research drive
+Make sure you adjust the target of this command, `${HOME}/rescer201800002-cer-researchfolder-test` in this example, to the location you used when you mounted your research drive.
 
+
+## Symbolic links within a research-drive
+--
+
+If you want to create symbolic links within the research drive, add the option `mfsymlinks` to the list you provide in your mount command (continuing from the code above):
+
+```bash
+options="username=${USER},${common_options},mfsymlinks"
+```
