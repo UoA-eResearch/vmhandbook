@@ -17,6 +17,9 @@ categories: howto drive
 
 * [NeSI documentation](https://support.nesi.org.nz/hc/en-gb/articles/4405623380751-Data-Transfer-using-Globus-V5)
 
+[!NOTE]  June, 2025:  NeSI is transitioning from the collection "NeSI Wellington DTN V5" to the newer "NeSI HPC Storage" collection.
+Please bookmark the new collection.
+
 ## Transfer data between an institutional globus endpoint and your workstation
 
 * Using [GlobusConnectPersonal](https://www.globus.org/globus-connect-personal), you can create a personal endpoint on your workstation or Nectar vm, and transfer data between 
