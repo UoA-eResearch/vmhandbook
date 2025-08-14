@@ -4,7 +4,7 @@ categories: transcribedesktop howto
 ---
 
 ## Logging in to the nectar virtual desktop service
-1. Go to https://desktop.rc.nectar.org.au/ 
+1. Go to the [Nectar Virtual Desktop Service](https://desktop.rc.nectar.org.au/) 
 2. Click on “Sign in”. 
 3. Choose either the AAF (Australia) or Reannz Tuakiri (New Zealand) option based on your affiliation. 
 4. Choose your institution from the list. 
