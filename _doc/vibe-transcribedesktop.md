@@ -39,7 +39,7 @@ Vibe AI enables you to transcribe or translate audio content from multiple langu
  8. Review and Refine 
     Vibe will generate a transcription preview for you to review in the output area. Here you can review the text, make any necessary corrections or edits, save and open the folder that contains the saved files. Once transcribed, you can edit the file directly in the window or save it as-is. Keep in mind, if you are using this for SRT or VTT mode, you must keep the timestamps in to keep it properly aligned.
 
-9. Download the transcript from the virtual desktop to your computer. Follow the instructions from the general guide.
+9. Download the transcript from the virtual desktop to your computer. Follow [the instructions from the general guide](https://tutorials.rc.nectar.org.au/virtual-desktop-service/03-general-tasks#downloading-a-file-from-the-virtual-desktop-to-your-local-computer).
 
 ## Further Customisation: Change Vibe settings 
 
