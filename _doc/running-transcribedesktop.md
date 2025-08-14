@@ -42,4 +42,4 @@ For a general guide on using Nectar virtual desktops, read [the Virtual Desktop 
  
 For a specific explanation on how to launch the various applications available in the TranscribeDesktop desktop, follow the instructions for each here:
 * [Using Vibe on TranscribeDesktop](vibe-transcribedesktop)
-* Using Buzz on TranscribeDesktop
+* [Using Buzz on TranscribeDesktop](buzz-transcribedesktop)
