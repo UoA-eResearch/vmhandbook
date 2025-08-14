@@ -9,7 +9,8 @@ This is only available to researchers with access to the Nectar platform. See [h
 
 This guide will help you through:
 * [Log in and create a virtual desktop](running-transcribedesktop)
-* [Use Vibe transcription tool on your virtual desktop](vibe-transcribedesktop)
+* [Use the Vibe transcription tool on your virtual desktop](vibe-transcribedesktop)
+* [Use the Buzz transcription tool on your virtual desktop](buzz-transcribedesktop)
 
 ## Tips for Accurate Transcription 
 
