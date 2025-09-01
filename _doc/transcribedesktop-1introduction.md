@@ -8,9 +8,9 @@ TranscribeDesktop is a solution that allows you to transcribe your audio and vid
 This is only available to researchers with access to the Nectar platform. See [here](https://desktop.rc.nectar.org.au/about/) for more information.
 
 This guide will help you to:
-* [Log in and create a virtual desktop](transcribedesktop-2running.md)
-* [Use the Vibe transcription tool on your virtual desktop](transcribedesktop-3vibe.md)
-* [Use the Buzz transcription tool on your virtual desktop](transcribedesktop-4buzz.md)
+* [Log in and create a virtual desktop]({{ site.baseurl }}{% link _doc/transcribedesktop-2running.md %})
+* [Use the Vibe transcription tool on your virtual desktop]({{ site.baseurl }}{% link _doc/transcribedesktop-3vibe.md %})
+* [Use the Buzz transcription tool on your virtual desktop]({{ site.baseurl }}{% link _doc/transcribedesktop-4buzz.md})
 
 ## Tips for Accurate Transcription 
 
