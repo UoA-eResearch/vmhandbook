@@ -41,5 +41,5 @@ categories: transcribedesktop howto
 For a general guide on using Nectar virtual desktops, read [the Virtual Desktop Serivce tutorial](https://tutorials.rc.nectar.org.au/virtual-desktop-service/01-overview).
  
 For a specific explanation on how to launch the various applications available in the TranscribeDesktop desktop, follow the instructions for each here:
-* [Using Vibe on TranscribeDesktop](vibe-transcribedesktop)
-* [Using Buzz on TranscribeDesktop](buzz-transcribedesktop)
+* [Using Vibe on TranscribeDesktop](transcribedesktop-3vibe.md)
+* [Using Buzz on TranscribeDesktop](transcribedesktop-4buzz.md)
