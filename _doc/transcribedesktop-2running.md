@@ -6,9 +6,9 @@ categories: transcribedesktop howto
 ## Log in to the Nectar virtual desktop service
 1. Go to the [Nectar Virtual Desktop Service](https://desktop.rc.nectar.org.au/) 
 2. Click on “Sign in”. 
-3. Choose Reannz Tuakiri (New Zealand). 
-4. Choose The University of Auckland from the list. 
-5. Sign in with your institutional credentials. If this is the first time you are using Nectar, you may be asked if you want to share details with Nectar. Agree to proceed.
+3. Choose either the AAF (Australia) or Reannz Tuakiri (New Zealand) option based on your affiliation. 
+4. Choose your institution from the list. 
+5. Sign in with your institution's account. If this is the first time you are using Nectar, you may be asked if you want to share details with Nectar. Agree to proceed.
 6. Click on create a Workspace (you only need to do this when you sign in for the first time.)
 
     ![useful image]({{ "/assets" | append: page.id | append: "/image1.png" | absolute_url }}){:width="600px"}
