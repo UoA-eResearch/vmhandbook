@@ -99,7 +99,7 @@ title: "Home"
   </div>
   </div>
 
-  <h3><u>AI Transcription</u></h3>
+  <h3><u>Transcription using AI</u></h3>
     <div id="transcribedesktop">
       <ul>
       {% for item in transcribedesktop_posts %}
