@@ -7,7 +7,7 @@ Buzz allows users to transcribe and translate audio offline, and allows for mult
 
 ## Features
 
-* Import audio and video and export transcripts to TXT, SRT, and VTT ([Demo](https://www.loom.com/share/cf263b099ac3481082bb56d19b7c87fe))files
+* Import audio and video and export transcripts to TXT, SRT, and VTT ([Demo](https://www.loom.com/share/cf263b099ac3481082bb56d19b7c87fe)) files
 * Transcribe and translate from your computer's microphone to text (Resource-intensive and may not be real-time, [Demo](https://www.loom.com/share/564b753eb4d44b55b985b8abd26b55f7))
 * Supports [Whisper](https://github.com/openai/whisper#available-models-and-languages), [Whisper.cpp](https://github.com/ggerganov/whisper.cpp), [Faster Whisper](https://github.com/guillaumekln/faster-whisper), [Whisper-compatible Hugging Face models](https://huggingface.co/models?other=whisper), and the [OpenAI Whisper API](https://platform.openai.com/docs/api-reference/introduction)
 * [Command-Line Interface](https://chidiwilliams.github.io/buzz/docs#command-line-interface)
