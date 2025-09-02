@@ -8,6 +8,7 @@ title: "Home"
 {% assign windows_admin_posts = site.doc | where: "categories","admin" | where: "categories","windows" %}
 {% assign windows_user_posts = site.doc | where: "categories","user" | where: "categories","windows" %}
 {% assign nectar_posts = site.doc | where: "categories","nectar" %}
+{% assign transcribedesktop_posts = site.doc | where: "categories", "transcribedesktop" %}
 
 {% assign research_drive_posts = site.doc | where: "categories","drive" %}
 {% assign dropbox_posts = site.doc | where: "categories","dropbox" %}
@@ -72,7 +73,9 @@ title: "Home"
     </ul>
   </div>
   </div>
-    
+
+
+
   <h3><u>Data Handbook</u></h3>
     <div style="margin-left:20px;" id="datahandbook">
       <h3>I'm using a <b>Research Drive</b> </h3>
@@ -95,6 +98,15 @@ title: "Home"
     </ul>
   </div>
   </div>
+
+  <h3><u>Transcription using AI</u></h3>
+    <div id="transcribedesktop">
+      <ul>
+      {% for item in transcribedesktop_posts %}
+        <li> <a href="{{ item.url | relative_url}}">{{ item.title | escape }}</a></li>
+      {% endfor %}
+      </ul>
+    </div>
 
   <h3><u> Announcements </u></h3>
   <div id="generic">
