@@ -6,9 +6,9 @@ categories: transcribedesktop howto
 TranscribeDesktop allows you to transcribe audio and video recordings. It is a "virtual desktop" - a remote computer accessible through your web browser. You can launch the virtual desktop on [Nectar's Virtual Desktop Service](https://desktop.rc.nectar.org.au/login/).
 
 This guide will help you to:
-* [Log in and create a virtual desktop](running-transcribedesktop)
-* [Use the Vibe transcription tool on your virtual desktop](vibe-transcribedesktop)
-* [Use the Buzz transcription tool on your virtual desktop](buzz-transcribedesktop)
+* [Log in and create a virtual desktop]({{ site.baseurl }}{% link _doc/transcribedesktop-2running.md %})
+* [Use the Vibe transcription tool on your virtual desktop]({{ site.baseurl }}{% link _doc/transcribedesktop-3vibe.md %})
+* [Use the Buzz transcription tool on your virtual desktop]({{ site.baseurl }}{% link _doc/transcribedesktop-4buzz.md %})
 
 ## Tips for Accurate Transcription 
 
