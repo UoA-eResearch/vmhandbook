@@ -18,7 +18,7 @@ Buzz allows users to transcribe and translate audio offline, and allows for mult
 ## Getting started
 
 1. Transfer the audio and video recordings you wish to transcribe into the virtual desktop. Follow [the instructions in the general guide](https://tutorials.rc.nectar.org.au/virtual-desktop-service/03-general-tasks#transferring-files).
-2. From the desktop click on the Buzz icon [IMAGE] to open the Buzz interface.
+2. From the desktop click on the Buzz icon ![Buzz icon]({{ "/assets" | append: page.id | append: "/buzz-favicon.ico" | absolute_url }}){:height="25px" style="vertical-align:baseline"} to open the Buzz interface.
 
 ![File import]({{ "/assets" | append: page.id | append: "/image18.png" | absolute_url }}){:width="600px"}
 
