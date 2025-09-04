@@ -1,0 +1,71 @@
+---
+title:  "How to launch a GPU instance in Auckland cluster"
+categories: nectar howto
+---
+
+
+**Note**: GPU is NOT available for all Nectar projects. You have to reserve it first. Please refer to [How to reserve a GPU in Auckland cluster](ntr-gpu-instance.html) before you can launch a GPU instance.
+
+
+## Launch a GPU instance
+
+Login to [Nectar Dashboard](https://dashboard.rc.nectar.org.au/) via Tuakiri. Please make sure you've selected the correct project that you used to reserve the GPU.
+
+Browse to *Project > Compute > Images* as shown in the picture below, and enter `CeR` in the search box. You will find the prebuilt images for GPU instances. The image is built upon the latest Ubuntu LTS and has lots of useful tools pre-installed, such as the NVIDIA GPU drivers. If you have an approved GPU project and can not find an image, please contact us.
+
+![useful image]({{ "/assets" | append: page.id | append: "/step1-image.png" | absolute_url }}){:width="80%"}
+
+If there are multiple images, please always choose the latest one, and click the "Launch" button to start the new instance wizard. If you can not see the image, please contact us and we will help you to share the image with your project.
+
+In the *Details* tab, please select `auckland` from the *Availability Zone* dropdown box.
+
+![useful image]({{ "/assets" | append: page.id | append: "/step2-az.png" | absolute_url }}){:width="80%"}
+
+In the *Flavour* tab, please enter `reservation` in the filter box, and select the corresponding GPU flavour that your project has been granted to.
+
+![useful image]({{ "/assets" | append: page.id | append: "/step3-flavour.png" | absolute_url }}){:width="80%"}
+
+If you can't find the flavour starting with `reservation`, it means your GPU reseration is not active or you are not using the correct project. Please refer to [How to reserve a GPU in Auckland cluster](ntr-gpu-instance.html) for more information.
+
+In the *Security Groups* tab, please make sure you've enabled SSH (port 22) ingress. 
+
+Click the "Launch" button, and go to *Project > Compute > Instances* panel, wait until the status of your new instance is **Active**. It might take 2-10 minutes, depending on the size of your VM. 
+
+For more information about other VM launching options, security groups, and keys, please refer to the following Nectar tutorials:
+
+- [Launching Virtual Machines](https://tutorials.rc.nectar.org.au/launching-virtual-machines/01-overview)
+- [Security groups, the absolute basics](https://tutorials.rc.nectar.org.au/sec-groups-101/01-overview)
+- [Intermediate Security Groups](https://tutorials.rc.nectar.org.au/intermediate-security-groups/01-overview)
+
+
+## Access command line via SSH
+
+You can follow this tutorial to connect your instance via SSH.
+
+[Access using SSH and web-based VNC](https://tutorials.rc.nectar.org.au/connecting/02-terminal-and-ssh)
+
+After you've logged in, please run `lspci | grep NV` to check if you can see your GPU in the VM. For example, a VM with K20 GPU should see something like this:
+
+```bash
+(base) ubuntu@mygpuinstance:~$ lspci | grep NV
+00:06.0 3D controller: NVIDIA Corporation GK110GL [Tesla K20Xm] (rev a1)
+```
+
+That means your GPU is correctly attached to the VM, and you can start using it.
+
+<!-- Jason: comment out x2go.
+
+## Access graphical interface via x2go
+
+You can also access the GUI of the GPU instance via x2go client. Please follow [this article](https://wiki.x2go.org/doku.php/doc:installation:x2goclient){:target="_blank"} to install x2go client.
+
+In x2go client, create a new session, and make sure the following items are correctly configured:
+- **Host**: the IP address of your VM.
+- **Login**: enter `ubuntu`.
+- **SSH port**: enter `22`.
+- **Use RSA/DSA key for ssh connection**: enter the path of your private key.
+- **Session type**: select `MATE` from the dropdown menu.
+
+![useful image]({{ "/assets" | append: page.id | append: "/step4-x2go.png" | absolute_url }}){:width="50%"}
+
+Then, connect with the new session, you should be able to see the graphical user interface of you GPU VM. -->
