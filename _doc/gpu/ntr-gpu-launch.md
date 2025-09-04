@@ -53,6 +53,11 @@ After you've logged in, please run `lspci | grep NV` to check if you can see you
 
 That means your GPU is correctly attached to the VM, and you can start using it.
 
+
+## Windows Instances
+
+Launching a Windows instance with GPU is technically possible, but we don't have any Windows images with GPU drivers pre-installed. That means you will have to install the GPU drivers by yourself, which is not a trivial task. Replacing the `CeR` image with a Windows image in the above steps will create a Windows VM with GPU attached, but without the GPU drivers.
+
 <!-- Jason: comment out x2go.
 
 ## Access graphical interface via x2go
