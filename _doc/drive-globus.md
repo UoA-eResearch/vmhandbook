@@ -48,6 +48,13 @@ Once you have logged in (UoA Single-Sign-On), navigate to your research drive fr
 or to "/~/": \
 ![tilde_home_dir]({{ "/assets" | append: page.id | append: "/globus_tilde_home_dir.png" | absolute_url }}){:width=30%}
 >
+
+
+## File-transfer documentation
+
+Please see [globus file-transfer documentation](https://docs.globus.org/guides/tutorials/manage-files/transfer-files/)
+
+
 ## Transfer Errors
 
 You can inspect the logs for your globus transfers from the console
