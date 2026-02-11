@@ -29,7 +29,8 @@ requires configuration on both the research-drive and your nectar instance:
 
 ### Nectar VM configuration
 
-Install a [globus personal endpoint](https://docs.globus.org/how-to/) on your nectar vm.
+Install a [globus personal endpoint](https://www.globus.org/globus-connect-personal)
+on your nectar vm.
 This installation is specific to the vm's operating system.  Choose appropriately.
 
 
@@ -38,8 +39,8 @@ This installation is specific to the vm's operating system.  Choose appropriatel
 
 With both your research-drive and nectar vm now configured to be accessible through globus,
 
-1. start the globus personal connect application on your nectar vm (see the installation page 
-[globus personal endpoint](https://docs.globus.org/how-to/) for a fully-worked example).
+1. start the globus personal connect application on your nectar vm (see the download page 
+for your operating system (Windows/MacOS/Linux) for a fully-worked example).
 2. in your browser, sign in to [globus](globus.org) selecting the "existing organizational login" 
 associated with `The University of Auckland` (single-sign-on).
 3. Proceed to globus's [FileManager](https://app.globus.org/file-manager) page, and select
