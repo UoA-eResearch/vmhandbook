@@ -3,7 +3,6 @@ title:  "MATLAB Installation"
 categories: nectar howto
 ---
 
-
 The University of Auckland has a site-wide MATLAB licence.
 While the UoA Nectar node does not provide have a custom image containing MATLAB, 
 it is not difficult to install it on your Nectar instance yourself.
@@ -27,11 +26,11 @@ Now that you have an account with mathworks, you can download and install MATLAB
 ### Download MATLAB
 
 From the Mathworks page, select the MATLAB link, and search for "Downloads" at the bottom of the page:
-![online]({{ "/assets" | append: page.id | append: "/downloads_link.png" | absolute_url }}){:width="70%"}
+![downloads]({{ "/assets" | append: page.id | append: "/downloads_link.png" | absolute_url }}){:width="70%"}
 Once again you'll sign in using your UoA identity.
 
 You'll be provided with an installation appropriate to your operating system:
-![online]({{ "/assets" | append: page.id | append: "/matlab_os_download.png" | absolute_url }}){:width="70%"}
+![downloads\_os]({{ "/assets" | append: page.id | append: "/matlab_os_download.png" | absolute_url }}){:width="70%"}
 
 Download and install the application software.
 
