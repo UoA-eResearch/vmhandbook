@@ -13,7 +13,10 @@ Steps:
 
 4. Click **+** to add the Research Drive location to **Favourite Servers** 
 
-5. Click **Connect** and if prompted, enter your University username and password. 
-
+5. Click **Connect**. 
 
 ![useful image]({{ "/assets" | append: page.id | append: "/map-mac-drive.png" | absolute_url }}){:width="600px"}
+
+If prompted, enter your University username and password ensuring the Domain is UOA.
+
+![useful image]({{ "/assets" | append: page.id | append: "/map-mac-drive-username.png" | absolute_url }}){:width="600px"}
