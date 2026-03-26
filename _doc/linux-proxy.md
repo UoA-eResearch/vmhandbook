@@ -22,3 +22,15 @@ To configure this for all users, you must be an admin.
 `export https_proxy=http://squid.auckland.ac.nz:3128`  
 `export no_proxy=localhost,127.0.0.1,localaddress,.auckland.ac.nz,keystone.rc.nectar.org.au`
 2. Log out then back in again, or in your current shell session run `source ~/.bashrc`
+
+#### SSH via the proxy server
+To SSH to a host (e.g. `lander`) through the UoA proxy, use the `ProxyCommand` option:
+```
+ssh -o "ProxyCommand=ncat --proxy squid.auckland.ac.nz:3128 --proxy-type http %h %p" lander
+```
+
+You can also add this `ProxyCommand` to the `Host lander` section of your `~/.ssh/config` file so you don't have to specify it each time:
+```
+Host lander
+    ProxyCommand ncat --proxy squid.auckland.ac.nz:3128 --proxy-type http %h %p
+```
