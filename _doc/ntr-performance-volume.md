@@ -5,13 +5,13 @@ categories: nectar howto
 
 ## Introduction
 
-Nectar Auckland node now provides a new type of block storage called "Performance Volume". Performance Volumes are backed by high-performance storage hardware (NVME SSDs)and offer improved performance compared to standard volumes. This type of volume is designed for workloads that require high IOPS and low latency, such as:
+Nectar Auckland node now provides a new type of block storage called "Performance Volume". Performance Volumes are backed by high-performance storage hardware (NVME SSDs) and offer improved performance compared to standard volumes. This type of volume is designed for workloads that require high IOPS and low latency, such as:
 - SQL and NoSQL databases
 - Big data analytics
 - High-performance computing applications
 - Data-intensive applications
 
-The performance volume type is NOT by default available, because of the additional costs and limited capacity. If your research workload requires high-performance storage, you can request a Performance Volume quota and use it in your Nectar instances. This article will guide you through the process of requesting a Performance Volume quota and converting an existing volume to a Performance Volume.
+The performance volume type is not available by default because of the additional costs and limited capacity. If your research workload requires high-performance storage, you can request a Performance Volume quota and use it in your Nectar instances. This article will guide you through the process of requesting a Performance Volume quota and converting an existing volume to a Performance Volume.
 
 ## Request Performance Volume for Your Allocation
 
@@ -38,9 +38,9 @@ If you can't see the "Performance" option, it means your allocation does not hav
 
 **Warning**: Please backup your important data before converting an existing volume to a Performance Volume. Although the conversion process is designed to be safe, there is always a risk of data loss when performing operations on storage volumes. It's better to be safe than sorry.
 
-If you have an existing standard volume that you want to convert to a Performance Volume, you can do so if you're familiar with the command line interface (CLI), specifically the `openstack` command. It's totally fine if you're not familiar with CLI, you can ask the Nectar Ops team for help. We're happy to help you convert your existing volume to a Performance Volume.
+If you have an existing standard volume that you want to convert to a Performance Volume, you can do so using the command line interface (CLI) and the `openstack` command. If you are not familiar with the CLI, you can ask the Nectar Ops team for help. They can assist you with converting your existing volume to a Performance Volume.
 
-If you want to give it a try yourself, you can follow these steps:
+If you want to try it yourself, follow these steps:
 
 1. If you haven't already, install the OpenStack CLI on your local machine. You can follow the instructions in the [OpenStack CLI documentation](https://tutorials.rc.nectar.org.au/openstack-cli/01-overview) to do this.
 2. Unmount the existing volume from your Nectar instance if it's currently attached.
@@ -54,7 +54,7 @@ If you want to give it a try yourself, you can follow these steps:
    openstack volume set --type 690c74a9-b31a-4a3d-8e6c-4e7289c8c06e --migration-policy on-demand <volume_id>
    ```
    Replace `<volume_id>` with the ID of the existing volume you want to convert.
-5. Watch the status of the volume conversion process using the dashboard or the following command:
+5. Check the status of the volume conversion process using the dashboard or the following command:
    ```
    openstack volume show <volume_id>
    ```
