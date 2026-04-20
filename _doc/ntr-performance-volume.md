@@ -38,7 +38,7 @@ If you can't see the "Performance" option, it means your allocation does not hav
 
 **Warning**: Please backup your important data before converting an existing volume to a Performance Volume. Although the conversion process is designed to be safe, there is always a risk of data loss when performing operations on storage volumes. It's better to be safe than sorry.
 
-If you have an existing standard volume that you want to convert to a Performance Volume, you can do so using the command line interface (CLI) and the `openstack` command. If you are not familiar with the CLI, you can ask the Nectar Ops team for help. They can assist you with converting your existing volume to a Performance Volume.
+If you have an existing standard volume that you want to convert to a Performance Volume, you can do so using the command line interface (CLI) and the `openstack` command. If you are not familiar with the CLI, you can [raise a ticket](http://support.nectar.org.au/) for help. They can assist you with converting your existing volume to a Performance Volume.
 
 If you want to try it yourself, follow these steps:
 
