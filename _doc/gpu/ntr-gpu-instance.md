@@ -8,7 +8,7 @@ categories: nectar howto
 
 ## The GPU reservation system
 
-Before you can launch a GPU instance, you must reserve a GPU first. Login to this website with your university credential
+Before you can launch a GPU instance, you must reserve a GPU first. Log in to this website with your university credentials
 
 [Centre for eResearch - GPU Reservation](https://portal.cer.auckland.ac.nz/gpu)
 
@@ -24,7 +24,7 @@ You can follow the link inside the email to read the instructions on how to laun
 
 ## Renew your reservation
 
-We your reservation is approaching to the end date (normally 2 weeks before), you'll receive another email asking you to renew. You can follow the instructions to renew your reservation, if nobody has reserved your GPU. You won't be able to see the renew button until you receive the email. That is, you can not renew your reservation in advance.
+When your reservation is approaching the end date (normally 2 weeks before), you'll receive another email asking you to renew. You can follow the instructions to renew your reservation, if nobody has reserved your GPU. You won't be able to see the renew button until you receive the email. That is, you can not renew your reservation in advance.
 
 ![useful image]({{ "/assets" | append: page.id | append: "/email2.png" | absolute_url }}){:width="60%"}
 
@@ -32,7 +32,7 @@ We your reservation is approaching to the end date (normally 2 weeks before), yo
 ## GPU reservation v.s. Nectar allocation
 
 
-There are two separate life cycles: Nectar project allocation lifecycle, and the GPU reservation lifecycle. The nectar project allocation allows you to use nectar services, including VM (without GPU), storage, database, etc. and the GPU reservation allows you to launch a nectar VM with GPU. Since the GPU reservation is built on top of Nectar project allocation, the GPU reservation lifecycle must be within the Nectar project lifecycle.
+There are two separate life cycles: Nectar project allocation lifecycle, and the GPU reservation lifecycle. The Nectar project allocation allows you to use Nectar services, including VMs (without GPU), storage, database, etc., and the GPU reservation allows you to launch a Nectar VM with GPU. Since the GPU reservation is built on top of Nectar project allocation, the GPU reservation lifecycle must be within the Nectar project lifecycle.
 
 
-The nectar project allocation lifecycle is managed via the [Nectar dashboard](https://dashboard.rc.nectar.org.au/), and the GPU reservation lifecycle is managed by the [CeR reservation portal](https://portal.cer.auckland.ac.nz/gpu), In order to use a GPU VM on Nectar, you need both. So firstly you must ensure you have a valid nectar project allocation, and then, you reserve a GPU reservation to enable GPU usage. What you see on CeR reservation portal is the life cycle of your GPU reservation, not your project allocation. If your GPU reservation expires, your GPU VMs will be deleted, but you can still launch normal Nectar VMs, without GPUs. 
+The Nectar project allocation lifecycle is managed via the [Nectar dashboard](https://dashboard.rc.nectar.org.au/), and the GPU reservation lifecycle is managed by the [CeR reservation portal](https://portal.cer.auckland.ac.nz/gpu). In order to use a GPU VM on Nectar, you need both. First, you must ensure you have a valid Nectar project allocation, and then reserve a GPU reservation to enable GPU usage. What you see on CeR reservation portal is the life cycle of your GPU reservation, not your project allocation. If your GPU reservation expires, your GPU VMs will be deleted, but you can still launch normal Nectar VMs, without GPUs. 
