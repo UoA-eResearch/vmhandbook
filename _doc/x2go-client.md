@@ -1,7 +1,57 @@
 ---
-title:  "Login to a graphical desktop environment through X2Go"
+title:  "Login to a graphical desktop environment"
 categories: linux admin user howto
 ---
+
+
+desktop environment on remote vm
+---------------------------------
+
+Prepare to install new packages:
+```
+sudo apt update
+```
+
+
+# XFCE (recommended)
+```
+sudo apt install xfce4 xfce4-goodies
+```
+
+# LXDE (very lightweight)
+```
+sudo apt install lxde
+```
+
+# MATE (for a more traditional desktop)
+```
+sudo apt install ubuntu-mate-desktop
+```
+
+
+
+https://mylinux.work/guides/remmina-remote-desktop-client/
+
+
+x2go
+====
+
+On the machine you'll connect from, install the x2go client:
+
+Connecting from a Linux Client
+BASH
+￼
+```
+sudo apt-add-repository ppa:x2go/stable
+sudo apt update
+sudo apt install x2goclient
+```
+
+connecting from a MacOS client:
+```
+brew install --cask xquartz
+brew install --cask x2goclient
+```
 
 __Note: Login via x2go only works on Linux VMs that are set up for this. Please check with CeR if it doesn't work for you and you feel it should work.__
 
