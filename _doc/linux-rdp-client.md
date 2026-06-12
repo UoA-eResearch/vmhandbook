@@ -1,5 +1,5 @@
 ---
-title:  "Login to a graphical desktop environment with a remote desktop client"
+title:  "Login to a linux graphical desktop environment with a remote desktop client"
 categories: linux admin user howto
 ---
 
@@ -23,7 +23,8 @@ Click 'OK' to connect to the virtual machine.
 
 ## Mac Client
 
-Download the **Microsoft Remote Desktop** client from the [Mac App Store](https://itunes.apple.com/us/app/microsoft-remote-desktop/id1295203466?mt=12){:target="_blank"}.
+Download the **Microsoft Remote Desktop** client from the
+[Mac App Store](https://itunes.apple.com/us/app/microsoft-remote-desktop/id1295203466?mt=12){:target="\_blank"}.
 
 Create a new remote desktop connection. Set the **PC name** as the VM's host name and **User name** as your University username.
 
@@ -33,6 +34,16 @@ Create a new remote desktop connection. Set the **PC name** as the VM's host nam
 
 Then, you can login with your university password. If you have sudo privileges on the VM you need to use [2-factor authentication]({{ site.baseurl }}{% link _doc/two-factor-authentication.md %}) for the Password field. Otherwise just type your University password.
 
+
+## Linux Client
+
+Remmina (select rdp mode) or xfreerdp from the xfreerdp-x11 package:
+```
+sudo apt update
+sudo apt install remmina
+```
+
+![remmina interface ]({{ "/assets" | append: page.id | append: "/remmina_rdp_client.png" | absolute_url }}){:width="50%"}
 
 ## Accessing Local Files and Folders on Remote Desktop Session
 
