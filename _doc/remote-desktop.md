@@ -24,6 +24,16 @@ Create a new remote desktop connection. Set the **PC name** as the VM's host nam
 Then, you can login with your university password.
 
 
+## Linux Client
+
+Remmina (select rdp mode) or xfreerdp from the xfreerdp-x11 package:
+```
+sudo apt update
+sudo apt install remmina
+```
+
+![remmina interface ]({{ "/assets" | append: page.id | append: "/remmina_rdp_client.png" | absolute_url }}){:width="50%"}
+
 ## Accessing Local Files and Folders on Remote Desktop Session
 
 To access local files from virtual machines, you need to configure the remote desktop connection settings **before** connecting to the VM.
