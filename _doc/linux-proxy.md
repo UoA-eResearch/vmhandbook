@@ -9,7 +9,7 @@ To configure this for all users, you must be an admin.
 1. Add the following to the bottom of the files `/etc/profile.d/squid.sh` and `/etc/bash.bashrc`:  
 `export http_proxy=http://squid.auckland.ac.nz:3128`  
 `export https_proxy=http://squid.auckland.ac.nz:3128`  
-`export no_proxy=localhost,127.0.0.1,localaddress,.auckland.ac.nz,keystone.rc.nectar.org.au`
+`export no_proxy=localhost,127.0.0.1,localaddress,.auckland.ac.nz,169.254.169.254`
 
 2. To make sure the added environment variables work properly when using sudo, edit sudoers using the command `sudo visudo` (don't edit sudoers manually!) and add the following to the very bottom (case sensitive):  
 `Defaults env_keep = "http_proxy https_proxy no_proxy"`
@@ -20,7 +20,7 @@ To configure this for all users, you must be an admin.
 1. Add the following to the bottom of the file `~/.bashrc`:  
 `export http_proxy=http://squid.auckland.ac.nz:3128`  
 `export https_proxy=http://squid.auckland.ac.nz:3128`  
-`export no_proxy=localhost,127.0.0.1,localaddress,.auckland.ac.nz,keystone.rc.nectar.org.au`
+`export no_proxy=localhost,127.0.0.1,localaddress,.auckland.ac.nz,169.254.169.254`
 2. Log out then back in again, or in your current shell session run `source ~/.bashrc`
 
 #### SSH via the proxy server
