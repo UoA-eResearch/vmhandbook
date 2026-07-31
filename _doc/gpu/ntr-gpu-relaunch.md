@@ -14,7 +14,7 @@ In this case, after your current reservation expires, the GPU instance you are u
 
 When your GPU reservation expires, the GPU instance you are using will be automatically terminated by the system. This means that the instance will be shut down and all data stored on its root disk will be deleted. However, any volumes you have attached to the instance will remain intact and can be re-attached to a new instance later.
 
-When your reservation is about to expire, you will receive reminder emails from our GPU reservation system. At this point, please make sure you have backed up all your important data from the GPU instance to a safe location. Also, it's important to make it clear that what will be deleted and what will be retained after the GPU instance is terminated:
+When your reservation is about to expire, you will receive reminder emails from our GPU reservation system. At this point, please make sure you have backed up all your important data from the GPU instance to a safe location. It's also important to clarify what will be deleted and what will be retained after the GPU instance is terminated:
 
 Things that will be deleted:
 - The GPU instance itself, including all data stored on its root disk (E.g., your home directory, the applications that you installed to the root disk).

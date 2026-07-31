@@ -9,9 +9,9 @@ categories: nectar howto
 
 ## Launch a GPU instance
 
-Login to [Nectar Dashboard](https://dashboard.rc.nectar.org.au/) via Tuakiri. Please make sure you've selected the correct project that you used to reserve the GPU.
+Log in to the [Nectar Dashboard](https://dashboard.rc.nectar.org.au/) via Tuakiri. Please make sure you've selected the correct project that you used to reserve the GPU.
 
-Browse to *Project > Compute > Images* as shown in the picture below, and enter `CeR` in the search box. You will find the prebuilt images for GPU instances. The image is built upon the latest Ubuntu LTS and has lots of useful tools pre-installed, such as the NVIDIA GPU drivers. If you have an approved GPU project and can not find an image, please contact us.
+Browse to *Project > Compute > Images* as shown in the picture below, and enter `CeR` in the search box. You will find the prebuilt images for GPU instances. The image is built upon the latest Ubuntu LTS and has lots of useful tools pre-installed, such as the NVIDIA GPU drivers. If you have an approved GPU project and cannot find an image, please contact us.
 
 ![useful image]({{ "/assets" | append: page.id | append: "/step1-image.png" | absolute_url }}){:width="80%"}
 
@@ -21,11 +21,11 @@ In the *Details* tab, please select `auckland` from the *Availability Zone* drop
 
 ![useful image]({{ "/assets" | append: page.id | append: "/step2-az.png" | absolute_url }}){:width="80%"}
 
-In the *Flavour* tab, please enter `reservation` in the filter box, and select the corresponding GPU flavour that your project has been granted to.
+In the *Flavour* tab, please enter `reservation` in the filter box, and select the GPU flavour that your project has been granted.
 
 ![useful image]({{ "/assets" | append: page.id | append: "/step3-flavour.png" | absolute_url }}){:width="80%"}
 
-If you can't find the flavour starting with `reservation`, it means your GPU reseration is not active or you are not using the correct project. Please refer to [How to reserve a GPU in Auckland cluster](ntr-gpu-instance.html) for more information.
+If you can't find the flavour starting with `reservation`, it means your GPU reservation is not active or you are not using the correct project. Please refer to [How to reserve a GPU in Auckland cluster](ntr-gpu-instance.html) for more information.
 
 In the *Security Groups* tab, please make sure you've enabled SSH (port 22) ingress. 
 
@@ -73,4 +73,4 @@ In x2go client, create a new session, and make sure the following items are corr
 
 ![useful image]({{ "/assets" | append: page.id | append: "/step4-x2go.png" | absolute_url }}){:width="50%"}
 
-Then, connect with the new session, you should be able to see the graphical user interface of you GPU VM. -->
+Then, connect with the new session, you should be able to see the graphical user interface of your GPU VM. -->
