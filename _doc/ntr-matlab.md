@@ -5,16 +5,14 @@ categories: nectar howto
 
 
 The University of Auckland has a site-wide MATLAB licence.
-While the UoA Nectar node does not provide have a custom image containing MATLAB, 
+While the UoA Nectar node does not provide a custom image containing MATLAB, 
 it is not difficult to install it on your Nectar instance yourself.
 
-Firstly, create and launch your Nectar instance:
-If Windows, follow the instructions at [How to access Windows VMs in Auckland cluster]({{ site.baseurl }}{% link _doc/ntr-windows/index.md %})
-What follows should be run from a browser on your Nectar image.
+Firstly, create and launch your Nectar instance. If you're using Windows, follow the instructions at [How to access Windows VMs in Auckland cluster]({{ site.baseurl }}{% link _doc/ntr-windows/index.md %}). What follows should be run from a browser on your Nectar instance.
 
-### create a mathworks account 
+### Create a MathWorks account 
 
-Point your browser to [mathworks.com](mathworks.com) and select the "Sign In" tab at the top of the page.
+Point your browser to [mathworks.com](https://www.mathworks.com) and select the "Sign In" tab at the top of the page.
 
 ![online]({{ "/assets" | append: page.id | append: "/mathworks_signup.png" | absolute_url }}){:width="70%"}
 | ![online]({{ "/assets" | append: page.id | append: "/uoa_email_sign_in.png" | absolute_url }}){:width="45%"}| ![ online]({{ "/assets" | append: page.id | append: "/organizational_portal_login.png" | absolute_url }}){:width="45%"}|
@@ -22,7 +20,7 @@ Point your browser to [mathworks.com](mathworks.com) and select the "Sign In" ta
 Sign in with your UoA email address.
 You'll be taken to UoA single-sign-on during this process, and will need your UoA two-factor authentication token.
 
-Now that you have an account with mathworks, you can download and install MATLAB:
+Now that you have an account with MathWorks, you can download and install MATLAB:
 
 ### Download MATLAB
 
@@ -35,13 +33,12 @@ You'll be provided with an installation appropriate to your operating system:
 
 Download and install the application software.
 
-You now have Matlab on your Nectar instance.
+You now have MATLAB on your Nectar instance.
 
 
+## MATLAB on Linux VMs
 
-## Matlab on Linux VMs
-
-You can access the GUI of the Matlab instance via x2go client. Please follow [this article](https://wiki.x2go.org/doku.php/doc:installation:x2goclient){:target="_blank"} to install x2go client.
+You can access the GUI of the MATLAB instance via x2go client. Please follow [this article](https://wiki.x2go.org/doku.php/doc:installation:x2goclient){:target="_blank"} to install x2go client.
 
 In x2go client, create a new session, and make sure the following items are correctly configured:
 - **Host**: the IP address of your VM.
@@ -50,10 +47,10 @@ In x2go client, create a new session, and make sure the following items are corr
 - **Use RSA/DSA key for ssh connection**: enter the path of your private key.
 - **Session type**: select `MATE` from the dropdown menu.
 
-Then, connect with the new session, you should be able to see the graphical user interface of you GPU VM.
+Then, connect with the new session, you should be able to see the graphical user interface of your MATLAB VM.
 
 
-## Matlab on Windows VMs
+## MATLAB on Windows VMs
 
 To connect to your Windows VM on Nectar, please refer to this article:
 
