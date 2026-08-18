@@ -1,5 +1,5 @@
 ---
-title:  "Map a Research Drive to a Windows computer"
+title:  "Connect to a Research Drive on a Windows computer"
 categories: windows admin user howto drive
 ---
 
