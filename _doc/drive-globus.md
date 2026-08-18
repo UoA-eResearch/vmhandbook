@@ -1,59 +1,37 @@
 ---
-title:  "Data Transfer Using Globus"
+title:  "Transfer data using Globus"
 categories: howto drive
 ---
 
-# Contents
-  - [Globus Research Drive Access](#globus-research-drive-access)
-  - [Transfer Errors](#transfer-errors)
-  - [Endpoint management](#endpoint-management)
-  - [Performance](#performance)
+# Transfer data between a research drive and external endpoint
 
+You can use Globus to transfer data between a research drive and other endpoints in New Zealand such as the REANNZ High Performance Computing platform. See a list of endpoints [here](https://docs.nesi.org.nz/Data_Transfer/Globus/Data_Transfer_using_Globus/#data-transfer-nodes-throughout-new-zealand).
 
+For questions about transferring data from external providers with special requirements (such as Health NZ or other Government agencies), contact your [business relationship manager](https://www.auckland.ac.nz/en/intranet/services/a-z-service-teams/digital-services-brms.html).
 
-## Transfer data between UoA and other NZ locations
+# Transfer data between a Nectar virtual machine and external endpoint
 
-* You can use [globus](http://globus.org) to transfer data between your research drive and 
-<a href="https://docs.nesi.org.nz/Data_Transfer/Globus/Data_Transfer_using_Globus/#data-transfer-nodes-throughout-new-zealand">NeSI and other associated NZ public globus endpoints</a>
+You can use [GlobusConnectPersonal](https://www.globus.org/globus-connect-personal) to create a personal endpoint on a Nectar VM. See [here](./ntr-drive.html) for more information.
 
-* [NeSI: General globus introduction](https://docs.nesi.org.nz/Data_Transfer/Globus/Globus_Overview/)
-* [NeSI: globus transfers](https://docs.nesi.org.nz/Data_Transfer/Globus/Data_Transfer_using_Globus/)
+# Establishing Globus access to a University of Auckland Research Drive
 
-## Transfer data between an institutional globus endpoint and your workstation
+If you have not previously used Globus with a Research Drive you need to [request access](https://forms.office.com/Pages/ResponsePage.aspx?id=lW6z0VAN6UKVj7Y_qQa-qsETxC2IIfJFk946yTnKPBRUMloxQVZINVI3NUZOODRMMDFIUDAzSENYUyQlQCN0PWcu) from the Centre for eResearch. 
 
-* Using [GlobusConnectPersonal](https://www.globus.org/globus-connect-personal), you can create a personal endpoint on your workstation or Nectar vm,
-<a href="https://docs.nesi.org.nz/Data_Transfer/Globus/Add_Your_Computer_To_Globus/"> add your computer to globus</a>
+Once you have Globus access to the Research Drive, log in to [Globus](https://www.globus.org/) via Single Sign On, and navigate to your research drive from "/home/\<your_upi\>", or "/~/" for short by searching the FileManager for "University of Auckland Research Data Collection".
 
-and transfer data between
-that endpoint and any NZ institutional endpoint in exactly the same way: [Nectar vm data-transfers](./ntr-drive.html)
-
-
-## University of Auckland Research Drive Access
-
-If you have not previously transferred files to or from a University of Auckland Globus endpoint,
-you need to request access from Centre for eResearch.  Please 
-[submit globus access to your research-drive](https://forms.office.com/Pages/ResponsePage.aspx?id=lW6z0VAN6UKVj7Y_qQa-qsETxC2IIfJFk946yTnKPBRUMloxQVZINVI3NUZOODRMMDFIUDAzSENYUyQlQCN0PWcu)
-
-Access your research drive on the Data Transfer Node (DTN) either by using the 
-link   [University of Auckland Research Data Collection](https://app.globus.org/file-manager?origin_id=844ba90c-1d37-4480-8263-a206ebd9f4f3) or .
-searching the FileManager for the collection "University of Auckland Research Data Collection".
-
-Once you have logged in (UoA Single-Sign-On), navigate to your research drive from "/home/\<your_upi\>", or "/~/" for short.
 >
 ![home_dir]({{ "/assets" | append: page.id | append: "/globus_home_dir.png" | absolute_url }}){:width=30%} \
 or to "/~/": \
 ![tilde_home_dir]({{ "/assets" | append: page.id | append: "/globus_tilde_home_dir.png" | absolute_url }}){:width=30%}
 >
 
+# Transferring files
 
-## File-transfer documentation
+See the documentation at REANNZ for [transferring data on to the High Performance Computing platform](https://docs.nesi.org.nz/Data_Transfer/Globus/Data_Transfer_Using_Globus/).
 
-Very good documentation at [File transfer](https://docs.nesi.org.nz/Data_Transfer/Data_Transfer_Overview/)
+See the documentation at Globus for [general file-transfer information](https://docs.globus.org/guides/tutorials/manage-files/transfer-files/)
 
-See also [globus file-transfer documentation](https://docs.globus.org/guides/tutorials/manage-files/transfer-files/)
-
-
-## Transfer Errors
+# Transfer Errors
 
 You can inspect the logs for your globus transfers from the console
 in globus:
@@ -70,17 +48,6 @@ can't control, please get in touch with Centre for eResearch. ![useful
 image]({{ "/assets" | append: page.id | append: "/globus_error_logs.png"
 | absolute_url }}){:width="900px"}
 
+# Performance
 
-## Performance
-
-Please read [Data Transfer Best Practices](https://docs.nesi.org.nz/Data_Transfer/Data_Transfer_Overview/)
-
-## Data Transfer between two personal globus endpoints
-
-[Transferring files between two computers](https://docs.nesi.org.nz/Data_Transfer/Globus/Data_Transfer_Between_Personal_Endpoints/)
-
-
-## Further Reading
-
-* [further globus documentation](https://docs.nesi.org.nz/Data_Transfer/Globus/Globus_Overview/)
-
+Please read [Data Transfer Best Practices](https://docs.nesi.org.nz/Data_Transfer/Data_Transfer_Overview/) to maximise file transfer performance.
