@@ -17,6 +17,8 @@ Browse to *Project > Compute > Images* as shown in the picture below, and enter 
 
 If there are multiple images, please always choose the latest one, and click the "Launch" button to start the new instance wizard. If you can not see the image, please contact us and we will help you to share the image with your project.
 
+**Note for V100 GPU users**: In addition to our general-purpose GPU image, we now provide a dedicated V100 image named `CeR-Ubuntu-Noble-24.04-GPU-V100`. This is the latest image that supports the V100 GPU. If you are using a V100 GPU, please launch your VM from this image instead.
+
 In the *Details* tab, please select `auckland` from the *Availability Zone* dropdown box.
 
 ![useful image]({{ "/assets" | append: page.id | append: "/step2-az.png" | absolute_url }}){:width="80%"}
