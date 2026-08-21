@@ -1,5 +1,5 @@
 ---
-title:  "Advanced Mount information:  sharing a research drive, persistent mount of research drive"
+title:  "Advanced drive mounting on Linux virtual machines"
 categories: howto drive linux admin
 ---
 
