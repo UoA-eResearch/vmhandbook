@@ -32,18 +32,18 @@ There are a lot of in-detail manuals for the scp command to be found on the Inte
 
 ```bash
 # Upload the file yourFile.xyz to your home directory on the VM
-$ scp yourFile.xyz username@cerzheprd03.its.auckland.ac.nz:~/.
+$ scp yourFile.xyz username@cerzheprd03.cer.auckland.ac.nz:~/.
  
 # Upload the folder yourFolder to your home directory on the VM
-$ scp -r yourFolder username@cerzheprd03.its.auckland.ac.nz:~/.
+$ scp -r yourFolder username@cerzheprd03.cer.auckland.ac.nz:~/.
 ```
 
 Downloading files from your home directory on the login node to your home directory on your local machine is a similar process as shown below:
 
 ```bash
 # Download the file ~/yourFile.xyz to your home directory on your computer
-$ scp username@cerzheprd03.its.auckland.ac.nz:~/yourFile.xyz ~/.
+$ scp username@cerzheprd03.cer.auckland.ac.nz:~/yourFile.xyz ~/.
  
 # Download the folder yourFolder to your home directory on your computer
-$ scp -r username@cerzheprd03.its.auckland.ac.nz:~/yourFolder ~/.
+$ scp -r username@cerzheprd03.cer.auckland.ac.nz:~/yourFolder ~/.
 ```

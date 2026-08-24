@@ -16,7 +16,7 @@ If you have admin privileges on the VM (sudo) you need to login through [2-facto
 Example:
 
 ```bash
-$ ssh mfel395@cerdkroprd01.its.auckland.ac.nz
+$ ssh mfel395@cerdkroprd01.cer.auckland.ac.nz
 ```
 
 ## If you're using Windows
