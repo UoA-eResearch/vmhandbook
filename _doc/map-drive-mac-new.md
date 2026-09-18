@@ -1,5 +1,5 @@
 ---
-title:  "OLD Connect to a Research Drive on a Mac computer"
+title:  "NEW Connect to a Research Drive on a Mac computer"
 categories: mac howto drive
 ---
 
@@ -8,8 +8,8 @@ Steps:
 
 2. Click on the **Finder** icon, press command ⌘ + K to bring up the **Connect to Server** window. 
 
-3. In the Server Address field, enter `smb://files.auckland.ac.nz/research/` followed by the name of the Research Drive. It will look similar to this:  
-`smb://files.auckland.ac.nz/research/ressci202400035-drive-name`
+3. In the Server Address field, enter `smb://researchdrive.auckland.ac.nz/` followed by the name of the Research Drive. It will look similar to this:  
+`smb://researchdrive.auckland.ac.nz/ressci202400035-drive-name`
 
 4. Click **+** to add the Research Drive location to **Favourite Servers** 
 

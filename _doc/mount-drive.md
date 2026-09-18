@@ -1,6 +1,6 @@
 ---
-title:  "Mount network drives to Linux VMs"
-categories: linux admin howto
+title:  "OLD Mount network drives to Linux VMs"
+categories: linux admin howto drive
 ---
 
 Network drives include your Unifiles home folder, Unifiles research drives and other network file systems that start with `//machine_name`.

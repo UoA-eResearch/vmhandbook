@@ -1,5 +1,5 @@
 ---
-title:  "OLD Connect to a Research Drive on a Windows computer"
+title:  "NEW Connect to a Research Drive on a Windows computer"
 categories: windows admin user howto drive
 ---
 
@@ -19,8 +19,8 @@ Steps:
 
 4. In the **Drive** list, select a free drive letter.
 
-5. In the **Folder** box, enter `\\files.auckland.ac.nz\research\` followed by the name of the Research Drive. It will look similar to this:
- `\\files.auckland.ac.nz\research\ressci202400035-drive-name`
+5. In the **Folder** box, enter `\\researchdrive.auckland.ac.nz\` followed by the name of the Research Drive. It will look similar to this:
+ `\\researchdrive.auckland.ac.nz\ressci202400035-drive-name`
 
 6. Make sure that **Reconnect at login** remains ticked.
 
