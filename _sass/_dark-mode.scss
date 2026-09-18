@@ -1,0 +1,160 @@
+// Dark mode for the minima 2.5 theme.
+//
+// Follows the OS preference by default. The toggle in _includes/header.html
+// sets html[data-theme="light" | "dark"] to override it; the choice is kept in
+// localStorage and restored by the inline script in _includes/head.html.
+//
+// Every dark rule is scoped under `html`, so light mode compiles exactly as
+// before, and the extra specificity also beats tipuesearch.css, which loads
+// after main.css on the search page.
+
+$dm-background:   #181a1b;
+$dm-surface:      #23262a;
+$dm-surface-alt:  #1f2224;
+$dm-text:         #e3e3e3;
+$dm-text-soft:    #c8c8c8;
+$dm-muted:        #9a9a9a;
+$dm-border:       #3a3d40;
+$dm-border-heavy: #4a4d50;
+$dm-link:         #6ea8fe;
+$dm-link-visited: #a5c8ff;
+
+@mixin dark-theme {
+  color-scheme: dark;
+
+  body {
+    color: $dm-text;
+    background-color: $dm-background;
+  }
+
+  a { color: $dm-link; }
+  a:visited { color: $dm-link-visited; }
+  a:hover { color: $dm-text; }
+
+  blockquote {
+    color: $dm-muted;
+    border-left-color: $dm-border;
+  }
+
+  pre, code {
+    background-color: $dm-surface;
+    border-color: $dm-border;
+  }
+
+  table {
+    color: $dm-text-soft;
+    border-color: $dm-border;
+  }
+  table tr:nth-child(even) { background-color: $dm-surface-alt; }
+  table th {
+    background-color: $dm-surface;
+    border-color: $dm-border;
+    border-bottom-color: $dm-border-heavy;
+  }
+  table td { border-color: $dm-border; }
+
+  .site-header { border-bottom-color: $dm-border; }
+  .site-footer { border-top-color: $dm-border; }
+  .post-meta, .footer-col-wrapper { color: $dm-muted; }
+  .svg-icon { fill: $dm-muted; }
+
+  // Background and border only show on the mobile dropdown.
+  .site-nav {
+    background-color: $dm-background;
+    border-color: $dm-border;
+  }
+  .site-nav .page-link { color: $dm-text; }
+  // header.html sets fill="#424242" on each path, so target the paths directly.
+  .site-nav .menu-icon svg path { fill: $dm-text; }
+
+  // Screenshots with transparent areas need a light backing to stay readable.
+  .page-content img { background-color: #fff; }
+
+  // Syntax highlighting: brighten the rouge colours that are too dark here.
+  .highlight,
+  .highlighter-rouge .highlight { background: $dm-surface; }
+  .highlight {
+    .c, .cm, .c1, .cp, .cs { color: #8b949e; }
+    .err  { color: #ffa198; background-color: #5c1f1f; }
+    .gd   { color: #ffdcd7; background-color: #67060c; }
+    .gd .x { color: #ffdcd7; background-color: #8e1519; }
+    .gi   { color: #aff5b4; background-color: #033a16; }
+    .gi .x { color: #aff5b4; background-color: #04561f; }
+    .gr, .gt { color: #ff7b72; }
+    .gp, .nn { color: #b0b0b0; }
+    .kt, .nc, .nb { color: #79c0ff; }
+    .m, .mf, .mh, .mi, .mo, .il { color: #79c0ff; }
+    .s, .sb, .sc, .sd, .s2, .se, .sh, .si, .sx, .s1 { color: #a5d6ff; }
+    .sr, .nt { color: #7ee787; }
+    .ss { color: #f778ba; }
+    .na, .no, .nv, .vc, .vg, .vi { color: #56d4dd; }
+    .ni, .ne, .nf { color: #d2a8ff; }
+    .w { color: #6e7681; }
+  }
+
+  // Tipue search page.
+  #tipue_search_input {
+    color: $dm-text;
+    background-color: $dm-surface;
+    border-color: $dm-border;
+  }
+  #tipue_search_results_count,
+  #tipue_search_warning,
+  .tipue_search_content_text,
+  .tipue_search_content_bold,
+  .tipue_search_content_debug,
+  .tipue_search_related_title { color: $dm-text; }
+  .tipue_search_content_title,
+  .tipue_search_content_title a,
+  .tipue_search_content_title a:hover { color: $dm-text-soft; }
+  #tipue_search_warning a,
+  .tipue_search_content_url a,
+  .tipue_search_related_text a { color: $dm-link; }
+  #tipue_search_warning a:hover,
+  .tipue_search_content_url a:hover,
+  .tipue_search_related_text a:hover,
+  .tipue_search_related_before,
+  .tipue_search_related_after { color: $dm-muted; }
+  #tipue_search_foot_boxes li a {
+    color: $dm-text;
+    background-color: $dm-surface;
+    border-color: $dm-border;
+  }
+  #tipue_search_foot_boxes li.current,
+  #tipue_search_foot_boxes li a:hover {
+    color: $dm-text;
+    background: $dm-border;
+    border-color: $dm-border;
+  }
+  .tipue_search_spinner > div { background-color: $dm-border; }
+
+  .theme-toggle .icon-moon { display: none; }
+  .theme-toggle .icon-sun { display: inline-block; }
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme="light"]) { @include dark-theme; }
+}
+html[data-theme="dark"] { @include dark-theme; }
+
+// Light/dark toggle button in the site nav (styled like the other nav links).
+.theme-toggle {
+  background: none;
+  border: 0;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+
+  svg {
+    width: 16px;
+    height: 16px;
+    vertical-align: -2px;
+  }
+  .icon-sun { display: none; }
+}
+
+@include media-query($on-palm) {
+  // Buttons shrink to fit, so push it to the right like the other links.
+  .site-nav .theme-toggle { margin-left: auto; }
+}
