@@ -27,7 +27,7 @@
             <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
             {% endif %}
           {% endfor %}
-          <button type="button" class="page-link theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <button type="button" class="page-link theme-toggle" aria-label="Dark mode" aria-pressed="false" title="Dark mode">
             <svg class="icon-moon" viewBox="0 0 16 16" aria-hidden="true" fill="currentColor">
               <path d="M6.74 1.12A7 7 0 1 0 14.89 9.26 6 6 0 0 1 6.74 1.12z"/>
             </svg>
@@ -46,13 +46,27 @@
   (function () {
     var toggle = document.querySelector('.theme-toggle');
     if (!toggle) return;
+    var root = document.documentElement;
+    var osDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+    function isDark() {
+      var theme = root.getAttribute('data-theme');
+      return theme ? theme === 'dark' : osDark.matches;
+    }
+    // Let screen readers announce whether dark mode is on.
+    function syncPressed() {
+      toggle.setAttribute('aria-pressed', isDark() ? 'true' : 'false');
+    }
+
     toggle.addEventListener('click', function () {
-      var root = document.documentElement;
-      var current = root.getAttribute('data-theme') ||
-        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-      var next = current === 'dark' ? 'light' : 'dark';
+      var next = isDark() ? 'light' : 'dark';
       root.setAttribute('data-theme', next);
       try { localStorage.setItem('theme', next); } catch (e) {}
+      syncPressed();
     });
+    // With no saved choice the page follows the OS, so the state can change without a click.
+    if (osDark.addEventListener) osDark.addEventListener('change', syncPressed);
+    else if (osDark.addListener) osDark.addListener(syncPressed);
+    syncPressed();
   })();
 </script>
