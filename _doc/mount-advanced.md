@@ -64,38 +64,39 @@ One method of sharing a mount of a research drive is by having an admin user set
 
 ### Superuser setup
 
-1. A superuser creates the folder /mnt/<research_drive_name>
-with group owner the vm's rw(user) group name:
+1. A superuser creates the folder `/mnt/<research_drive_name>`
+   with group owner the vm's rw(user) group name:
 
-```bash
-mkdir -p /mnt/<research_drive_name>
-chown <user>:<vm_rw_group_name> /mnt/<research_drive_name>
-```
+   ```bash
+   mkdir -p /mnt/<research_drive_name>
+   chown <user>:<vm_rw_group_name> /mnt/<research_drive_name>
+   ```
 
-2.This superuser then creates a secure credentials file for their access to the research drive:
+2. This superuser then creates a secure credentials file for their access to the research drive:
 
-E.g. create the file /<some_directory_path>/.smb.cred
-to contain the details:
+   E.g. create the file `/<some_directory_path>/.smb.cred`
+   to contain the details:
 
-```code
-user=<UOA_username>
-password=<UOA_password>
-domain=UOA
-```
+   ```code
+   user=<UOA_username>
+   password=<UOA_password>
+   domain=UOA
+   ```
 
-```bash
-chmod 0600 /<some_directory_path>/.smb.cred
-```
+   ```bash
+   chmod 0600 /<some_directory_path>/.smb.cred
+   ```
 
 3. With sudo permissions, edit the file `/etc/fstab` instructing that the research drive be mounted with these credentials, with the multiuser attribute:
 
-Note: For drives created after mid-September 2026, the drive location starts with `//research.drive.auckland.ac.nz/`, whereas for drives created before mid-September 2026 it starts with `//files.auckland.ac.nz/research/`.
+   Note: For drives created after mid-September 2026, the drive location starts with `//research.drive.auckland.ac.nz/`, whereas for drives created before mid-September 2026 it starts with `//files.auckland.ac.nz/research/`.
 
-```bash
-<drive_server_path_prefix><research_drive_name>  /mnt/unifiles   cifs multiuser,sec=ntlmssp,credentials=/<some_directory_path>/.smb.cred,noauto  0 0
-systemctl daemon-reload
-```
-4.  A superuser effectively mounts the drive under their username, supplying the credentials file to /etc/fstab.
+   ```bash
+   <drive_server_path_prefix><research_drive_name>  /mnt/unifiles   cifs multiuser,sec=ntlmssp,credentials=/<some_directory_path>/.smb.cred,noauto  0 0
+   systemctl daemon-reload
+   ```
+
+4. A superuser effectively mounts the drive under their username, supplying the credentials file to /etc/fstab.
 
 ### User access
 
@@ -106,4 +107,4 @@ provides their credentials for the research-drive server (`research.drive.auckla
 cifscreds add -u $USER research.drive.auckland.ac.nz
 ```
 
-They can then access the drive with their permissions in the directory /mnt/<research_drive_name>.
+They can then access the drive with their permissions in the directory `/mnt/<research_drive_name>`.
