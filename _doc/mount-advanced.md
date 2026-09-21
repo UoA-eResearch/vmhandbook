@@ -85,11 +85,12 @@ domain=UOA
 chmod 0600 /<some_directory_path>/.smb.cred
 ```
 
-
 3. With sudo permissions, edit the file `/etc/fstab` instructing that the research drive be mounted with these credentials, with the multiuser attribute:
 
+Note: For drives created after mid-September 2026, the drive location starts with `//research.drive.auckland.ac.nz/`, whereas for drives created before mid-September 2026 it starts with `//files.auckland.ac.nz/research/`.
+
 ```bash
-//files.auckland.ac.nz/research/<research_drive_name>  /mnt/unifiles   cifs multiuser,sec=ntlmssp,credentials=/<some_directory_path>/.smb.cred,noauto  0 0
+//research.drive.auckland.ac.nz/<research_drive_name>  /mnt/unifiles   cifs multiuser,sec=ntlmssp,credentials=/<some_directory_path>/.smb.cred,noauto  0 0
 systemctl daemon-reload
 ```
 4.  A superuser effectively mounts the drive under their username, supplying the credentials file to /etc/fstab.
@@ -97,12 +98,10 @@ systemctl daemon-reload
 ### User access
 
 Any user of the vm who has access to the research-drive (belongs to the appropriate vmuser group) then
-provides their credentials for the research-drive server (`files.auckland.ac.nz`) to the kernel’s keyring with the command:
+provides their credentials for the research-drive server (`research.drive.auckland.ac.nz`) to the kernel’s keyring with the command:
 
 ```bash
 cifscreds add -u $USER files.auckland.ac.nz
 ```
 
-They can then access the drive with their permissions in the directory /mnt/<research_drive_name>
-
-
+They can then access the drive with their permissions in the directory /mnt/<research_drive_name>.
