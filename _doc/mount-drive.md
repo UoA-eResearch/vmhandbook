@@ -38,7 +38,7 @@ Note: For drives created after mid-September 2026, the drive location starts wit
 #!/bin/bash
 
 drive_name="rescer201800002-cer-researchfolder-test"
-share="//research.drive.auckland.ac.nz/research/${drive_name}"
+share="//research.drive.auckland.ac.nz/${drive_name}"
 
 # unifiles doesn't work with smb versions earlier than 2.1, and smb version 2.1 has some issues with caja file manager
 # we therefore specify smb version 3.0, introduced with Windows 8 / Windows Server 2012
