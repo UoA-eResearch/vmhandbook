@@ -3,13 +3,19 @@ title:  "Connect to a Research Drive on a Mac computer"
 categories: mac howto drive
 ---
 
-Steps:
 1. If you are **off-campus** connect via the University [Virtual Private Network](https://www.auckland.ac.nz/en/students/academic-information/postgraduate-students/postgraduate/postgraduate-support-and-services/vpn-service.html) (VPN). 
 
 2. Click on the **Finder** icon, press command ⌘ + K to bring up the **Connect to Server** window. 
 
-3. In the Server Address field, enter `smb://files.auckland.ac.nz/research/` followed by the name of the Research Drive. It will look similar to this:  
-`smb://files.auckland.ac.nz/research/ressci202400035-drive-name`
+3. In the Server Address field, enter the drive location you were sent when the drive was created:
+
+    a. For drives created after mid-September 2026, enter `smb://research.drive.auckland.ac.nz/` followed by the name of the Research Drive. It will look similar to this:
+    `smb://research.drive.auckland.ac.nz/ressci202400035-drive-name`
+
+    OR
+
+    b. For drives created before mid-September 2026, enter `smb://files.auckland.ac.nz/research/` followed by the name of the Research Drive. It will look similar to this:
+    `smb://files.auckland.ac.nz/research/ressci202400035-drive-name`
 
 4. Click **+** to add the Research Drive location to **Favourite Servers** 
 
