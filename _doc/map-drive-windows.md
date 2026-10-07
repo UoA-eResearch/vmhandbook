@@ -19,15 +19,18 @@ categories: windows admin user howto drive
 
 4. In the **Drive** list, select a free drive letter.
 
-5. In the **Folder** box, enter the drive location you were sent when the drive was created:
+5. In the **Folder** box, 
+    <span id="defaultEnterMessage">enter the drive location you were sent when the drive was created:</span>
+    <span id="personalisedEnterMessage" style="display:none;">enter this drive location:</span>
 
-    a. For drives created after mid-September 2026, enter `\\research.drive.auckland.ac.nz\` followed by the name of the Research Drive. It will look similar to this:
-    `\\research.drive.auckland.ac.nz\ressci202400035-drive-name`
-
-    OR
-
-    b. For drives created before mid-September 2026, enter `\\files.auckland.ac.nz\research\` followed by the name of the Research Drive. It will look similar to this:
-    `\\files.auckland.ac.nz\research\ressci202400035-drive-name`
+    <div id="defaultPathInfo">
+    <p>a. For drives created after mid-September 2026, enter <code class="language-plaintext highlighter-rouge">\\research.drive.auckland.ac.nz\</code> followed by the name of the Research Drive. It will look similar to this:
+    <code class="language-plaintext highlighter-rouge">\\research.drive.auckland.ac.nz\ressci202400035-drive-name</code></p>
+    <p>OR</p>
+    <p>b. For drives created before mid-September 2026, enter <code class="language-plaintext highlighter-rouge">\\files.auckland.ac.nz\research\</code> followed by the name of the Research Drive. It will look similar to this:
+    <code class="language-plaintext highlighter-rouge">\\files.auckland.ac.nz\research\ressci202400035-drive-name</code></p>
+    </div>
+    <pre style="display:none" id="personalisedPathInfo"></pre>
 
 6. Make sure that **Reconnect at login** remains ticked.
 
@@ -41,3 +44,6 @@ categories: windows admin user howto drive
 
 
     ![useful image]({{ "/assets" | append: page.id | append: "/map-drive-windows-credentials2.png" | absolute_url }}){:width="500"}
+
+<script src='{{"/assets/doc/personalised-instructions.js" | relative_url}}'></script>
+<script>initPersonalisedInstructions("windows")</script>
