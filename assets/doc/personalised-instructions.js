@@ -18,6 +18,6 @@ function initPersonalisedInstructions(os) {
         document.getElementById("personalisedEnterMessage").style.display = "inline";
         document.getElementById("defaultPathInfo").style.display = "none";
         document.getElementById("personalisedPathInfo").style.display = "block";
-        document.getElementById("personalisedPathInfo").innerHTML = basePath + driveName;
+        document.getElementById("personalisedPathInfo").textContent = basePath + driveName;
     }
 }
