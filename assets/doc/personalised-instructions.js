@@ -26,12 +26,8 @@ function initPersonalisedInstructions(os, options = {}) {
         basePath = `${prefix}research.drive.auckland.ac.nz${divider}`
     }
     let driveName = params.get("name");
-    if (driveName) {
-        document.getElementById("defaultEnterMessage").style.display = "none";
-        document.getElementById("personalisedEnterMessage").style.display = "inline";
-        document.getElementById("defaultPathInfo").style.display = "none";
-        document.getElementById("personalisedPathInfo").style.display = "block";
-        document.getElementById("personalisedPathInfo").textContent = basePath + driveName;
+    if (!driveName) {
+        return;
     }
 
     document.querySelectorAll("#defaultEnterMessage, #defaultPathInfo, .personalised-default").forEach(el => {
