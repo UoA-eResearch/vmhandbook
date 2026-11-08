@@ -26,6 +26,11 @@ function initPersonalisedInstructions(os, options = {}) {
         basePath = `${prefix}research.drive.auckland.ac.nz${divider}`
     }
     let driveName = params.get("name");
+    driveNameRegExp = /^res[a-z]{2,3}[0-9]{9}[-_][\w-]+$/;
+    if (!driveName || !driveNameRegExp.test(driveName)) {
+        console.log(`Not valid drive name "${driveName}"`)
+        return; // leave the default instructions visible if there's no drive name supplied or name is invalid.
+    }
     if (!driveName) {
         return;
     }
