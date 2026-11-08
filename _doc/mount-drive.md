@@ -30,9 +30,9 @@ sudo yum install cifs-utils
 
 Below is a script you can use to mount a research drive (should you have one).
 
-Make sure you adjust the name of your drive in the variable `drive_name` at the beginning of the script to your needs.
-
-Note: For drives created after mid-September 2026, the drive location starts with `//research.drive.auckland.ac.nz/`, whereas for drives created before mid-September 2026 it starts with `//files.auckland.ac.nz/research/`.
+<p class="personalised-default">Make sure you adjust the name of your drive in the variable <code class="language-plaintext highlighter-rouge">drive_name</code> at the beginning of the script to your needs.</p>
+<p class="personalised-default">Note: For drives created after mid-September 2026, the drive location starts with <code class="language-plaintext highlighter-rouge">//research.drive.auckland.ac.nz/</code>, whereas for drives created before mid-September 2026 it starts with <code class="language-plaintext highlighter-rouge">//files.auckland.ac.nz/research/</code>.</p>
+<p class="personalised-message" style="display:none;">This script has been personalised for your drive, <code class="language-plaintext highlighter-rouge personalised-drive-name"></code>.</p>
 
 ```bash
 #!/bin/bash
@@ -54,6 +54,7 @@ if [ "$?" -gt "0" ]; then
   rmdir ${mountpoint}
 fi
 ```
+{: .personalised-code}
 
 If you save this code in the file `~/mount_drive.sh` and give it executable permissions via `chmod u+x ~/mount_drive.sh`, you can then run the script like this:
 ```bash
@@ -65,8 +66,9 @@ If you save this code in the file `~/mount_drive.sh` and give it executable perm
 ```bash
 sudo umount -l ${HOME}/rescer201800002-cer-researchfolder-test
 ```
+{: .personalised-code}
 
-Make sure you adjust the target of this command, `${HOME}/rescer201800002-cer-researchfolder-test` in this example, to the location you used when you mounted your research drive.
+<p class="personalised-default">Make sure you adjust the target of this command, <code class="language-plaintext highlighter-rouge">${HOME}/rescer201800002-cer-researchfolder-test</code> in this example, to the location you used when you mounted your research drive.</p>
 
 
 ## Symbolic links within a research-drive
@@ -77,3 +79,6 @@ If you want to create symbolic links within the research drive, add the option `
 ```bash
 options="username=${USER},${common_options},mfsymlinks"
 ```
+
+<script src='{{"/assets/doc/personalised-instructions.js" | relative_url}}'></script>
+<script>initPersonalisedInstructions("linux", { exampleName: "rescer201800002-cer-researchfolder-test", exampleBasePath: "//research.drive.auckland.ac.nz/" })</script>
