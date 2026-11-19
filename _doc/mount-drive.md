@@ -45,7 +45,7 @@ share="//research.drive.auckland.ac.nz/${drive_name}"
 smb_version="3.0"
 
 mountpoint="${HOME}/${drive_name}"
-common_options="iocharset=utf8,workgroup=uoa,uid=${USER},dir_mode=0700,file_mode=0700,nodev,nosuid,vers=${smb_version}"
+common_options="iocharset=utf8,workgroup=uoa,uid=${USER},dir_mode=0700,file_mode=0700,nodev,nosuid,noserverino,vers=${smb_version}"
 options="username=${USER},${common_options}"
 
 mkdir -p ${mountpoint}
