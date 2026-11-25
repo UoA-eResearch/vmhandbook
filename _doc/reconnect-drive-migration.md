@@ -1,11 +1,9 @@
 ---
-title:  "Reconnecting a Research Drive after the storage migration"
+title:  "Reconnect a Research Drive after the storage migration"
 categories: mac windows linux howto drive
 ---
 
 The University is performing a [file storage upgrade](https://www.auckland.ac.nz/en/intranet/stay-informed/improvement-projects-programmes/file-storage-upgrade-home-shared-research-drives.html) which involves migrating Research Drives to a new storage platform. You will need to reconnect any migrated Research Drives to your machine to continue accessing them. See instructions below for each operating system.
-
-The new storage platform does not yet have a Vault or Archive facility, so migrated files within the 'Vault' or 'Archive' folders will be stored in the Drive's active space.
 
 # Contents <!-- omit in toc -->
 - [Connecting on a Windows machine](#connecting-on-a-windows-machine)
@@ -30,7 +28,7 @@ The new storage platform does not yet have a Vault or Archive facility, so migra
 
 4. In the **Drive** list, select a free drive letter.
 
-5. In the **Folder** box, enter the new drive location you were sent when the drive was migrated. It will look similar to this:
+5. In the **Folder** box, enter the new drive location you were emailed when the drive was migrated. It will look similar to this:
     <p><code>\\research.drive.auckland.ac.nz\ressci202400035-drive-name</code></p>
 
 6. Make sure that **Reconnect at login** remains ticked.
@@ -52,7 +50,7 @@ The new storage platform does not yet have a Vault or Archive facility, so migra
 
 2. Click on the **Finder** icon, press command ⌘ + K to bring up the **Connect to Server** window. 
 
-3. In the Server Address field, enter the drive location you were sent when the drive was created. It will look similar to this: 
+3. In the Server Address field, enter the drive location you were emailed when the drive was migrated. It will look similar to this: 
    </p><code>smb://research.drive.auckland.ac.nz/ressci202400035-drive-name</code></p>
 
 4. Click **+** to add the Research Drive location to **Favourite Servers** 
@@ -66,6 +64,8 @@ If prompted, enter your University username and password ensuring the Domain is 
 ![useful image]({{ "/assets" | append: page.id | append: "/map-mac-drive-username.png" | absolute_url }}){:width="600px"}
 
 ## Connecting on a Linux machine
+
+If you are **off-campus** connect via the University [Virtual Private Network](https://www.auckland.ac.nz/en/students/academic-information/postgraduate-students/postgraduate/postgraduate-support-and-services/vpn-service.html) (VPN).
 
 ### Install cifs-utils and create mount directory [required once] <!-- omit in toc -->
 
