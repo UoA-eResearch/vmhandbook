@@ -5,14 +5,16 @@ categories: mac windows linux howto drive
 
 The University is performing a [file storage upgrade](https://www.auckland.ac.nz/en/intranet/stay-informed/improvement-projects-programmes/file-storage-upgrade-home-shared-research-drives.html) which involves migrating Research Drives to a new storage platform. You will need to reconnect any migrated Research Drives to your machine to continue accessing them. See instructions below for each operating system.
 
-The new storage platform does not yet have an Archive or Vault facility, so migrated files within the 'Archive' folder will no longer be archived on tape storage (but all files on the new platform are still backed up daily).
-
-[Other stuff about the new storage platform]
+The new storage platform does not yet have a Vault or Archive facility, so migrated files within the 'Vault' or 'Archive' folders will be stored in the Drive's active space.
 
 # Contents <!-- omit in toc -->
 - [Connecting on a Windows machine](#connecting-on-a-windows-machine)
 - [Connecting on a Mac machine](#connecting-on-a-mac-machine)
 - [Connecting on a Linux machine](#connecting-on-a-linux-machine)
+  - [Install cifs-utils and create mount directory \[required once\]](#install-cifs-utils-and-create-mount-directory-required-once)
+- [Mount a research drive](#mount-a-research-drive)
+  - [Unmount a network drive](#unmount-a-network-drive)
+  - [Symbolic links within a research-drive](#symbolic-links-within-a-research-drive)
 
 ## Connecting on a Windows machine
 
@@ -69,104 +71,67 @@ If prompted, enter your University username and password ensuring the Domain is 
 
 ## Connecting on a Linux machine
 
-### Persistent Research Drive Mount <!-- omit in toc -->
+### Install cifs-utils and create mount directory [required once]
 
-System maintenance on the vm will cause it to occasionally reboot.
-This section outlines how to ensure the drive is automatically remounted after reboot.
+You need to have sudo privileges to mount network drives.
 
-#### Set up a credentials file <!-- omit in toc -->
-
-Create a file in your home-directory of the vm named (e.g.) `.cifs_credentials`,
-and edit it to contain the lines
-
-```
-username=<your_UOA_username>
-password=<your_UOA_password>
-domain=UOA
-```
-
-Now protect that file by changing its permissions to give you, and no-one else,  read-only access:
-```bash
-chmod 0600 ~/.cifs_credentials
-```
-
-#### Gather auxilliary information <!-- omit in toc -->
-
-Find your user identity on the vm with the command
+On Ubuntu run:
 
 ```bash
-id
+sudo apt-get update
+sudo apt-get install cifs-utils
 ```
 
-and observe the values of your *uid* and *gid* (user-id and group-id).
-
-We assume you mount the drive on your home directory as above, e.g. `~/<research_drive_mount_point>`.
-
-#### edit /etc/fstab with sudo <!-- omit in toc -->
-
-Using sudo, edit the file `/etc/fstab` and append the following line to it, substituting your values:
-
-Use `<drive_server_path_prefix>` as either `//research.drive.auckland.ac.nz/` (drives created after mid-September 2026) or `//files.auckland.ac.nz/research/` (drives created before mid-September 2026).
-
-```
-<drive_server_path_prefix><research_drive_name>  /home/<your_username_on_the_vm>/<research_drive_mount_point>  cifs nofail,credentials=/home/<your_username_on_the_vm>/.cifs_credentials,uid=<your_uid>,gid=<your_gid>,users 0   0
-```
-
-Unmount the research drive in order to test the fstab configuration:
+On Red Hat run:
 
 ```bash
-sudo mount -av
+sudo yum update
+sudo yum install cifs-utils
 ```
-----
 
-### Shared Research Drive Access <!-- omit in toc -->
-(Taken from [RedHat documentation](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html-single/managing_file_systems/index#proc_accessing-a-share-as-a-user_assembly_performing-a-multi-user-smb-mount))
+## Mount a research drive
 
-One method of sharing a mount of a research drive is by having an admin user set up the mount with the multiuser option, mounting the drive, and then letting individual users authenticate with cifs using their credentials.
+Below is a script you can use to mount a research drive.
 
-#### Superuser setup <!-- omit in toc -->
-
-1. A superuser creates the folder `/mnt/<research_drive_name>`
-   with group owner the vm's rw(user) group name:
-
-   ```bash
-   mkdir -p /mnt/<research_drive_name>
-   chown <user>:<vm_rw_group_name> /mnt/<research_drive_name>
-   ```
-
-2. This superuser then creates a secure credentials file for their access to the research drive:
-
-   E.g. create the file `/<some_directory_path>/.smb.cred`
-   to contain the details:
-
-   ```code
-   user=<UOA_username>
-   password=<UOA_password>
-   domain=UOA
-   ```
-
-   ```bash
-   chmod 0600 /<some_directory_path>/.smb.cred
-   ```
-
-3. With sudo permissions, edit the file `/etc/fstab` instructing that the research drive be mounted with these credentials, with the multiuser attribute:
-
-   Note: For drives created after mid-September 2026, the drive location starts with `//research.drive.auckland.ac.nz/`, whereas for drives created before mid-September 2026 it starts with `//files.auckland.ac.nz/research/`.
-
-   ```bash
-   <drive_server_path_prefix><research_drive_name>  /mnt/unifiles   cifs multiuser,sec=ntlmssp,credentials=/<some_directory_path>/.smb.cred,noauto  0 0
-   systemctl daemon-reload
-   ```
-
-4. A superuser effectively mounts the drive under their username, supplying the credentials file to /etc/fstab.
-
-#### User access <!-- omit in toc -->
-
-Any user of the vm who has access to the research-drive (belongs to the appropriate vmuser group) then
-provides their credentials for the research-drive server (`research.drive.auckland.ac.nz`) to the kernel’s keyring with the command:
+<p class="personalised-default">Make sure you edit the <code>drive_name</code> variable to match your drive.
 
 ```bash
-cifscreds add -u $USER research.drive.auckland.ac.nz
+#!/bin/bash
+
+drive_name="rescer201800002-cer-researchfolder-test"
+share="//research.drive.auckland.ac.nz/${drive_name}"
+
+smb_version="3.0"
+
+mountpoint="${HOME}/${drive_name}"
+common_options="iocharset=utf8,workgroup=uoa,uid=${USER},dir_mode=0700,file_mode=0700,nodev,nosuid,vers=${smb_version}"
+options="username=${USER},${common_options}"
+
+mkdir -p ${mountpoint}
+sudo mount -t cifs "${share}" "${mountpoint}" -o "${options}"
+if [ "$?" -gt "0" ]; then
+  rmdir ${mountpoint}
+fi
+```
+{: .personalised-code}
+
+If you save this code in the file `~/mount_drive.sh` and give it executable permissions via `chmod u+x ~/mount_drive.sh`, you can then run the script like this:
+
+```bash
+~/mount_drive.sh
 ```
 
-They can then access the drive with their permissions in the directory `/mnt/<research_drive_name>`.
+### Unmount a network drive
+
+```bash
+sudo umount -l ${HOME}/rescer201800002-cer-researchfolder-test
+```
+Make sure you adjust the target of this command, <code>${HOME}/rescer201800002-cer-researchfolder-test</code> in this example, to the location you used when you mounted your research drive.</p>
+
+### Symbolic links within a research-drive
+
+If you want to create symbolic links within the research drive, add the option `mfsymlinks` to the list you provide in your mount command (continuing from the code above):
+
+```bash
+options="username=${USER},${common_options},mfsymlinks"
+```
