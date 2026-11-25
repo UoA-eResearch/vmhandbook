@@ -85,7 +85,7 @@ sudo yum update
 sudo yum install cifs-utils
 ```
 
-## Mount a research drive <!-- omit in toc -->
+### Mount a research drive <!-- omit in toc -->
 
 Below is a script you can use to mount a research drive.
 
