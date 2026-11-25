@@ -11,10 +11,6 @@ The new storage platform does not yet have a Vault or Archive facility, so migra
 - [Connecting on a Windows machine](#connecting-on-a-windows-machine)
 - [Connecting on a Mac machine](#connecting-on-a-mac-machine)
 - [Connecting on a Linux machine](#connecting-on-a-linux-machine)
-  - [Install cifs-utils and create mount directory \[required once\]](#install-cifs-utils-and-create-mount-directory-required-once)
-- [Mount a research drive](#mount-a-research-drive)
-  - [Unmount a network drive](#unmount-a-network-drive)
-  - [Symbolic links within a research-drive](#symbolic-links-within-a-research-drive)
 
 ## Connecting on a Windows machine
 
@@ -71,7 +67,7 @@ If prompted, enter your University username and password ensuring the Domain is 
 
 ## Connecting on a Linux machine
 
-### Install cifs-utils and create mount directory [required once]
+### Install cifs-utils and create mount directory [required once] <!-- omit in toc -->
 
 You need to have sudo privileges to mount network drives.
 
@@ -89,7 +85,7 @@ sudo yum update
 sudo yum install cifs-utils
 ```
 
-## Mount a research drive
+## Mount a research drive <!-- omit in toc -->
 
 Below is a script you can use to mount a research drive.
 
@@ -121,14 +117,14 @@ If you save this code in the file `~/mount_drive.sh` and give it executable perm
 ~/mount_drive.sh
 ```
 
-### Unmount a network drive
+### Unmount a network drive <!-- omit in toc -->
 
 ```bash
 sudo umount -l ${HOME}/rescer201800002-cer-researchfolder-test
 ```
 Make sure you adjust the target of this command, <code>${HOME}/rescer201800002-cer-researchfolder-test</code> in this example, to the location you used when you mounted your research drive.</p>
 
-### Symbolic links within a research-drive
+### Symbolic links within a research-drive <!-- omit in toc -->
 
 If you want to create symbolic links within the research drive, add the option `mfsymlinks` to the list you provide in your mount command (continuing from the code above):
 
