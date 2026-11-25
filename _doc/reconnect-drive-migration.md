@@ -51,7 +51,7 @@ The University is performing a [file storage upgrade](https://www.auckland.ac.nz
 2. Click on the **Finder** icon, press command ⌘ + K to bring up the **Connect to Server** window. 
 
 3. In the Server Address field, enter the drive location you were emailed when the drive was migrated. It will look similar to this: 
-   </p><code>smb://research.drive.auckland.ac.nz/ressci202400035-drive-name</code></p>
+   <p><code>smb://research.drive.auckland.ac.nz/ressci202400035-drive-name</code></p>
 
 4. Click **+** to add the Research Drive location to **Favourite Servers** 
 
