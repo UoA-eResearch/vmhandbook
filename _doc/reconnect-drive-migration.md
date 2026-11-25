@@ -24,7 +24,7 @@ The University is performing a [file storage upgrade](https://www.auckland.ac.nz
     
     b. Windows 11: Select **•••** on the File Explorer ribbon, then **Map Network Drive**.
 
-    ![useful image]({{ "/assets" | append: page.id | append: "/map-drive-windows-win10-11.png" | absolute_url }}){:width="1000px"}
+    ![useful image]({{ "/assets/doc/map-drive-windows/map-drive-windows-win10-11.png" | absolute_url }}){:width="1000px"}
 
 4. In the **Drive** list, select a free drive letter.
 
@@ -37,12 +37,12 @@ The University is performing a [file storage upgrade](https://www.auckland.ac.nz
 **Note**: If you receive an error message when attempting to map the drive, please sign out or restart your machine and try again.
 
 
-    ![useful image]({{ "/assets" | append: page.id | append: "/map-drive-windows-options.png" | absolute_url }}){:width="500"}
+    ![useful image]({{ "/assets/doc/map-drive-windows/map-drive-windows-options.png" | absolute_url }}){:width="500"}
 
 9. If prompted, enter your University username and password ensuring the Domain is UOA.
 
 
-    ![useful image]({{ "/assets" | append: page.id | append: "/map-drive-windows-credentials2.png" | absolute_url }}){:width="500"}
+    ![useful image]({{ "/assets/doc/map-drive-windows/map-drive-windows-credentials2.png" | absolute_url }}){:width="500"}
 
 ## Connecting on a Mac machine
 
@@ -57,11 +57,11 @@ The University is performing a [file storage upgrade](https://www.auckland.ac.nz
 
 5. Click **Connect**. 
 
-![useful image]({{ "/assets" | append: page.id | append: "/map-mac-drive.png" | absolute_url }}){:width="600px"}
+![useful image]({{ "/assets/doc/map-drive-mac/map-mac-drive.png" | absolute_url }}){:width="600px"}
 
 If prompted, enter your University username and password ensuring the Domain is UOA.
 
-![useful image]({{ "/assets" | append: page.id | append: "/map-mac-drive-username.png" | absolute_url }}){:width="600px"}
+![useful image]({{ "/assets/doc/map-drive-mac/map-mac-drive-username.png" | absolute_url }}){:width="600px"}
 
 ## Connecting on a Linux machine
 
