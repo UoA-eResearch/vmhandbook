@@ -89,7 +89,7 @@ sudo yum install cifs-utils
 
 Below is a script you can use to mount a research drive.
 
-<p class="personalised-default">Make sure you edit the <code>drive_name</code> variable to match your drive.
+Make sure you edit the <code>drive_name</code> variable to match your drive.
 
 ```bash
 #!/bin/bash
@@ -109,7 +109,6 @@ if [ "$?" -gt "0" ]; then
   rmdir ${mountpoint}
 fi
 ```
-{: .personalised-code}
 
 If you save this code in the file `~/mount_drive.sh` and give it executable permissions via `chmod u+x ~/mount_drive.sh`, you can then run the script like this:
 
